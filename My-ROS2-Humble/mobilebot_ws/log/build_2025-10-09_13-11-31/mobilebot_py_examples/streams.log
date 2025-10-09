@@ -1,0 +1,25 @@
+[1.233s] Invoking command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/src/mobilebot_py_examples': PYTHONPATH=/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mobilebot_py_examples build --build-base /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/build install --record /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/install.log --single-version-externally-managed install_data
+[1.614s] running egg_info
+[1.615s] writing ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/PKG-INFO
+[1.618s] writing dependency_links to ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/dependency_links.txt
+[1.618s] writing entry points to ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/entry_points.txt
+[1.618s] writing requirements to ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/requires.txt
+[1.618s] writing top-level names to ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/top_level.txt
+[1.622s] reading manifest file '../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/SOURCES.txt'
+[1.624s] writing manifest file '../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/SOURCES.txt'
+[1.624s] running build
+[1.624s] running build_py
+[1.625s] copying mobilebot_py_examples/simple_publisher.py -> /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/build/lib/mobilebot_py_examples
+[1.626s] running install
+[1.627s] running install_lib
+[1.628s] copying /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/build/lib/mobilebot_py_examples/simple_publisher.py -> /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples
+[1.629s] byte-compiling /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples/simple_publisher.py to simple_publisher.cpython-310.pyc
+[1.630s] running install_data
+[1.631s] copying package.xml -> /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/share/mobilebot_py_examples
+[1.631s] running install_egg_info
+[1.637s] removing '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples-0.0.0-py3.10.egg-info' (and everything under it)
+[1.637s] Copying ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info to /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples-0.0.0-py3.10.egg-info
+[1.640s] running install_scripts
+[1.672s] Installing simple_publisher script to /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/mobilebot_py_examples
+[1.672s] writing list of installed files to '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/install.log'
+[1.705s] Invoked command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/src/mobilebot_py_examples' returned '0': PYTHONPATH=/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mobilebot_py_examples build --build-base /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/build install --record /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/install.log --single-version-externally-managed install_data

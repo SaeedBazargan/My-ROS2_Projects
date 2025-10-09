@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/PKG-INFO
+../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/SOURCES.txt
+../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/dependency_links.txt
+../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/entry_points.txt
+../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/requires.txt
+../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/top_level.txt
+../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/zip-safe
+mobilebot_py_examples/__init__.py
+mobilebot_py_examples/simple_publisher.py
+mobilebot_py_examples/simple_subscriber.py
+resource/mobilebot_py_examples
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

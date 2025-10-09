@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/PKG-INFO
+writing dependency_links to ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/dependency_links.txt
+writing entry points to ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/entry_points.txt
+writing requirements to ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/requires.txt
+writing top-level names to ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/top_level.txt
+reading manifest file '../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/SOURCES.txt'
+writing manifest file '../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/SOURCES.txt'
+running build
+running build_py
+copying mobilebot_py_examples/simple_subscriber.py -> /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/build/lib/mobilebot_py_examples
+running install
+running install_lib
+copying /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/build/lib/mobilebot_py_examples/simple_subscriber.py -> /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples
+byte-compiling /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples/simple_subscriber.py to simple_subscriber.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info to /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples-0.0.0-py3.10.egg-info
+running install_scripts
+Installing simple_publisher script to /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/mobilebot_py_examples
+Installing simple_subscriber script to /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/mobilebot_py_examples
+writing list of installed files to '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_py_examples/install.log'
