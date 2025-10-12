@@ -1,0 +1,11 @@
+[0.024s] Invoking command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_description -- -j4 -l4
+[0.058s] [31mCMake Error at CMakeLists.txt:11:
+[0.058s]   Parse error.  Expected "(", got newline with text "
+[0.058s] 
+[0.058s]   ".
+[0.059s] 
+[0.059s] [0m
+[0.059s] -- Configuring incomplete, errors occurred!
+[0.059s] See also "/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_description/CMakeFiles/CMakeOutput.log".
+[0.061s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.487s] Invoked command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_description' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_description -- -j4 -l4

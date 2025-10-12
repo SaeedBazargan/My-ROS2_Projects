@@ -1,8 +1,10 @@
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples/simple_subscriber.py
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples/simple_publisher.py
+/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples/simple_parameter.py
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples/__init__.py
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples/__pycache__/simple_subscriber.cpython-310.pyc
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples/__pycache__/simple_publisher.cpython-310.pyc
+/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples/__pycache__/simple_parameter.cpython-310.pyc
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples/__pycache__/__init__.cpython-310.pyc
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/share/ament_index/resource_index/packages/mobilebot_py_examples
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/share/mobilebot_py_examples/package.xml
@@ -13,5 +15,6 @@
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples-0.0.0-py3.10.egg-info/PKG-INFO
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples-0.0.0-py3.10.egg-info/dependency_links.txt
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/python3.10/site-packages/mobilebot_py_examples-0.0.0-py3.10.egg-info/zip-safe
+/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/mobilebot_py_examples/simple_parameter
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/mobilebot_py_examples/simple_publisher
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_py_examples/lib/mobilebot_py_examples/simple_subscriber

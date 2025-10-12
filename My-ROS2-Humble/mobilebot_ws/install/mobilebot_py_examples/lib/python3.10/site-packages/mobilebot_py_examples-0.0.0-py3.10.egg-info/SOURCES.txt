@@ -9,6 +9,7 @@ setup.py
 ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/top_level.txt
 ../../build/mobilebot_py_examples/mobilebot_py_examples.egg-info/zip-safe
 mobilebot_py_examples/__init__.py
+mobilebot_py_examples/simple_parameter.py
 mobilebot_py_examples/simple_publisher.py
 mobilebot_py_examples/simple_subscriber.py
 resource/mobilebot_py_examples

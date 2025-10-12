@@ -1,0 +1,39 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/build/mobilebot_description
+-- Install configuration: ""
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/base_plate.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/claw_support.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/round_plate.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/plate.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/servo_plate.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/left_finger.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/link.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/triangular_link.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/vertical_drive_arm.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/forward_drive_arm.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/basement.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/horizontal_arm.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/right_finger.STL
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/urdf
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/urdf/mobilebot.urdf.xacro
+-- Up-to-date: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/ament_index/resource_index/package_run_dependencies/mobilebot_description
+-- Up-to-date: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/ament_index/resource_index/parent_prefix_path/mobilebot_description
+-- Up-to-date: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/environment/ament_prefix_path.sh
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/environment/path.sh
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/environment/path.dsv
+-- Up-to-date: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/local_setup.bash
+-- Up-to-date: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/local_setup.sh
+-- Up-to-date: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/local_setup.zsh
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/local_setup.dsv
+-- Installing: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/package.dsv
+-- Up-to-date: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/ament_index/resource_index/packages/mobilebot_description
+-- Up-to-date: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/cmake/mobilebot_descriptionConfig.cmake
+-- Up-to-date: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/cmake/mobilebot_descriptionConfig-version.cmake
+-- Up-to-date: /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/package.xml

@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'simple_publisher = mobilebot_py_examples.simple_publisher:main',
             'simple_subscriber = mobilebot_py_examples.simple_subscriber:main',
+            'simple_parameter = mobilebot_py_examples.simple_parameter:main',
         ],
     },
 )
