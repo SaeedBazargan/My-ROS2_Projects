@@ -11,7 +11,9 @@
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/basement.STL
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/horizontal_arm.STL
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/meshes/right_finger.STL
-/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/urdf/mobilebot.urdf.xacro
+/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/urdf/mobilebot.urdf
+/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/launch/display.launch.py
+/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/rviz/display.rviz
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/ament_index/resource_index/package_run_dependencies/mobilebot_description
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/ament_index/resource_index/parent_prefix_path/mobilebot_description
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/environment/ament_prefix_path.sh
