@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<robot name="mobilebot">
+
+    <material name="green">
+        <color rgba="0 0.5 0 1"/>
+    </material>
+    <material name="blue">
+        <color rgba="0 0 0.5 1"/>
+    </material>
+    <material name="red">
+        <color rgba="0.5 0 0 1"/>
+    </material>
+
+
+    <link name="base_footprint"/>
+    <link name="base_link">
+        <visual>    <!-- give a shape to it -->
+             <geometry>
+                <box size="0.6 0.4 0.2"/>   <!-- 60cm long, 40cm wide, 20cm height-->
+             </geometry>
+             <origin xyz="0 0 0.1" rpy="0 0 0"/>
+             <material name="blue"/>
+        </visual>
+    </link>
+    <joint name="footprint_BaseLink_joint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    </joint>
+
+    <link name="right_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0"/>     <!-- 90degree in X-Axis-->
+            <material name="red"/>
+        </visual>
+    </link>
+    <joint name="base_RightWheel_joint" type="continuous">  <!-- continuous is a revolution with no limit-->
+        <parent link="base_link"/>
+        <child link="right_wheel_link"/>
+        <origin xyz="-0.15 -0.225 0" rpy="0 0 0"/>     <!-- 15cm: pulled back, 22.5cm: pulled right-->
+        <axis xyz="0 1 0"/> <!-- rotate on Y-Axis -->
+    </joint>
+
+    <link name="left_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0"/>     <!-- 90degree in X-Axis-->
+            <material name="red"/>
+        </visual>
+    </link>
+    <joint name="base_LeftWheel_joint" type="continuous">  <!-- continuous is a revolution with no limit-->
+        <parent link="base_link"/>
+        <child link="left_wheel_link"/>
+        <origin xyz="-0.15 0.225 0" rpy="0 0 0"/>     <!-- 15cm: pulled back, 22.5cm: pulled left-->
+        <axis xyz="0 1 0"/> <!-- rotate on Y-Axis -->
+    </joint>
+
+    <link name="caster_wheel_link">
+        <visual>
+            <geometry>
+                <sphere radius="0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="red"/>
+        </visual>
+    </link>
+    <joint name="base_CasterWheel_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="caster_wheel_link"/>
+        <origin xyz="0.2 0 -0.05" rpy="0 0 0"/>
+    </joint>
+
+</robot>
