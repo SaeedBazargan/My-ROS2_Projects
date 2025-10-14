@@ -1,4 +1,6 @@
-/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_description/share/mobilebot_description//urdf/mobilebot.urdf
+/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_description/share/mobilebot_description//urdf/common_properties.xacro
+/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_description/share/mobilebot_description//urdf/mobilebot.urdf.xacro
+/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_description/share/mobilebot_description//urdf/mobilebot_base.xacro
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_description/share/mobilebot_description//launch/display.launch.py
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_description/share/mobilebot_description//rviz/mobilebot_config.rviz
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_description/share/ament_index/resource_index/package_run_dependencies/mobilebot_description
