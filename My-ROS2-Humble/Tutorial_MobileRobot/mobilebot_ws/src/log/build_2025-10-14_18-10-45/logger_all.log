@@ -1,0 +1,198 @@
+[0.160s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.160s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x791ca812fa90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x791ca812ea70>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x791ca812ea70>>)
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.452s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_bringup) by extension 'ignore'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_bringup) by extension 'ignore_ament_install'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_bringup) by extensions ['colcon_pkg']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_bringup) by extension 'colcon_pkg'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_bringup) by extensions ['colcon_meta']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_bringup) by extension 'colcon_meta'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_bringup) by extensions ['ros']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_bringup) by extension 'ros'
+[0.475s] DEBUG:colcon.colcon_core.package_identification:Package 'mobilebot_bringup' with type 'ros.ament_cmake' and name 'mobilebot_bringup'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_description) by extension 'ignore'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_description) by extension 'ignore_ament_install'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_description) by extensions ['colcon_pkg']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_description) by extension 'colcon_pkg'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_description) by extensions ['colcon_meta']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_description) by extension 'colcon_meta'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_description) by extensions ['ros']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(mobilebot_description) by extension 'ros'
+[0.477s] DEBUG:colcon.colcon_core.package_identification:Package 'mobilebot_description' with type 'ros.ament_cmake' and name 'mobilebot_description'
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.507s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.524s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 362 installed packages in /opt/ros/humble
+[0.527s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.598s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.598s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.598s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.598s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.598s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.598s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.598s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.598s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.598s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.598s] DEBUG:colcon.colcon_core.verb:Building package 'mobilebot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup', 'merge_install': False, 'path': '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_description' build argument 'cmake_args' from command line to 'None'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_description' build argument 'cmake_target' from command line to 'None'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.599s] Level 5:colcon.colcon_core.verb:set package 'mobilebot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.599s] DEBUG:colcon.colcon_core.verb:Building package 'mobilebot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description', 'merge_install': False, 'path': '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_description', 'symlink_install': False, 'test_result_base': None}
+[0.599s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.601s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.601s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_bringup' with build type 'ament_cmake'
+[0.601s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_bringup'
+[0.604s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.605s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.605s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.610s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_description' with build type 'ament_cmake'
+[0.610s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_description'
+[0.611s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.611s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.624s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_bringup -DCMAKE_INSTALL_PREFIX=/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup
+[0.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_description -- -j4 -l4
+[0.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_description -- -j4 -l4
+[0.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_description
+[0.728s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mobilebot_description)
+[0.730s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_description
+[0.734s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description' for CMake module files
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description' for CMake config files
+[0.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobilebot_description', 'cmake_prefix_path')
+[0.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/hook/cmake_prefix_path.ps1'
+[0.737s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/hook/cmake_prefix_path.dsv'
+[0.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/hook/cmake_prefix_path.sh'
+[0.740s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/bin'
+[0.740s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/lib/pkgconfig/mobilebot_description.pc'
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/lib/python3.10/site-packages'
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/bin'
+[0.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/package.ps1'
+[0.743s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/package.dsv'
+[0.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/package.sh'
+[0.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/package.bash'
+[0.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/package.zsh'
+[0.793s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/colcon-core/packages/mobilebot_description)
+[0.796s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mobilebot_description)
+[0.797s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description' for CMake module files
+[0.800s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description' for CMake config files
+[0.802s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobilebot_description', 'cmake_prefix_path')
+[0.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/hook/cmake_prefix_path.ps1'
+[0.805s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/hook/cmake_prefix_path.dsv'
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/hook/cmake_prefix_path.sh'
+[0.808s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/bin'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/lib/pkgconfig/mobilebot_description.pc'
+[0.810s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/lib/python3.10/site-packages'
+[0.812s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/bin'
+[0.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/package.ps1'
+[0.817s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/package.dsv'
+[0.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/package.sh'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/package.bash'
+[0.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/mobilebot_description/package.zsh'
+[0.827s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_description/share/colcon-core/packages/mobilebot_description)
+[1.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_bringup -DCMAKE_INSTALL_PREFIX=/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup
+[1.790s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_bringup -- -j4 -l4
+[1.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_bringup -- -j4 -l4
+[1.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_bringup
+[1.870s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mobilebot_bringup)
+[1.870s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup' for CMake module files
+[1.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_bringup
+[1.872s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup' for CMake config files
+[1.873s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobilebot_bringup', 'cmake_prefix_path')
+[1.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/cmake_prefix_path.ps1'
+[1.874s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/cmake_prefix_path.dsv'
+[1.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/cmake_prefix_path.sh'
+[1.876s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/lib'
+[1.876s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/bin'
+[1.876s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/lib/pkgconfig/mobilebot_bringup.pc'
+[1.877s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/lib/python3.10/site-packages'
+[1.877s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobilebot_bringup', 'pythonpath')
+[1.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/pythonpath.ps1'
+[1.878s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/pythonpath.dsv'
+[1.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/pythonpath.sh'
+[1.880s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/bin'
+[1.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/package.ps1'
+[1.881s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/package.dsv'
+[1.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/package.sh'
+[1.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/package.bash'
+[1.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/package.zsh'
+[1.884s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/colcon-core/packages/mobilebot_bringup)
+[1.885s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mobilebot_bringup)
+[1.885s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup' for CMake module files
+[1.886s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup' for CMake config files
+[1.886s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobilebot_bringup', 'cmake_prefix_path')
+[1.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/cmake_prefix_path.ps1'
+[1.887s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/cmake_prefix_path.dsv'
+[1.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/cmake_prefix_path.sh'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/lib'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/bin'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/lib/pkgconfig/mobilebot_bringup.pc'
+[1.890s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/lib/python3.10/site-packages'
+[1.890s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobilebot_bringup', 'pythonpath')
+[1.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/pythonpath.ps1'
+[1.891s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/pythonpath.dsv'
+[1.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/hook/pythonpath.sh'
+[1.892s] Level 1:colcon.colcon_core.environment:checking '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/bin'
+[1.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/package.ps1'
+[1.894s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/package.dsv'
+[1.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/package.sh'
+[1.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/package.bash'
+[1.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/mobilebot_bringup/package.zsh'
+[1.897s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/mobilebot_bringup/share/colcon-core/packages/mobilebot_bringup)
+[1.897s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.898s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.898s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.899s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.906s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.906s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.906s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.921s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.922s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/local_setup.ps1'
+[1.924s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/_local_setup_util_ps1.py'
+[1.928s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/setup.ps1'
+[1.930s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/local_setup.sh'
+[1.931s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/_local_setup_util_sh.py'
+[1.933s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/setup.sh'
+[1.935s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/local_setup.bash'
+[1.936s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/setup.bash'
+[1.937s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/local_setup.zsh'
+[1.938s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/install/setup.zsh'
