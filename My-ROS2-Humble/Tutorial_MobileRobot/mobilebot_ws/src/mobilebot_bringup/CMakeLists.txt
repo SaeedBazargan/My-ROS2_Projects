@@ -8,7 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 install(
-  DIRECTORY launch rviz
+  DIRECTORY launch rviz worlds
   DESTINATION share/${PROJECT_NAME}/
 )
 

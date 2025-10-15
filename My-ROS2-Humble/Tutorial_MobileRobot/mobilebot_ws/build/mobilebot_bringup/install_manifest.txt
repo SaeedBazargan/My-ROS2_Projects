@@ -1,5 +1,6 @@
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_bringup/share/mobilebot_bringup//launch/gazebo.launch.py
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_bringup/share/mobilebot_bringup//rviz/mobilebot_config.rviz
+/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_bringup/share/mobilebot_bringup//worlds/mobilebot_gazeboWorld.world
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_bringup/share/ament_index/resource_index/package_run_dependencies/mobilebot_bringup
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_bringup/share/ament_index/resource_index/parent_prefix_path/mobilebot_bringup
 /home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_bringup/share/mobilebot_bringup/environment/ament_prefix_path.sh

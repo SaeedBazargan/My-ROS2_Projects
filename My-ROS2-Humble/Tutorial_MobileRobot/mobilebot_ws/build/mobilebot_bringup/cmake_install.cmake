@@ -46,6 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mobilebot_bringup/" TYPE DIRECTORY FILES
     "/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_bringup/launch"
     "/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_bringup/rviz"
+    "/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_bringup/worlds"
     )
 endif()
 

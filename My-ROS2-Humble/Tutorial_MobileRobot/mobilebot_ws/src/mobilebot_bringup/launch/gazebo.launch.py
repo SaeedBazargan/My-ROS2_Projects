@@ -12,6 +12,8 @@ def generate_launch_description():
                              'urdf', 'mobilebot.urdf.xacro')
     rviz_config_path = os.path.join(get_package_share_path('mobilebot_bringup'),
                              'rviz', 'mobilebot_config.rviz')
+    world_path = os.path.join(get_package_share_path('mobilebot_bringup'),
+                             'worlds', 'mobilebot_gazeboWorld.world')
 
     robot_description = ParameterValue(Command(["xacro ", urdf_path]), value_type=str)
 
@@ -21,13 +23,9 @@ def generate_launch_description():
         parameters=[{"robot_description": robot_description}]
     )
 
-    start_gazebo_server = IncludeLaunchDescription(PythonLaunchDescriptionSource(
-        os.path.join(get_package_share_path("gazebo_ros"), "launch", "gzserver.launch.py")
-    ))
-
-    start_gazebo_client = IncludeLaunchDescription(PythonLaunchDescriptionSource(
-        os.path.join(get_package_share_path("gazebo_ros"), "launch", "gzclient.launch.py")
-    ))
+    start_gazebo = IncludeLaunchDescription(PythonLaunchDescriptionSource(
+        os.path.join(get_package_share_path("gazebo_ros"), "launch", "gazebo.launch.py")),
+        launch_arguments={'world': world_path}.items())
 
     spawn_robot_node = Node(
         package="gazebo_ros",
@@ -45,8 +43,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         robot_state_publisher_node,
-        start_gazebo_server,
-        start_gazebo_client,
+        start_gazebo,
         spawn_robot_node,
         rviz_node
     ])
