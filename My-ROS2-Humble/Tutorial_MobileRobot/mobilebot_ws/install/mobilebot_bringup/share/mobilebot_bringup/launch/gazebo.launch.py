@@ -26,13 +26,6 @@ def generate_launch_description():
     start_gazebo = IncludeLaunchDescription(PythonLaunchDescriptionSource(
         os.path.join(get_package_share_path("gazebo_ros"), "launch", "gazebo.launch.py")),
         launch_arguments={'world': world_path}.items())
-    # start_gazebo_server = IncludeLaunchDescription(PythonLaunchDescriptionSource(
-    #     os.path.join(get_package_share_path("gazebo_ros"), "launch", "gzserver.launch.py")
-    # ))
-
-    # start_gazebo_client = IncludeLaunchDescription(PythonLaunchDescriptionSource(
-    #     os.path.join(get_package_share_path("gazebo_ros"), "launch", "gzclient.launch.py")
-    # ))
 
     spawn_robot_node = Node(
         package="gazebo_ros",
@@ -51,8 +44,6 @@ def generate_launch_description():
     return LaunchDescription([
         robot_state_publisher_node,
         start_gazebo,
-        # start_gazebo_server,
-        # start_gazebo_client,
         spawn_robot_node,
         rviz_node
     ])
