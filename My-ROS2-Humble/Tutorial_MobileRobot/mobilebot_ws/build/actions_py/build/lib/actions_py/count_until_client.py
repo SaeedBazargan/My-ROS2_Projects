@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
-from rclpy.action.client import ClientGoalHandle
+from rclpy.action.client import ClientGoalHandle, GoalStatus
 from mobilebot_interfaces.action import CountUntil
 
 class CountUntilClientNode(Node):
@@ -25,20 +25,29 @@ class CountUntilClientNode(Node):
         goal_.period = period_
 
         # send the goal
-        self.get_logger().info("Sending goal: target : " + str(target_num_) + " " + "period : " + str(period_))
-        send_goal_ = self.count_client_.send_goal_async(goal_)
-        send_goal_.add_done_callback(self.goal_response_callback)
+        self.get_logger().info("Sending goal: target -> " + str(target_num_) + " " + "period -> " + str(period_))
+        self.count_client_.send_goal_async(goal_).add_done_callback(self.goal_response_callback)
 
 
     # we send the goal and the server is going to say accepted or not
     def goal_response_callback(self, future):
-        goal_handle = future.result()
-        if goal_handle.accepted:
-            goal_handle.get_result_async().add_done_callback(self.goal_result_callback)
+        self.goal_handle : ClientGoalHandle = future.result()
+        if self.goal_handle.accepted:
+            self.get_logger().info("the goal got accepted.")
+            self.goal_handle.get_result_async().add_done_callback(self.goal_result_callback)
+        else:
+            self.get_logger().warn("the goal got rejected.")
 
 
     def goal_result_callback(self, future):
-        result_ = future.result().result    # (mobilebot_interfaces.action.CountUntil.action:Result)
+        status_ = future.result().status
+        result_ = future.result().result
+        
+        if status_ == GoalStatus.STATUS_SUCCEEDED:
+            self.get_logger().info("Success.")
+        elif status_ == GoalStatus.STATUS_ABORTED:
+            self.get_logger().error("Abort.")
+
         self.get_logger().info("Result is: " + str(result_.reached_number))
 
 

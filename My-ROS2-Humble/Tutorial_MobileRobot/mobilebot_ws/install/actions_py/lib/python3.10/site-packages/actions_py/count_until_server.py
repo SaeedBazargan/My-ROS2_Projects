@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from rclpy.action import ActionServer
+from rclpy.action import ActionServer, GoalResponse
 from rclpy.action.server import ServerGoalHandle
 from mobilebot_interfaces.action import CountUntil
 import time
@@ -11,11 +11,24 @@ class CountUntilServerNode(Node):
         self.count_server_ = ActionServer(
             self, 
             CountUntil, 
-            "count_until", 
-            execute_callback = self.execute_callback)
+            "count_until",
+            goal_callback=self.goal_callback,
+            execute_callback=self.execute_callback)
         self.get_logger().info("Action server is ready!")
 
+    # We only get the target in this function for evaluation.
+    def goal_callback(self, goal_request : CountUntil.Goal):
+        self.get_logger().info("Received a goal")
+        
+        # validate the goal request
+        if goal_request.target_number <= 0:
+            self.get_logger().info("the goal is invalid.")
+            return GoalResponse.REJECT
+        
+        self.get_logger().info("the goal is valid.")
+        return GoalResponse.ACCEPT
 
+    # If the evaluation is positive, we receive the goal and execute it.
     def execute_callback(self, goal_handle: ServerGoalHandle):
         # get request from goal (mobilebot_interfaces.action.CountUntil.action:Goal) 
         target_ = goal_handle.request.target_number
@@ -29,7 +42,7 @@ class CountUntilServerNode(Node):
             self.get_logger().info(str(counter_))
             time.sleep(period_)
 
-        goal_handle.succeed()
+        goal_handle.abort()
 
         # send the result (mobilebot_interfaces.action.CountUntil.action:Result)
         result_ = CountUntil.Result()
