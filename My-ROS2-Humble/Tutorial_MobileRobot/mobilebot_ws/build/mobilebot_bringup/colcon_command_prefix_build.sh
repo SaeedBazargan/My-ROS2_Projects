@@ -1,2 +1,2 @@
 # generated from colcon_core/shell/template/command_prefix.sh.em
-. "/home/sbzrobot/ROS2-Projects/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/package.sh"
+. "/home/saeedbazargan/Desktop/ROS2-Humble/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_description/share/mobilebot_description/package.sh"

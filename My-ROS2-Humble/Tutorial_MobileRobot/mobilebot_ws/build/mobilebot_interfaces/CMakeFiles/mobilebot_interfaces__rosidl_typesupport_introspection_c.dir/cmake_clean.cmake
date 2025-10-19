@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/mobilebot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mobilebot_interfaces/action/detail/count_until__type_support.c.o"
+  "CMakeFiles/mobilebot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mobilebot_interfaces/action/detail/count_until__type_support.c.o.d"
+  "libmobilebot_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libmobilebot_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/mobilebot_interfaces/action/detail/count_until__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/mobilebot_interfaces/action/detail/count_until__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/mobilebot_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
