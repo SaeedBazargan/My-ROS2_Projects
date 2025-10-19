@@ -3,7 +3,7 @@
 
 # class MyCustomNode(Node):
 #     def __init__(self):
-#         super.__init__("node_name")
+#         super().__init__("node_name")
 
 # def main(args=None):
 #     rclpy.init(args=args)

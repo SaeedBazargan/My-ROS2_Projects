@@ -9,6 +9,7 @@ setup.py
 ../../build/actions_py/actions_py.egg-info/top_level.txt
 ../../build/actions_py/actions_py.egg-info/zip-safe
 actions_py/__init__.py
+actions_py/count_until_client.py
 actions_py/count_until_server.py
 actions_py/nodeTemplate.py
 resource/actions_py
