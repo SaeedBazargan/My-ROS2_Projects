@@ -9,7 +9,7 @@
         "${workspaceFolder}/**",
         "/opt/ros/humble/include/**",
         "/usr/include/**",
-        "/home/saeedbazargan/Desktop/ROS2-Humble/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_interfaces/include/**"
+        "/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/mobilebot_interfaces/include/**"
       ],
       "name": "linux-gcc-x64",
       "intelliSenseMode": "linux-gcc-x64",
