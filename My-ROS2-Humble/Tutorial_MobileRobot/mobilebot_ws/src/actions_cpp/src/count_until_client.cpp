@@ -21,7 +21,7 @@ private:
     {
         if(!goal_handle_)
         {
-            RCLCPP_INFO(this->get_logger(), "Goal got rejected.");
+            RCLCPP_WARN(this->get_logger(), "Goal got rejected.");
         }
         else
         {
@@ -103,7 +103,7 @@ public:
         count_client_->async_send_goal(goal_, options);
 
         // Schedule goal cancellation after 2 seconds (for testing)
-        timer_ = this->create_wall_timer(std::chrono::seconds(2), std::bind(&CountUntilClientNode::timer_callback, this));
+        // timer_ = this->create_wall_timer(std::chrono::seconds(2), std::bind(&CountUntilClientNode::timer_callback, this));
     }
 
     // ------------------------------------------------------------------------
