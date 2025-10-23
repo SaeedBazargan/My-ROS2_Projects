@@ -236,6 +236,19 @@ count_until_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_until_client.dir/build.make CMakeFiles/count_until_client.dir/build
 .PHONY : count_until_client/fast
 
+#=============================================================================
+# Target rules for targets named robot_move_server
+
+# Build rule for target.
+robot_move_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_move_server
+.PHONY : robot_move_server
+
+# fast build rule for target.
+robot_move_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_server.dir/build.make CMakeFiles/robot_move_server.dir/build
+.PHONY : robot_move_server/fast
+
 src/count_until_client.o: src/count_until_client.cpp.o
 .PHONY : src/count_until_client.o
 
@@ -308,6 +321,30 @@ src/count_until_server_queue_goals.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_until_server_queue_goals.dir/build.make CMakeFiles/count_until_server_queue_goals.dir/src/count_until_server_queue_goals.cpp.s
 .PHONY : src/count_until_server_queue_goals.cpp.s
 
+src/robot_move_server.o: src/robot_move_server.cpp.o
+.PHONY : src/robot_move_server.o
+
+# target to build an object file
+src/robot_move_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_server.dir/build.make CMakeFiles/robot_move_server.dir/src/robot_move_server.cpp.o
+.PHONY : src/robot_move_server.cpp.o
+
+src/robot_move_server.i: src/robot_move_server.cpp.i
+.PHONY : src/robot_move_server.i
+
+# target to preprocess a source file
+src/robot_move_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_server.dir/build.make CMakeFiles/robot_move_server.dir/src/robot_move_server.cpp.i
+.PHONY : src/robot_move_server.cpp.i
+
+src/robot_move_server.s: src/robot_move_server.cpp.s
+.PHONY : src/robot_move_server.s
+
+# target to generate assembly for a file
+src/robot_move_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_server.dir/build.make CMakeFiles/robot_move_server.dir/src/robot_move_server.cpp.s
+.PHONY : src/robot_move_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -326,6 +363,7 @@ help:
 	@echo "... count_until_client"
 	@echo "... count_until_server"
 	@echo "... count_until_server_queue_goals"
+	@echo "... robot_move_server"
 	@echo "... src/count_until_client.o"
 	@echo "... src/count_until_client.i"
 	@echo "... src/count_until_client.s"
@@ -335,6 +373,9 @@ help:
 	@echo "... src/count_until_server_queue_goals.o"
 	@echo "... src/count_until_server_queue_goals.i"
 	@echo "... src/count_until_server_queue_goals.s"
+	@echo "... src/robot_move_server.o"
+	@echo "... src/robot_move_server.i"
+	@echo "... src/robot_move_server.s"
 .PHONY : help
 
 

@@ -247,8 +247,15 @@ CMakeFiles/mobilebot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/r
   rosidl_generator_c/mobilebot_interfaces/action/detail/count_until__struct.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
-  rosidl_generator_c/mobilebot_interfaces/action/detail/count_until__functions.h
+  rosidl_generator_c/mobilebot_interfaces/action/detail/count_until__functions.h \
+  rosidl_generator_c/mobilebot_interfaces/action/detail/robot_move__type_support.h \
+  rosidl_generator_c/mobilebot_interfaces/action/detail/robot_move__struct.h \
+  rosidl_generator_c/mobilebot_interfaces/action/detail/robot_move__functions.h
 
+
+rosidl_generator_c/mobilebot_interfaces/action/detail/robot_move__struct.h:
+
+rosidl_generator_c/mobilebot_interfaces/action/detail/robot_move__type_support.h:
 
 /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h:
 
@@ -611,6 +618,8 @@ rosidl_generator_c/mobilebot_interfaces/action/detail/count_until__functions.h:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+rosidl_generator_c/mobilebot_interfaces/action/detail/robot_move__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 

@@ -1,10 +1,14 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mobilebot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mobilebot_interfaces/action/detail/count_until__type_support_c.cpp.o"
   "CMakeFiles/mobilebot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mobilebot_interfaces/action/detail/count_until__type_support_c.cpp.o.d"
+  "CMakeFiles/mobilebot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mobilebot_interfaces/action/detail/robot_move__type_support_c.cpp.o"
+  "CMakeFiles/mobilebot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mobilebot_interfaces/action/detail/robot_move__type_support_c.cpp.o.d"
   "libmobilebot_interfaces__rosidl_typesupport_fastrtps_c.pdb"
   "libmobilebot_interfaces__rosidl_typesupport_fastrtps_c.so"
   "rosidl_typesupport_fastrtps_c/mobilebot_interfaces/action/detail/count_until__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/mobilebot_interfaces/action/detail/count_until__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/mobilebot_interfaces/action/detail/robot_move__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/mobilebot_interfaces/action/detail/robot_move__type_support_c.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/T
 all: CMakeFiles/count_until_server.dir/all
 all: CMakeFiles/count_until_server_queue_goals.dir/all
 all: CMakeFiles/count_until_client.dir/all
+all: CMakeFiles/robot_move_server.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,6 +79,7 @@ clean: CMakeFiles/actions_cpp_uninstall.dir/clean
 clean: CMakeFiles/count_until_server.dir/clean
 clean: CMakeFiles/count_until_server_queue_goals.dir/clean
 clean: CMakeFiles/count_until_client.dir/clean
+clean: CMakeFiles/robot_move_server.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -209,6 +211,32 @@ count_until_client: CMakeFiles/count_until_client.dir/rule
 CMakeFiles/count_until_client.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_until_client.dir/build.make CMakeFiles/count_until_client.dir/clean
 .PHONY : CMakeFiles/count_until_client.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/robot_move_server.dir
+
+# All Build rule for target.
+CMakeFiles/robot_move_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_server.dir/build.make CMakeFiles/robot_move_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_server.dir/build.make CMakeFiles/robot_move_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/actions_cpp/CMakeFiles --progress-num=7,8 "Built target robot_move_server"
+.PHONY : CMakeFiles/robot_move_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/robot_move_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/actions_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_move_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/actions_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/robot_move_server.dir/rule
+
+# Convenience name for target.
+robot_move_server: CMakeFiles/robot_move_server.dir/rule
+.PHONY : robot_move_server
+
+# clean rule for target.
+CMakeFiles/robot_move_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_server.dir/build.make CMakeFiles/robot_move_server.dir/clean
+.PHONY : CMakeFiles/robot_move_server.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

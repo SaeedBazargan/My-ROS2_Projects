@@ -5,6 +5,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/mobilebot_interfaces/action/detail/count_until__struct.hpp"
   "rosidl_generator_cpp/mobilebot_interfaces/action/detail/count_until__traits.hpp"
   "rosidl_generator_cpp/mobilebot_interfaces/action/detail/count_until__type_support.hpp"
+  "rosidl_generator_cpp/mobilebot_interfaces/action/detail/robot_move__builder.hpp"
+  "rosidl_generator_cpp/mobilebot_interfaces/action/detail/robot_move__struct.hpp"
+  "rosidl_generator_cpp/mobilebot_interfaces/action/detail/robot_move__traits.hpp"
+  "rosidl_generator_cpp/mobilebot_interfaces/action/detail/robot_move__type_support.hpp"
+  "rosidl_generator_cpp/mobilebot_interfaces/action/robot_move.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

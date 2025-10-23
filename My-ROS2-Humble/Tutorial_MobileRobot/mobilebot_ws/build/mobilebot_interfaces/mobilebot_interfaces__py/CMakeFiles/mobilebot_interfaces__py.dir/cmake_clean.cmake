@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/mobilebot_interfaces/action/__init__.py"
   "../rosidl_generator_py/mobilebot_interfaces/action/_count_until.py"
   "../rosidl_generator_py/mobilebot_interfaces/action/_count_until_s.c"
+  "../rosidl_generator_py/mobilebot_interfaces/action/_robot_move.py"
+  "../rosidl_generator_py/mobilebot_interfaces/action/_robot_move_s.c"
   "CMakeFiles/mobilebot_interfaces__py"
 )
 

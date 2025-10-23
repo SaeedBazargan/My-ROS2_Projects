@@ -1,0 +1,53 @@
+[01m[K/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/actions_cpp/src/robot_move_server.cpp:[m[K In constructor ‘[01m[KRobotMoveServerNode::RobotMoveServerNode()[m[K’:
+[01m[K/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/actions_cpp/src/robot_move_server.cpp:35:62:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_server<RobotMove>(RobotMoveServerNode*, const char [11], std::_Bind_helper<false, rclcpp_action::GoalResponse (RobotMoveServerNode::*)(const std::array<unsigned char, 16>&, std::shared_ptr<const mobilebot_interfaces::action::RobotMove_Goal_<std::allocator<void> > >), RobotMoveServerNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type)[m[K’
+   35 |         robot_move_ = [01;31m[Krclcpp_action::create_server<RobotMove>([m[K
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   36 | [01;31m[K            this,[m[K
+      |             [01;31m[K~~~~~[m[K                                             
+   37 | [01;31m[K            "robot_move",[m[K
+      |             [01;31m[K~~~~~~~~~~~~~[m[K                                     
+   38 | [01;31m[K            std::bind(&RobotMoveServerNode::goal_callback, this, _1, _2)[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;31m[K            // cancel_callback,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K                               
+   40 | [01;31m[K            // accepted_callback,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~[m[K                             
+   41 | [01;31m[K            // rcl_action_server_get_default_options(),[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K       
+   42 | [01;31m[K            // callback_group[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~[m[K                                 
+   43 | [01;31m[K        )[m[K;
+      |         [01;31m[K~[m[K                                                     
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+                 from [01m[K/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/actions_cpp/src/robot_move_server.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktypename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr) [with ActionT = mobilebot_interfaces::action::RobotMove; typename rclcpp_action::Server<ActionT>::SharedPtr = std::shared_ptr<rclcpp_action::Server<mobilebot_interfaces::action::RobotMove> >; rclcpp::node_interfaces::NodeBaseInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>; rclcpp::node_interfaces::NodeClockInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeClockInterface>; rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeLoggingInterface>; rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeWaitablesInterface>; std::string = std::__cxx11::basic_string<char>; typename rclcpp_action::Server<ActionT>::GoalCallback = std::function<rclcpp_action::GoalResponse(const std::array<unsigned char, 16>&, std::shared_ptr<const mobilebot_interfaces::action::RobotMove_Goal_<std::allocator<void> > >)>; typename rclcpp_action::Server<ActionT>::CancelCallback = std::function<rclcpp_action::CancelResponse(std::shared_ptr<rclcpp_action::ServerGoalHandle<mobilebot_interfaces::action::RobotMove> >)>; typename rclcpp_action::Server<ActionT>::AcceptedCallback = std::function<void(std::shared_ptr<rclcpp_action::ServerGoalHandle<mobilebot_interfaces::action::RobotMove> >)>; rcl_action_server_options_t = rcl_action_server_options_s; rclcpp::CallbackGroup::SharedPtr = std::shared_ptr<rclcpp::CallbackGroup>][m[K’
+   58 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[K  candidate expects 10 arguments, 3 provided
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(NodeT, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  132 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/actions_cpp/src/robot_move_server.cpp:35:62:[m[K [01;36m[Knote: [m[K  candidate expects 7 arguments, 3 provided
+   35 |         robot_move_ = [01;36m[Krclcpp_action::create_server<RobotMove>([m[K
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   36 | [01;36m[K            this,[m[K
+      |             [01;36m[K~~~~~[m[K                                             
+   37 | [01;36m[K            "robot_move",[m[K
+      |             [01;36m[K~~~~~~~~~~~~~[m[K                                     
+   38 | [01;36m[K            std::bind(&RobotMoveServerNode::goal_callback, this, _1, _2)[m[K
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;36m[K            // cancel_callback,[m[K
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~[m[K                               
+   40 | [01;36m[K            // accepted_callback,[m[K
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~[m[K                             
+   41 | [01;36m[K            // rcl_action_server_get_default_options(),[m[K
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K       
+   42 | [01;36m[K            // callback_group[m[K
+      |             [01;36m[K~~~~~~~~~~~~~~~~~[m[K                                 
+   43 | [01;36m[K        )[m[K;
+      |         [01;36m[K~[m[K                                                     
+gmake[2]: *** [CMakeFiles/robot_move_server.dir/build.make:76: CMakeFiles/robot_move_server.dir/src/robot_move_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/robot_move_server.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2
