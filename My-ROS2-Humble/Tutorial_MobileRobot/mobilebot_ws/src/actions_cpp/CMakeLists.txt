@@ -24,11 +24,16 @@ ament_target_dependencies(count_until_client rclcpp rclcpp_action mobilebot_inte
 add_executable(robot_move_server src/robot_move_server.cpp)
 ament_target_dependencies(robot_move_server rclcpp rclcpp_action mobilebot_interfaces)
 
+add_executable(robot_move_client src/robot_move_client.cpp)
+ament_target_dependencies(robot_move_client rclcpp rclcpp_action mobilebot_interfaces std_msgs)
+
+
 install(TARGETS
   count_until_server
   count_until_server_queue_goals
   count_until_client
   robot_move_server
+  robot_move_client
   DESTINATION lib/${PROJECT_NAME}/
 )
 
