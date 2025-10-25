@@ -79,32 +79,16 @@ namespace action
 namespace builder
 {
 
-class Init_RobotMove_Result_velocity
-{
-public:
-  explicit Init_RobotMove_Result_velocity(::mobilebot_interfaces::action::RobotMove_Result & msg)
-  : msg_(msg)
-  {}
-  ::mobilebot_interfaces::action::RobotMove_Result velocity(::mobilebot_interfaces::action::RobotMove_Result::_velocity_type arg)
-  {
-    msg_.velocity = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::mobilebot_interfaces::action::RobotMove_Result msg_;
-};
-
 class Init_RobotMove_Result_position
 {
 public:
   Init_RobotMove_Result_position()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_RobotMove_Result_velocity position(::mobilebot_interfaces::action::RobotMove_Result::_position_type arg)
+  ::mobilebot_interfaces::action::RobotMove_Result position(::mobilebot_interfaces::action::RobotMove_Result::_position_type arg)
   {
     msg_.position = std::move(arg);
-    return Init_RobotMove_Result_velocity(msg_);
+    return std::move(msg_);
   }
 
 private:

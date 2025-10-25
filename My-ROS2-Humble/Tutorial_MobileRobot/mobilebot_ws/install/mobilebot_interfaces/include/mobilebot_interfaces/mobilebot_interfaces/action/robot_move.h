@@ -1,12 +1,1 @@
-// generated from rosidl_generator_c/resource/idl.h.em
-// with input from mobilebot_interfaces:action/RobotMove.idl
-// generated code does not contain a copyright notice
-
-#ifndef MOBILEBOT_INTERFACES__ACTION__ROBOT_MOVE_H_
-#define MOBILEBOT_INTERFACES__ACTION__ROBOT_MOVE_H_
-
-#include "mobilebot_interfaces/action/detail/robot_move__struct.h"
-#include "mobilebot_interfaces/action/detail/robot_move__functions.h"
-#include "mobilebot_interfaces/action/detail/robot_move__type_support.h"
-
-#endif  // MOBILEBOT_INTERFACES__ACTION__ROBOT_MOVE_H_
+/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_interfaces/rosidl_generator_c/mobilebot_interfaces/action/robot_move.h

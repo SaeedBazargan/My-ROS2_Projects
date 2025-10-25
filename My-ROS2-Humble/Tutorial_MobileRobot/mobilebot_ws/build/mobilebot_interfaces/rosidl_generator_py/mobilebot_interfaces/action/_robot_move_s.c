@@ -174,15 +174,6 @@ bool mobilebot_interfaces__action__robot_move__result__convert_from_py(PyObject 
     ros_message->position = PyLong_AsLongLong(field);
     Py_DECREF(field);
   }
-  {  // velocity
-    PyObject * field = PyObject_GetAttrString(_pymsg, "velocity");
-    if (!field) {
-      return false;
-    }
-    assert(PyLong_Check(field));
-    ros_message->velocity = PyLong_AsLongLong(field);
-    Py_DECREF(field);
-  }
 
   return true;
 }
@@ -210,17 +201,6 @@ PyObject * mobilebot_interfaces__action__robot_move__result__convert_to_py(void 
     field = PyLong_FromLongLong(ros_message->position);
     {
       int rc = PyObject_SetAttrString(_pymessage, "position", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // velocity
-    PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->velocity);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "velocity", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

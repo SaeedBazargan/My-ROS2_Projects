@@ -136,7 +136,7 @@ void mobilebot_interfaces__action__RobotMove_Result__rosidl_typesupport_introspe
   mobilebot_interfaces__action__RobotMove_Result__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember mobilebot_interfaces__action__RobotMove_Result__rosidl_typesupport_introspection_c__RobotMove_Result_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember mobilebot_interfaces__action__RobotMove_Result__rosidl_typesupport_introspection_c__RobotMove_Result_message_member_array[1] = {
   {
     "position",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
@@ -153,30 +153,13 @@ static rosidl_typesupport_introspection_c__MessageMember mobilebot_interfaces__a
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
-  },
-  {
-    "velocity",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(mobilebot_interfaces__action__RobotMove_Result, velocity),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers mobilebot_interfaces__action__RobotMove_Result__rosidl_typesupport_introspection_c__RobotMove_Result_message_members = {
   "mobilebot_interfaces__action",  // message namespace
   "RobotMove_Result",  // message name
-  2,  // number of fields
+  1,  // number of fields
   sizeof(mobilebot_interfaces__action__RobotMove_Result),
   mobilebot_interfaces__action__RobotMove_Result__rosidl_typesupport_introspection_c__RobotMove_Result_message_member_array,  // message members
   mobilebot_interfaces__action__RobotMove_Result__rosidl_typesupport_introspection_c__RobotMove_Result_init_function,  // function to initialize message memory (memory has to be allocated)

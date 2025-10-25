@@ -3,12 +3,16 @@ file(REMOVE_RECURSE
   "CMakeFiles/mobilebot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mobilebot_interfaces/action/detail/count_until__type_support.cpp.o.d"
   "CMakeFiles/mobilebot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mobilebot_interfaces/action/detail/robot_move__type_support.cpp.o"
   "CMakeFiles/mobilebot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mobilebot_interfaces/action/detail/robot_move__type_support.cpp.o.d"
+  "CMakeFiles/mobilebot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mobilebot_interfaces/msg/detail/int64__type_support.cpp.o"
+  "CMakeFiles/mobilebot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mobilebot_interfaces/msg/detail/int64__type_support.cpp.o.d"
   "libmobilebot_interfaces__rosidl_typesupport_introspection_cpp.pdb"
   "libmobilebot_interfaces__rosidl_typesupport_introspection_cpp.so"
   "rosidl_typesupport_introspection_cpp/mobilebot_interfaces/action/detail/count_until__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/mobilebot_interfaces/action/detail/count_until__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/mobilebot_interfaces/action/detail/robot_move__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/mobilebot_interfaces/action/detail/robot_move__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/mobilebot_interfaces/msg/detail/int64__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/mobilebot_interfaces/msg/detail/int64__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

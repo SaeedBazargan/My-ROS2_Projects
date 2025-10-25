@@ -266,8 +266,6 @@ cdr_serialize(
 {
   // Member: position
   cdr << ros_message.position;
-  // Member: velocity
-  cdr << ros_message.velocity;
   return true;
 }
 
@@ -279,9 +277,6 @@ cdr_deserialize(
 {
   // Member: position
   cdr >> ros_message.position;
-
-  // Member: velocity
-  cdr >> ros_message.velocity;
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -302,12 +297,6 @@ get_serialized_size(
   // Member: position
   {
     size_t item_size = sizeof(ros_message.position);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: velocity
-  {
-    size_t item_size = sizeof(ros_message.velocity);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -344,15 +333,6 @@ max_serialized_size_RobotMove_Result(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: velocity
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -361,7 +341,7 @@ max_serialized_size_RobotMove_Result(
     using DataType = mobilebot_interfaces::action::RobotMove_Result;
     is_plain =
       (
-      offsetof(DataType, velocity) +
+      offsetof(DataType, position) +
       last_member_size
       ) == ret_val;
   }

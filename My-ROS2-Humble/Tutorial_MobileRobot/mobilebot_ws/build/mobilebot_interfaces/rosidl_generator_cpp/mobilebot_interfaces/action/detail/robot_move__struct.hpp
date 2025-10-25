@@ -167,7 +167,6 @@ struct RobotMove_Result_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->position = 0ll;
-      this->velocity = 0ll;
     }
   }
 
@@ -178,7 +177,6 @@ struct RobotMove_Result_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->position = 0ll;
-      this->velocity = 0ll;
     }
   }
 
@@ -186,21 +184,12 @@ struct RobotMove_Result_
   using _position_type =
     int64_t;
   _position_type position;
-  using _velocity_type =
-    int64_t;
-  _velocity_type velocity;
 
   // setters for named parameter idiom
   Type & set__position(
     const int64_t & _arg)
   {
     this->position = _arg;
-    return *this;
-  }
-  Type & set__velocity(
-    const int64_t & _arg)
-  {
-    this->velocity = _arg;
     return *this;
   }
 
@@ -247,9 +236,6 @@ struct RobotMove_Result_
   bool operator==(const RobotMove_Result_ & other) const
   {
     if (this->position != other.position) {
-      return false;
-    }
-    if (this->velocity != other.velocity) {
       return false;
     }
     return true;

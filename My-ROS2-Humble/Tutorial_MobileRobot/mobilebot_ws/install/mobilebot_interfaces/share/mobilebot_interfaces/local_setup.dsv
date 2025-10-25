@@ -1,4 +1,1 @@
-source;share/mobilebot_interfaces/environment/ament_prefix_path.sh
-source;share/mobilebot_interfaces/environment/library_path.sh
-source;share/mobilebot_interfaces/environment/path.sh
-source;share/mobilebot_interfaces/environment/pythonpath.sh
+/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_interfaces/ament_cmake_environment_hooks/local_setup.dsv

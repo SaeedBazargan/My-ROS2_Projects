@@ -7,3 +7,5 @@ mobilebot_interfaces.egg-info/top_level.txt
 mobilebot_interfaces/action/__init__.py
 mobilebot_interfaces/action/_count_until.py
 mobilebot_interfaces/action/_robot_move.py
+mobilebot_interfaces/msg/__init__.py
+mobilebot_interfaces/msg/_int64.py

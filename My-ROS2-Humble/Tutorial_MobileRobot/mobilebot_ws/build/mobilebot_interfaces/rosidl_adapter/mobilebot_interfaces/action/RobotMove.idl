@@ -16,8 +16,6 @@ module mobilebot_interfaces {
       "Result")
     struct RobotMove_Result {
       int64 position;
-
-      int64 velocity;
     };
     @verbatim (language="comment", text=
       "Feedback")

@@ -41,7 +41,6 @@ typedef struct mobilebot_interfaces__action__RobotMove_Goal__Sequence
 typedef struct mobilebot_interfaces__action__RobotMove_Result
 {
   int64_t position;
-  int64_t velocity;
 } mobilebot_interfaces__action__RobotMove_Result;
 
 // Struct for a sequence of mobilebot_interfaces__action__RobotMove_Result.

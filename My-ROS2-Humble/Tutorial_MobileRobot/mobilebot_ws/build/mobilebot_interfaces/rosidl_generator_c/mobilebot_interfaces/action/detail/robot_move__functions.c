@@ -251,7 +251,6 @@ mobilebot_interfaces__action__RobotMove_Result__init(mobilebot_interfaces__actio
     return false;
   }
   // position
-  // velocity
   return true;
 }
 
@@ -262,7 +261,6 @@ mobilebot_interfaces__action__RobotMove_Result__fini(mobilebot_interfaces__actio
     return;
   }
   // position
-  // velocity
 }
 
 bool
@@ -273,10 +271,6 @@ mobilebot_interfaces__action__RobotMove_Result__are_equal(const mobilebot_interf
   }
   // position
   if (lhs->position != rhs->position) {
-    return false;
-  }
-  // velocity
-  if (lhs->velocity != rhs->velocity) {
     return false;
   }
   return true;
@@ -292,8 +286,6 @@ mobilebot_interfaces__action__RobotMove_Result__copy(
   }
   // position
   output->position = input->position;
-  // velocity
-  output->velocity = input->velocity;
   return true;
 }
 

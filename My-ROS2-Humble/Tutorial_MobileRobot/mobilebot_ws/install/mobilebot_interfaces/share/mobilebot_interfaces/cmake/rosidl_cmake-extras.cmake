@@ -1,4 +1,1 @@
-# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
-
-set(mobilebot_interfaces_IDL_FILES "action/CountUntil.idl;action/RobotMove.idl")
-set(mobilebot_interfaces_INTERFACE_FILES "action/CountUntil.action;action/RobotMove.action")
+/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake

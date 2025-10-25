@@ -272,11 +272,6 @@ static bool _RobotMove_Result__cdr_serialize(
     cdr << ros_message->position;
   }
 
-  // Field name: velocity
-  {
-    cdr << ros_message->velocity;
-  }
-
   return true;
 }
 
@@ -292,11 +287,6 @@ static bool _RobotMove_Result__cdr_deserialize(
   // Field name: position
   {
     cdr >> ros_message->position;
-  }
-
-  // Field name: velocity
-  {
-    cdr >> ros_message->velocity;
   }
 
   return true;
@@ -319,12 +309,6 @@ size_t get_serialized_size_mobilebot_interfaces__action__RobotMove_Result(
   // field.name position
   {
     size_t item_size = sizeof(ros_message->position);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name velocity
-  {
-    size_t item_size = sizeof(ros_message->velocity);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -365,14 +349,6 @@ size_t max_serialized_size_mobilebot_interfaces__action__RobotMove_Result(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: velocity
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -382,7 +358,7 @@ size_t max_serialized_size_mobilebot_interfaces__action__RobotMove_Result(
     using DataType = mobilebot_interfaces__action__RobotMove_Result;
     is_plain =
       (
-      offsetof(DataType, velocity) +
+      offsetof(DataType, position) +
       last_member_size
       ) == ret_val;
   }

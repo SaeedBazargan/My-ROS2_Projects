@@ -69,9 +69,12 @@ include mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py.dir/progres
 mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_c.c
+mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/msg/_int64.py
 mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/action/_count_until.py
 mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/action/_robot_move.py
+mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/msg/__init__.py
 mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/action/__init__.py
+mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/msg/_int64_s.c
 mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/action/_count_until_s.c
 mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/action/_robot_move_s.c
 
@@ -88,6 +91,7 @@ rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_types
 rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_msg.py.em
 rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
+rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mobilebot_interfaces/msg/Int64.idl
 rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mobilebot_interfaces/action/CountUntil.idl
 rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mobilebot_interfaces/action/RobotMove.idl
 rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
@@ -106,14 +110,23 @@ rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_types
 rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_c.c
 
+rosidl_generator_py/mobilebot_interfaces/msg/_int64.py: rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mobilebot_interfaces/msg/_int64.py
+
 rosidl_generator_py/mobilebot_interfaces/action/_count_until.py: rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mobilebot_interfaces/action/_count_until.py
 
 rosidl_generator_py/mobilebot_interfaces/action/_robot_move.py: rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mobilebot_interfaces/action/_robot_move.py
 
+rosidl_generator_py/mobilebot_interfaces/msg/__init__.py: rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mobilebot_interfaces/msg/__init__.py
+
 rosidl_generator_py/mobilebot_interfaces/action/__init__.py: rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mobilebot_interfaces/action/__init__.py
+
+rosidl_generator_py/mobilebot_interfaces/msg/_int64_s.c: rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mobilebot_interfaces/msg/_int64_s.c
 
 rosidl_generator_py/mobilebot_interfaces/action/_count_until_s.c: rosidl_generator_py/mobilebot_interfaces/_mobilebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mobilebot_interfaces/action/_count_until_s.c
@@ -130,6 +143,9 @@ mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/action/_count
 mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/action/_count_until_s.c
 mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/action/_robot_move.py
 mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/action/_robot_move_s.c
+mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/msg/__init__.py
+mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/msg/_int64.py
+mobilebot_interfaces__py: rosidl_generator_py/mobilebot_interfaces/msg/_int64_s.c
 mobilebot_interfaces__py: mobilebot_interfaces__py/CMakeFiles/mobilebot_interfaces__py.dir/build.make
 .PHONY : mobilebot_interfaces__py
 

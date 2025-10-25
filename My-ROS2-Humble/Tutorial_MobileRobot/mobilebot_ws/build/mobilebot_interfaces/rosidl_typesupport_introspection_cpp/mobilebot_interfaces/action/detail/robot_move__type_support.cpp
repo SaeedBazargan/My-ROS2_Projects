@@ -173,7 +173,7 @@ void RobotMove_Result_fini_function(void * message_memory)
   typed_message->~RobotMove_Result();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember RobotMove_Result_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember RobotMove_Result_message_member_array[1] = {
   {
     "position",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
@@ -190,30 +190,13 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember RobotMove_Res
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
-  },
-  {
-    "velocity",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(mobilebot_interfaces::action::RobotMove_Result, velocity),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers RobotMove_Result_message_members = {
   "mobilebot_interfaces::action",  // message namespace
   "RobotMove_Result",  // message name
-  2,  // number of fields
+  1,  // number of fields
   sizeof(mobilebot_interfaces::action::RobotMove_Result),
   RobotMove_Result_message_member_array,  // message members
   RobotMove_Result_init_function,  // function to initialize message memory (memory has to be allocated)

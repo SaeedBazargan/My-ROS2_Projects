@@ -202,16 +202,13 @@ class RobotMove_Result(metaclass=Metaclass_RobotMove_Result):
 
     __slots__ = [
         '_position',
-        '_velocity',
     ]
 
     _fields_and_field_types = {
         'position': 'int64',
-        'velocity': 'int64',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
         rosidl_parser.definition.BasicType('int64'),  # noqa: E501
     )
 
@@ -220,7 +217,6 @@ class RobotMove_Result(metaclass=Metaclass_RobotMove_Result):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.position = kwargs.get('position', int())
-        self.velocity = kwargs.get('velocity', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -253,8 +249,6 @@ class RobotMove_Result(metaclass=Metaclass_RobotMove_Result):
             return False
         if self.position != other.position:
             return False
-        if self.velocity != other.velocity:
-            return False
         return True
 
     @classmethod
@@ -276,21 +270,6 @@ class RobotMove_Result(metaclass=Metaclass_RobotMove_Result):
             assert value >= -9223372036854775808 and value < 9223372036854775808, \
                 "The 'position' field must be an integer in [-9223372036854775808, 9223372036854775807]"
         self._position = value
-
-    @builtins.property
-    def velocity(self):
-        """Message field 'velocity'."""
-        return self._velocity
-
-    @velocity.setter
-    def velocity(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'velocity' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'velocity' field must be an integer in [-9223372036854775808, 9223372036854775807]"
-        self._velocity = value
 
 
 # Import statements for member types
