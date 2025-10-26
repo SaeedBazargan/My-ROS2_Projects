@@ -1,1 +1,1 @@
-lifecycle_node_manager:mobilebot_interfaces:rclcpp:rclcpp_lifecycle
+lifecycle_msgs:mobilebot_interfaces:rclcpp:rclcpp_action:rclcpp_lifecycle

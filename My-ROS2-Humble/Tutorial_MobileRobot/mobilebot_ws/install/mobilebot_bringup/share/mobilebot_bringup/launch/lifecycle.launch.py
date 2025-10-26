@@ -3,8 +3,6 @@ from launch_ros.actions import LifecycleNode
 from launch_ros.actions import Node
 
 def generate_launch_description():
-    # ld = LaunchDescription()
-
     node_name = "number_pub_node"
 
     number_node = LifecycleNode(
@@ -26,8 +24,3 @@ def generate_launch_description():
         number_node,
         lifecycle_node_manager
     ])
-
-    # ld.add_action(number_node)
-    # ld.add_action(lifecycle_node_manager)
-
-    # return ld

@@ -1,5 +1,7 @@
 /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/lifecycle_cpp/lib/lifecycle_cpp/number_publisher
 /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/lifecycle_cpp/lib/lifecycle_cpp/lifecycle_node_manager
+/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/lifecycle_cpp/lib/lifecycle_cpp/robot_move_server
+/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/lifecycle_cpp/lib/lifecycle_cpp/robot_move_startup
 /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/lifecycle_cpp/share/ament_index/resource_index/package_run_dependencies/lifecycle_cpp
 /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/lifecycle_cpp/share/ament_index/resource_index/parent_prefix_path/lifecycle_cpp
 /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/lifecycle_cpp/share/lifecycle_cpp/environment/ament_prefix_path.sh

@@ -223,6 +223,32 @@ lifecycle_node_manager/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lifecycle_node_manager.dir/build.make CMakeFiles/lifecycle_node_manager.dir/build
 .PHONY : lifecycle_node_manager/fast
 
+#=============================================================================
+# Target rules for targets named robot_move_server
+
+# Build rule for target.
+robot_move_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_move_server
+.PHONY : robot_move_server
+
+# fast build rule for target.
+robot_move_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_server.dir/build.make CMakeFiles/robot_move_server.dir/build
+.PHONY : robot_move_server/fast
+
+#=============================================================================
+# Target rules for targets named robot_move_startup
+
+# Build rule for target.
+robot_move_startup: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_move_startup
+.PHONY : robot_move_startup
+
+# fast build rule for target.
+robot_move_startup/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_startup.dir/build.make CMakeFiles/robot_move_startup.dir/build
+.PHONY : robot_move_startup/fast
+
 src/lifecycle_node_manager.o: src/lifecycle_node_manager.cpp.o
 .PHONY : src/lifecycle_node_manager.o
 
@@ -271,6 +297,54 @@ src/number_publisher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_publisher.dir/build.make CMakeFiles/number_publisher.dir/src/number_publisher.cpp.s
 .PHONY : src/number_publisher.cpp.s
 
+src/robot_move_server.o: src/robot_move_server.cpp.o
+.PHONY : src/robot_move_server.o
+
+# target to build an object file
+src/robot_move_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_server.dir/build.make CMakeFiles/robot_move_server.dir/src/robot_move_server.cpp.o
+.PHONY : src/robot_move_server.cpp.o
+
+src/robot_move_server.i: src/robot_move_server.cpp.i
+.PHONY : src/robot_move_server.i
+
+# target to preprocess a source file
+src/robot_move_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_server.dir/build.make CMakeFiles/robot_move_server.dir/src/robot_move_server.cpp.i
+.PHONY : src/robot_move_server.cpp.i
+
+src/robot_move_server.s: src/robot_move_server.cpp.s
+.PHONY : src/robot_move_server.s
+
+# target to generate assembly for a file
+src/robot_move_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_server.dir/build.make CMakeFiles/robot_move_server.dir/src/robot_move_server.cpp.s
+.PHONY : src/robot_move_server.cpp.s
+
+src/robot_move_startup.o: src/robot_move_startup.cpp.o
+.PHONY : src/robot_move_startup.o
+
+# target to build an object file
+src/robot_move_startup.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_startup.dir/build.make CMakeFiles/robot_move_startup.dir/src/robot_move_startup.cpp.o
+.PHONY : src/robot_move_startup.cpp.o
+
+src/robot_move_startup.i: src/robot_move_startup.cpp.i
+.PHONY : src/robot_move_startup.i
+
+# target to preprocess a source file
+src/robot_move_startup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_startup.dir/build.make CMakeFiles/robot_move_startup.dir/src/robot_move_startup.cpp.i
+.PHONY : src/robot_move_startup.cpp.i
+
+src/robot_move_startup.s: src/robot_move_startup.cpp.s
+.PHONY : src/robot_move_startup.s
+
+# target to generate assembly for a file
+src/robot_move_startup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_move_startup.dir/build.make CMakeFiles/robot_move_startup.dir/src/robot_move_startup.cpp.s
+.PHONY : src/robot_move_startup.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -288,12 +362,20 @@ help:
 	@echo "... uninstall"
 	@echo "... lifecycle_node_manager"
 	@echo "... number_publisher"
+	@echo "... robot_move_server"
+	@echo "... robot_move_startup"
 	@echo "... src/lifecycle_node_manager.o"
 	@echo "... src/lifecycle_node_manager.i"
 	@echo "... src/lifecycle_node_manager.s"
 	@echo "... src/number_publisher.o"
 	@echo "... src/number_publisher.i"
 	@echo "... src/number_publisher.s"
+	@echo "... src/robot_move_server.o"
+	@echo "... src/robot_move_server.i"
+	@echo "... src/robot_move_server.s"
+	@echo "... src/robot_move_startup.o"
+	@echo "... src/robot_move_startup.i"
+	@echo "... src/robot_move_startup.s"
 .PHONY : help
 
 

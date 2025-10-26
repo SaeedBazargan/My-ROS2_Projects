@@ -28,26 +28,6 @@ public:
     }
 
     // ----------------------------------------------
-    // Sends a ChangeState request to the target lifecycle node.
-    // transition The desired transition to perform (configure, activate, etc.).
-    // ----------------------------------------------
-    void change_state(const lifecycle_msgs::msg::Transition &transition_)
-    {
-        // Wait for the target node's service to be available
-        client_->wait_for_service();
-
-        // Prepare the request
-        auto request_ = std::make_shared<lifecycle_msgs::srv::ChangeState::Request>();
-        request_->transition = transition_;
-
-        // Call the service asynchronously and wait for the result
-        auto future_ = client_->async_send_request(request_);
-        rclcpp::spin_until_future_complete(this->get_node_base_interface(), future_);
-
-        RCLCPP_INFO(this->get_logger(), "Transition request '%s' (id: %d) sent.", transition_.label.c_str(), transition_.id);        
-    }
-
-    // ----------------------------------------------
     // Executes a basic lifecycle initialization sequence.
     // transition The desired transition to perform (configure, activate, etc.).
     // ----------------------------------------------
@@ -65,7 +45,10 @@ public:
 
         RCLCPP_INFO(this->get_logger(), "Configuring OK, now inactive");
 
-        // Step 1: Activate
+        // delay for 3 seconds
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
+        // Step 2: Activate
         RCLCPP_INFO(this->get_logger(), "Trying to switch to activating");
 
         transition_.id = lifecycle_msgs::msg::Transition::TRANSITION_ACTIVATE;
@@ -74,6 +57,26 @@ public:
         change_state(transition_);
 
         RCLCPP_INFO(this->get_logger(), "Configuring OK, now inactive");        
+    }
+
+    // ----------------------------------------------
+    // Sends a ChangeState request to the target lifecycle node.
+    // transition The desired transition to perform (configure, activate, etc.).
+    // ----------------------------------------------
+    void change_state(const lifecycle_msgs::msg::Transition &transition_)
+    {
+        // Wait for the target node's service to be available
+        client_->wait_for_service();
+
+        // Prepare the request
+        auto request_ = std::make_shared<lifecycle_msgs::srv::ChangeState::Request>();
+        request_->transition = transition_;
+
+        // Call the service asynchronously and wait for the result
+        auto future_ = client_->async_send_request(request_);
+        rclcpp::spin_until_future_complete(this->get_node_base_interface(), future_);
+
+        RCLCPP_INFO(this->get_logger(), "Transition request '%s' (id: %d) sent.", transition_.label.c_str(), transition_.id);        
     }
 };
 

@@ -31,7 +31,6 @@ public:
     NumberPublisherNode() : LifecycleNode("number_publisher")
     {
         // At this stage, the node is still in the "unconfigured" state.
-        
         RCLCPP_INFO(this->get_logger(), "In unconfigured state.");
 
         number_ = 1;
