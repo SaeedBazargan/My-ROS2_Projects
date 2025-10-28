@@ -1,0 +1,29 @@
+[0.028s] Invoking command in '/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/components_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/components_cpp -- -j4 -l4
+[0.133s] [35m[1mConsolidate compiler generated dependencies of target number_pub_components[0m
+[0.192s] [ 16%] [32mBuilding CXX object CMakeFiles/number_pub_components.dir/src/number_publisher.cpp.o[0m
+[0.206s] [ 83%] Built target manual_composition
+[6.274s] [100%] [32m[1mLinking CXX shared library libnumber_pub_components.so[0m
+[6.581s] [100%] Built target number_pub_components
+[6.596s] Invoked command in '/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/components_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/components_cpp -- -j4 -l4
+[6.600s] Invoking command in '/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/components_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/components_cpp
+[6.609s] -- Install configuration: ""
+[6.611s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/lib/components_cpp/manual_composition
+[6.612s] -- Installing: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/lib/libnumber_pub_components.so
+[6.615s] -- Set runtime path of "/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/lib/libnumber_pub_components.so" to ""
+[6.615s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/ament_index/resource_index/package_run_dependencies/components_cpp
+[6.615s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/ament_index/resource_index/parent_prefix_path/components_cpp
+[6.616s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/environment/ament_prefix_path.sh
+[6.616s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/environment/ament_prefix_path.dsv
+[6.616s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/environment/path.sh
+[6.616s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/environment/path.dsv
+[6.616s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/local_setup.bash
+[6.616s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/local_setup.sh
+[6.616s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/local_setup.zsh
+[6.617s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/local_setup.dsv
+[6.617s] -- Installing: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/package.dsv
+[6.617s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/ament_index/resource_index/packages/components_cpp
+[6.617s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/ament_index/resource_index/rclcpp_components/components_cpp
+[6.617s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/cmake/components_cppConfig.cmake
+[6.617s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/cmake/components_cppConfig-version.cmake
+[6.617s] -- Up-to-date: /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/install/components_cpp/share/components_cpp/package.xml
+[6.620s] Invoked command in '/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/components_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/components_cpp
