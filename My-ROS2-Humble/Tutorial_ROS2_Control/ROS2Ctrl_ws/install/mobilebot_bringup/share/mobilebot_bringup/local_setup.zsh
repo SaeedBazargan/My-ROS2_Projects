@@ -1,0 +1,1 @@
+/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/build/mobilebot_bringup/ament_cmake_environment_hooks/local_setup.zsh

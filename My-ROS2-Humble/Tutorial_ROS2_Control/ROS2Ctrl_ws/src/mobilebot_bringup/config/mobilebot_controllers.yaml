@@ -1,0 +1,51 @@
+controller_manager:
+  ros__parameters:
+    # The controller manager will update all controllers at 50 Hz.
+    update_rate: 50
+
+    # Publishes the positions, velocities, and efforts of all joints.
+    # Essential for visualizing robot state in RViz and for other nodes that need joint states.
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    # Defines the differential drive controller responsible for controlling
+    # a two-wheeled mobile robot. It will convert velocity commands into wheel commands.
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+
+diff_drive_controller:
+  ros__parameters:
+    
+    # Names of the left and right wheel joints. Must match the joint names defined in your robot's URDF/xacro.  
+    left_wheel_names: ["base_LeftWheel_joint"]
+    right_wheel_names: ["base_RightWheel_joint"]
+    
+    # Physical parameters of the robot:
+    # - wheel_separation: distance between the left and right wheels (meters)
+    # - wheel_radius: radius of each wheel (meters)
+    # Used for kinematics and odometry calculations.
+    wheel_separation: 0.45        # base_width + wheel_length
+    wheel_radius: 0.1             # wheel_radius
+
+    # Frame names for publishing odometry:
+    # - odom_frame_id: the world-relative odometry frame
+    # - base_frame_id: the robot's base frame
+    # odom_frame_id: "odom"
+    base_frame_id: "base_footprint"
+
+    # Covariance matrices for pose and twist in odometry messages. Represents the uncertainty in x, y, z, roll, pitch, yaw.
+    pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+    twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+
+    # enable_odom_tf: publish the transform from odom to base frame.
+    # publish_rate: frequency (Hz) at which odometry and tf are published.
+    enable_odom_tf: true
+    publish_rate: 50.0
+
+    # Limits for commanded velocities:
+    # - linear.x: forward/backward speed (m/s)
+    # - angular.z: rotational speed (rad/s)
+    linear.x.max_velocity: 1.0
+    linear.x.min_velocity: -1.0
+    angular.z.max_velocity: 1.0
+    angular.z.min_velocity: -1.0
