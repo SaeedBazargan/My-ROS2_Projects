@@ -1,1 +1,0 @@
-/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_interfaces/rosidl_generator_py/mobilebot_interfaces/__init__.py

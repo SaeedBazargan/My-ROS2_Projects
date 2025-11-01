@@ -1,0 +1,4 @@
+source;share/mobilebot_hardware/local_setup.bash
+source;share/mobilebot_hardware/local_setup.dsv
+source;share/mobilebot_hardware/local_setup.sh
+source;share/mobilebot_hardware/local_setup.zsh

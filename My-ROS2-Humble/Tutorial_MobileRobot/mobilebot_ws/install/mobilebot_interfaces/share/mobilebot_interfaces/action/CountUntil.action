@@ -1,1 +1,9 @@
-/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_interfaces/action/CountUntil.action
+# Goal
+int64 target_number
+float64 period
+---
+# Result
+int64 reached_number
+---
+# Feedback
+int64 current_number

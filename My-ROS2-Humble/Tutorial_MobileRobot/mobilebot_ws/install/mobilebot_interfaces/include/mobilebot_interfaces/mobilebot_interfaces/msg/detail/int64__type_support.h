@@ -1,1 +1,33 @@
-/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_interfaces/rosidl_generator_c/mobilebot_interfaces/msg/detail/int64__type_support.h
+// generated from rosidl_generator_c/resource/idl__type_support.h.em
+// with input from mobilebot_interfaces:msg/Int64.idl
+// generated code does not contain a copyright notice
+
+#ifndef MOBILEBOT_INTERFACES__MSG__DETAIL__INT64__TYPE_SUPPORT_H_
+#define MOBILEBOT_INTERFACES__MSG__DETAIL__INT64__TYPE_SUPPORT_H_
+
+#include "rosidl_typesupport_interface/macros.h"
+
+#include "mobilebot_interfaces/msg/rosidl_generator_c__visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+#include "rosidl_runtime_c/message_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_mobilebot_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  mobilebot_interfaces,
+  msg,
+  Int64
+)();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // MOBILEBOT_INTERFACES__MSG__DETAIL__INT64__TYPE_SUPPORT_H_

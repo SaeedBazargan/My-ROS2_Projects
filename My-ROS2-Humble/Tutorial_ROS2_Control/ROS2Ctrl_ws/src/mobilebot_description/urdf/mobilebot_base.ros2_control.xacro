@@ -2,16 +2,18 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <!-- Defines a ROS2 Control hardware interface for the robot.
-        - name: The unique name for this hardware system interface.
+        - name: The unique name for this hardware system interface. It can be abc or anything.
         - type="system": Indicates this is a system-level interface managing multiple joints.
     -->
-    <ros2_control name="MobileBaseHardwareInterface" type="system">
+    <ros2_control name="MobileBase" type="system">
         <hardware>
             <!-- Here we use a mock plugin for simulation/testing purposes. -->
             <plugin>mock_components/GenericSystem</plugin>
             
             <!-- Enables dynamic calculations for joints (e.g., velocity, position, effort). Useful for more realistic simulations. -->
             <param name="calculate_dynamics">true</param>
+
+            <!-- <plugin>mobile_base_hardware/MobileBaseHardwareInterface</plugin> -->
         </hardware>
 
         <!-- Defines the right wheel joint of the mobile base. -->
@@ -20,7 +22,7 @@
             <!-- The joint accepts velocity commands (angular velocity for the wheel). -->
             <command_interface name="velocity" />
 
-            <!-- he joint reports its position and velocity state -->
+            <!-- The joint reports its position and velocity state -->
             <state_interface name="position" />
             <state_interface name="velocity" />
         </joint>

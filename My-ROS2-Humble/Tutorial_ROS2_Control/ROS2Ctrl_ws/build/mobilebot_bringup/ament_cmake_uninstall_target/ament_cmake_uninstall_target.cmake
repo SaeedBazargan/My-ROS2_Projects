@@ -2,7 +2,7 @@
 # ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in
 
 function(ament_cmake_uninstall_target_remove_empty_directories path)
-  set(install_space "/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/install/mobilebot_bringup")
+  set(install_space "/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/install/mobilebot_bringup")
   if(install_space STREQUAL "")
     message(FATAL_ERROR "The CMAKE_INSTALL_PREFIX variable must not be empty")
   endif()
@@ -29,7 +29,7 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
-set(install_manifest "/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/build/mobilebot_bringup/install_manifest.txt")
+set(install_manifest "/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/build/mobilebot_bringup/install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()
@@ -55,6 +55,3 @@ endforeach()
 message(STATUS "Execute custom uninstall script")
 
 # begin of custom uninstall code
-
-# uninstall files installed using the symlink install functions
-include("/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/build/mobilebot_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")

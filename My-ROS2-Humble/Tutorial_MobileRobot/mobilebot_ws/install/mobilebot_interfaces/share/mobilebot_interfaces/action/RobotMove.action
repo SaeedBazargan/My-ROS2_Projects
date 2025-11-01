@@ -1,1 +1,9 @@
-/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_interfaces/action/RobotMove.action
+# Goal
+int64 goalposition
+int64 goalvelocity
+---
+# Result
+int64 position
+---
+# Feedback
+int64 current_position

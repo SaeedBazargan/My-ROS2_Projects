@@ -1,1 +1,8 @@
-/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/src/mobilebot_description/urdf/standalone_arm.urdf.xacro
+<?xml version="1.0"?>
+<robot name="mobilebot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="common_properties.xacro"/>
+    <xacro:include filename="arm.xacro"/>
+    <xacro:include filename="arm_gazebo.xacro"/>
+
+</robot>

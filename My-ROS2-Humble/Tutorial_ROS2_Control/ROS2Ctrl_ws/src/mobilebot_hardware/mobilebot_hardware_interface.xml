@@ -1,0 +1,10 @@
+<library path="mobilebot_hardware">
+    <class name="mobile_base_hardware/MobileBaseHardwareInterface"
+           type="mobile_base_hardware::MobileBaseHardwareInterface"
+           base_class_type="hardware_interface::SystemInterface">
+
+           <description>
+            Hardware Interface for a mobile base with 2 DXL.
+           </description>
+    </class>
+</library>

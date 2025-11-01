@@ -1,1 +1,1 @@
-/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_interfaces/rosidl_generator_py/mobilebot_interfaces/msg/__init__.py
+from mobilebot_interfaces.msg._int64 import Int64  # noqa: F401

@@ -1,1 +1,12 @@
-/home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_interfaces/rosidl_adapter/mobilebot_interfaces/msg/Int64.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mobilebot_interfaces/msg/Int64.msg
+// generated code does not contain a copyright notice
+
+
+module mobilebot_interfaces {
+  module msg {
+    struct Int64 {
+      int64 data;
+    };
+  };
+};
