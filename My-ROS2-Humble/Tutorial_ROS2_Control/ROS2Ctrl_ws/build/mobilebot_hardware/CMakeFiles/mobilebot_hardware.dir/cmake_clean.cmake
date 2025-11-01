@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mobilebot_hardware.dir/src/arm_hardware_interface.cpp.o"
+  "CMakeFiles/mobilebot_hardware.dir/src/arm_hardware_interface.cpp.o.d"
   "CMakeFiles/mobilebot_hardware.dir/src/mobile_base_hardware_interface.cpp.o"
   "CMakeFiles/mobilebot_hardware.dir/src/mobile_base_hardware_interface.cpp.o.d"
   "libmobilebot_hardware.pdb"

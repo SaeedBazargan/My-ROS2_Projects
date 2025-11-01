@@ -8,14 +8,12 @@
     <ros2_control name="MobileBase" type="system">
         <hardware>
             <!-- Here we use a mock plugin for simulation/testing purposes. -->
-            <!-- <plugin>mock_components/GenericSystem</plugin> -->
+            <plugin>mock_components/GenericSystem</plugin>
             
             <!-- Enables dynamic calculations for joints (e.g., velocity, position, effort). Useful for more realistic simulations. -->
-            <!-- <param name="calculate_dynamics">true</param> -->
+            <param name="calculate_dynamics">true</param>
 
-            <plugin>mobile_base_hardware/MobileBaseHardwareInterface</plugin>
-            <param name="DXL_ID">1</param>
-            <param name="DXL_Port">/dev/ttyUSB0</param>
+            <!-- <plugin>mobile_base_hardware/MobileBaseHardwareInterface</plugin> -->
         </hardware>
 
         <!-- Defines the right wheel joint of the mobile base. -->
@@ -24,7 +22,7 @@
             <!-- The joint accepts velocity commands (angular velocity for the wheel). -->
             <command_interface name="velocity" />
 
-            <!-- he joint reports its position and velocity state -->
+            <!-- The joint reports its position and velocity state -->
             <state_interface name="position" />
             <state_interface name="velocity" />
         </joint>

@@ -210,6 +210,30 @@ mobilebot_hardware/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mobilebot_hardware.dir/build.make CMakeFiles/mobilebot_hardware.dir/build
 .PHONY : mobilebot_hardware/fast
 
+src/arm_hardware_interface.o: src/arm_hardware_interface.cpp.o
+.PHONY : src/arm_hardware_interface.o
+
+# target to build an object file
+src/arm_hardware_interface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mobilebot_hardware.dir/build.make CMakeFiles/mobilebot_hardware.dir/src/arm_hardware_interface.cpp.o
+.PHONY : src/arm_hardware_interface.cpp.o
+
+src/arm_hardware_interface.i: src/arm_hardware_interface.cpp.i
+.PHONY : src/arm_hardware_interface.i
+
+# target to preprocess a source file
+src/arm_hardware_interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mobilebot_hardware.dir/build.make CMakeFiles/mobilebot_hardware.dir/src/arm_hardware_interface.cpp.i
+.PHONY : src/arm_hardware_interface.cpp.i
+
+src/arm_hardware_interface.s: src/arm_hardware_interface.cpp.s
+.PHONY : src/arm_hardware_interface.s
+
+# target to generate assembly for a file
+src/arm_hardware_interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mobilebot_hardware.dir/build.make CMakeFiles/mobilebot_hardware.dir/src/arm_hardware_interface.cpp.s
+.PHONY : src/arm_hardware_interface.cpp.s
+
 src/mobile_base_hardware_interface.o: src/mobile_base_hardware_interface.cpp.o
 .PHONY : src/mobile_base_hardware_interface.o
 
@@ -250,6 +274,9 @@ help:
 	@echo "... mobilebot_hardware_uninstall"
 	@echo "... uninstall"
 	@echo "... mobilebot_hardware"
+	@echo "... src/arm_hardware_interface.o"
+	@echo "... src/arm_hardware_interface.i"
+	@echo "... src/arm_hardware_interface.s"
 	@echo "... src/mobile_base_hardware_interface.o"
 	@echo "... src/mobile_base_hardware_interface.i"
 	@echo "... src/mobile_base_hardware_interface.s"

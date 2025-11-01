@@ -1,3 +1,5 @@
+# https://github.com/ros-controls/ros2_controllers/tree/humble
+
 controller_manager:
   ros__parameters:
     # The controller manager will update all controllers at 50 Hz.
@@ -12,6 +14,11 @@ controller_manager:
     # a two-wheeled mobile robot. It will convert velocity commands into wheel commands.
     diff_drive_controller:
       type: diff_drive_controller/DiffDriveController
+
+    # The controller will forward command values directly to the joints.
+    # whatever value you publish to this controller is sent to the joint's hardware interface (no PID, no trajectory generation).
+    arm_joints_controller:
+      type: forward_command_controller/ForwardCommandController
 
 diff_drive_controller:
   ros__parameters:
@@ -45,3 +52,20 @@ diff_drive_controller:
     linear.x.min_velocity: -1.0
     angular.z.max_velocity: 1.0
     angular.z.min_velocity: -1.0
+
+
+arm_joints_controller:
+  ros__parameters:
+    # List of joints controlled by this controller. These joint names MUST match those in the URDF / robot_description.
+    joints: ["arm_base_forearm_joint", "forearm_hand_joint"]
+
+    # Specifies which interface this controller will use to command the joints.
+    # Common options are:
+    #   position  -> joint moves to the specified angle (e.g. radians)
+    #   velocity  -> joint rotates with specified speed
+    #   effort    -> joint applies torque
+    # For this configuration, we are commanding joint POSITIONS directly.
+    # This means the higher-level node must send valid joint angle commands
+    # at a reasonable rate. If you send unrealistic values, the arm will jump.
+    interface_name: "position"
+

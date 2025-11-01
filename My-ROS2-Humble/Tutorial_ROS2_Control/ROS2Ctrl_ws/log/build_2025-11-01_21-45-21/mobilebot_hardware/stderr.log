@@ -1,0 +1,5 @@
+[01m[K/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/src/mobilebot_hardware/src/arm_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type arm_hardware::ArmHardwareInterface::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/src/mobilebot_hardware/src/arm_hardware_interface.cpp:83:111:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   83 | ace::return_type ArmHardwareInterface::read(const rclcpp::Time &time_, [01;35m[Kconst rclcpp::Duration &period_[m[K)
+      |                                                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+

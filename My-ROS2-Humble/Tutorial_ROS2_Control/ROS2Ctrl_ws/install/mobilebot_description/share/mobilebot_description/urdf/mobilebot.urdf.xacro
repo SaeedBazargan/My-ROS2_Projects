@@ -9,6 +9,7 @@
     <xacro:include filename="arm.xacro"/>
     <xacro:include filename="arm_gazebo.xacro"/>
     <xacro:include filename="mobilebot_base.ros2_control.xacro"/>
+    <xacro:include filename="arm.ros2_control.xacro"/>
 
     <!-- #### Combine the robot(mobilebot) and arm #### -->
     <joint name="mobilebot_base_arm_joint" type="fixed">
