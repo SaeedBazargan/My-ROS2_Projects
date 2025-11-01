@@ -1,4 +1,6 @@
 /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/install/mobilebot_bringup/share/mobilebot_bringup//config/mobilebot_controllers.yaml
+/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/install/mobilebot_bringup/share/mobilebot_bringup//config/gazebo_bridge.yaml
+/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/install/mobilebot_bringup/share/mobilebot_bringup//launch/mobilebot_gazebo.launch.py
 /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/install/mobilebot_bringup/share/mobilebot_bringup//launch/mobilebot.launch.py
 /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/install/mobilebot_bringup/share/ament_index/resource_index/package_run_dependencies/mobilebot_bringup
 /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_ROS2_Control/ROS2Ctrl_ws/install/mobilebot_bringup/share/ament_index/resource_index/parent_prefix_path/mobilebot_bringup
