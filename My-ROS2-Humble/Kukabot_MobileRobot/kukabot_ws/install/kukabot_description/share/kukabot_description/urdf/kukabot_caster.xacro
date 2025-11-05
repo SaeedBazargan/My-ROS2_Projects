@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+<!-- ##################################################################################################### -->
+ 
+    <xacro:macro name="kukacaster" params="name">
+
+        <link name="caster_link_frontLeft">
+            <inertial>
+                <mass value="${caster_mass}"/>
+                <origin xyz="0 0 0"/>
+                <inertia ixx="0.012411765597" ixy="-0.000711733678" ixz="0.00050272983" 
+                         iyy="0.015218160428" iyz="-0.000004273467" 
+                         izz="0.011763977943"/>
+            </inertial>
+        </link>
+
+        <joint name="caster_joint_frontLeft" type="fixed">
+            <parent link="${name}_link"/>
+            <child link="caster_link_frontLeft"/>
+            <origin xyz="${caster_offset_x} ${caster_offset_y} ${caster_offset_z}" rpy="0 0 0"/>
+            <axis xyz="0 0 1"/>
+            
+            <limit effort="${caster_joint_effort}" velocity="${caster_joint_velocity}"/>
+            
+            <dynamics damping="${caster_joint_damping}" friction="${caster_joint_friction}"/>
+            
+            <safety_controller k_velocity="${caster_joint_safety_k_velocity}"/>
+        </joint>
+<!-- ##################################################################################################### -->
+
+        <link name="caster_link_frontRight">
+            <inertial>
+                <mass value="${caster_mass}"/>
+                <origin xyz="0 0 0"/>
+                <inertia ixx="0.012411765597" ixy="-0.000711733678" ixz="0.00050272983" 
+                         iyy="0.015218160428" iyz="-0.000004273467" 
+                         izz="0.011763977943"/>
+            </inertial>
+        </link>
+
+        <joint name="caster_joint_frontRight" type="fixed">
+            <parent link="${name}_link"/>
+            <child link="caster_link_frontRight"/>
+            <origin xyz="${caster_offset_x} ${-caster_offset_y} ${caster_offset_z}" rpy="0 0 0"/>
+            <axis xyz="0 0 1"/>
+            
+            <limit effort="${caster_joint_effort}" velocity="${caster_joint_velocity}"/>
+            
+            <dynamics damping="${caster_joint_damping}" friction="${caster_joint_friction}"/>
+            
+            <safety_controller k_velocity="${caster_joint_safety_k_velocity}"/>
+        </joint>
+<!-- ##################################################################################################### -->
+
+        <link name="caster_link_backLeft">
+            <inertial>
+                <mass value="${caster_mass}"/>
+                <origin xyz="0 0 0"/>
+                <inertia ixx="0.012411765597" ixy="-0.000711733678" ixz="0.00050272983" 
+                         iyy="0.015218160428" iyz="-0.000004273467" 
+                         izz="0.011763977943"/>
+            </inertial>
+        </link>
+
+        <joint name="caster_joint_backLeft" type="fixed">
+            <parent link="${name}_link"/>
+            <child link="caster_link_backLeft"/>
+            <origin xyz="${-caster_offset_x} ${caster_offset_y} ${caster_offset_z}" rpy="0 0 0"/>
+            <axis xyz="0 0 1"/>
+            
+            <limit effort="${caster_joint_effort}" velocity="${caster_joint_velocity}"/>
+            
+            <dynamics damping="${caster_joint_damping}" friction="${caster_joint_friction}"/>
+            
+            <safety_controller k_velocity="${caster_joint_safety_k_velocity}"/>
+        </joint>
+<!-- ##################################################################################################### -->
+
+        <link name="caster_link_backRight">
+            <inertial>
+                <mass value="${caster_mass}"/>
+                <origin xyz="0 0 0"/>
+                <inertia ixx="0.012411765597" ixy="-0.000711733678" ixz="0.00050272983" 
+                         iyy="0.015218160428" iyz="-0.000004273467" 
+                         izz="0.011763977943"/>
+            </inertial>
+        </link>
+
+        <joint name="caster_joint_backRight" type="fixed">
+            <parent link="${name}_link"/>
+            <child link="caster_link_backRight"/>
+            <origin xyz="${-caster_offset_x} ${-caster_offset_y} ${caster_offset_z}" rpy="0 0 0"/>
+            <axis xyz="0 0 1"/>
+            
+            <limit effort="${caster_joint_effort}" velocity="${caster_joint_velocity}"/>
+            
+            <dynamics damping="${caster_joint_damping}" friction="${caster_joint_friction}"/>
+            
+            <safety_controller k_velocity="${caster_joint_safety_k_velocity}"/>
+        </joint>
+
+    </xacro:macro>
+
+</robot>

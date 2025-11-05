@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">   
+<!-- ##################################################################################################### -->
+
+    <xacro:macro name="kukawheel_gazebo" params="prefix">
+
+        <gazebo reference="wheel_link_${prefix}">
+            <material value="Gazebo/Orange" />
+            <kp>1000000</kp>
+            <kd>100</kd>
+        </gazebo>
+
+    </xacro:macro>
+
+</robot>

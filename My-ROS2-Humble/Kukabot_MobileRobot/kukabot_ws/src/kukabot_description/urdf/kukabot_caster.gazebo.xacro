@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">   
+<!-- ##################################################################################################### -->
+
+    <xacro:macro name="kukacaster_gazebo" params="prefix">
+
+        <gazebo reference="caster_link_${prefix}">
+            <material value="Gazebo/Orange" />
+        </gazebo>
+
+    </xacro:macro>
+
+</robot>

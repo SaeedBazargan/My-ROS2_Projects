@@ -1,0 +1,9 @@
+/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Kukabot_MobileRobot/kukabot_ws/build/kukabot_bringup/CMakeFiles/uninstall.dir
+/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Kukabot_MobileRobot/kukabot_ws/build/kukabot_bringup/CMakeFiles/kukabot_bringup_uninstall.dir
+/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Kukabot_MobileRobot/kukabot_ws/build/kukabot_bringup/CMakeFiles/test.dir
+/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Kukabot_MobileRobot/kukabot_ws/build/kukabot_bringup/CMakeFiles/edit_cache.dir
+/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Kukabot_MobileRobot/kukabot_ws/build/kukabot_bringup/CMakeFiles/rebuild_cache.dir
+/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Kukabot_MobileRobot/kukabot_ws/build/kukabot_bringup/CMakeFiles/list_install_components.dir
+/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Kukabot_MobileRobot/kukabot_ws/build/kukabot_bringup/CMakeFiles/install.dir
+/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Kukabot_MobileRobot/kukabot_ws/build/kukabot_bringup/CMakeFiles/install/local.dir
+/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Kukabot_MobileRobot/kukabot_ws/build/kukabot_bringup/CMakeFiles/install/strip.dir

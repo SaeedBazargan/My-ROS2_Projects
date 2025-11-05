@@ -1,4 +1,0 @@
-[0mCMake Error: The current CMakeCache.txt directory /home/saeedbazargan/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_interfaces/CMakeCache.txt is different than the directory /home/saeedbazargan/Desktop/ROS2-Humble/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/build/mobilebot_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0mCMake Error: The source directory "/home/saeedbazargan/Desktop/ROS2-Humble/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/src/mobilebot_interfaces" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.[0m
-gmake: *** [Makefile:747: cmake_check_build_system] Error 1

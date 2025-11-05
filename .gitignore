@@ -1,0 +1,12 @@
+# ROS2 build artifacts
+**/mobilebot_ws/build/
+**/mobilebot_ws/install/
+**/mobilebot_ws/log/
+
+**/ROS2Ctrl_ws/build/
+**/ROS2Ctrl_ws/install/
+**/ROS2Ctrl_ws/log/
+
+**/kukabot_ws/build/
+**/kukabot_ws/install/
+**/kukabot_ws/log/
