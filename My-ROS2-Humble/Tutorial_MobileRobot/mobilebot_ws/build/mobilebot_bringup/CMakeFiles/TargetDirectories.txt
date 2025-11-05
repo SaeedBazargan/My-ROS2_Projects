@@ -1,9 +1,0 @@
-/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_bringup/CMakeFiles/uninstall.dir
-/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_bringup/CMakeFiles/mobilebot_bringup_uninstall.dir
-/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_bringup/CMakeFiles/test.dir
-/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_bringup/CMakeFiles/edit_cache.dir
-/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_bringup/CMakeFiles/rebuild_cache.dir
-/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_bringup/CMakeFiles/list_install_components.dir
-/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_bringup/CMakeFiles/install.dir
-/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_bringup/CMakeFiles/install/local.dir
-/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_MobileRobot/mobilebot_ws/build/mobilebot_bringup/CMakeFiles/install/strip.dir

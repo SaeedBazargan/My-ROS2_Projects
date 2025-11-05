@@ -1,6 +1,0 @@
-action/CountUntil.action
-action/CountUntil.idl
-action/RobotMove.action
-action/RobotMove.idl
-msg/Int64.idl
-msg/Int64.msg

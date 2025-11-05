@@ -1,9 +1,0 @@
-# Goal
-int64 goalposition
-int64 goalvelocity
----
-# Result
-int64 position
----
-# Feedback
-int64 current_position
