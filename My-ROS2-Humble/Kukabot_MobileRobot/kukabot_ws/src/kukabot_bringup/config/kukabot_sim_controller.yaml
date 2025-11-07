@@ -12,6 +12,9 @@ forward_velocity_controller:
   ros__parameters:
     joints:
       - wheel_joint_frontLeft
+      - wheel_joint_frontRight
+      - wheel_joint_backLeft
+      - wheel_joint_backRight
     interface_name: velocity
     command_interfaces:
       - velocity

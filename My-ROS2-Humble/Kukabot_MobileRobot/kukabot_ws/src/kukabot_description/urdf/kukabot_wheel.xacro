@@ -2,9 +2,9 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 <!-- ##################################################################################################### -->
 
-    <xacro:macro name="kukawheel" params="prefix">
+    <xacro:macro name="kukawheel">
 
-        <link name="wheel_link_${prefix}">
+        <link name="wheel_link_frontLeft">
             <visual>
                 <geometry>
                     <mesh filename="package://kukabot_description/meshes/base/front-left_wheel.dae" />
@@ -29,9 +29,126 @@
             </inertial>
         </link>
 
-        <joint name="wheel_joint_${prefix}" type="continuous">
-            <parent link="caster_link_${prefix}"/>
-            <child link="wheel_link_${prefix}"/>
+        <joint name="wheel_joint_frontLeft" type="continuous">
+            <parent link="caster_link_frontLeft"/>
+            <child link="wheel_link_frontLeft"/>
+            <origin xyz="${wheel_offset_x} ${wheel_offset_y} ${wheel_offset_z}" rpy="0 0 0"/>
+            <axis xyz="0 1 0"/>
+
+            <limit effort="${wheel_joint_effort}" velocity="${wheel_joint_velocity}"/>
+
+            <dynamics damping="${wheel_joint_damping}" friction="${wheel_joint_friction}"/>
+
+            <safety_controller k_velocity="${wheel_joint_safety_k_velocity}"/>
+        </joint>
+<!-- ##################################################################################################### -->
+
+        <link name="wheel_link_frontRight">
+            <visual>
+                <geometry>
+                    <mesh filename="package://kukabot_description/meshes/base/front-right_wheel.dae" />
+                    <!-- <sphere radius="${wheel_radius}"/> -->
+                </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <material name="Orange"/>
+            </visual>
+
+            <collision>
+                <geometry>
+                    <cylinder radius="${wheel_radius}" length="${wheel_radius}"/>
+                </geometry>
+                <origin xyz="0 0 0" rpy="${M_PI/2} 0 0"/>
+            </collision>            
+            <inertial>
+                <mass value="${wheel_mass}"/>
+                <origin xyz="0 0 0"/>
+                <inertia ixx="0.012411765597" ixy="-0.000711733678" ixz="0.00050272983" 
+                         iyy="0.015218160428" iyz="-0.000004273467" 
+                         izz="0.011763977943"/>
+            </inertial>
+        </link>
+
+        <joint name="wheel_joint_frontRight" type="continuous">
+            <parent link="caster_link_frontRight"/>
+            <child link="wheel_link_frontRight"/>
+            <origin xyz="${wheel_offset_x} ${wheel_offset_y} ${wheel_offset_z}" rpy="0 0 0"/>
+            <axis xyz="0 1 0"/>
+
+            <limit effort="${wheel_joint_effort}" velocity="${wheel_joint_velocity}"/>
+
+            <dynamics damping="${wheel_joint_damping}" friction="${wheel_joint_friction}"/>
+
+            <safety_controller k_velocity="${wheel_joint_safety_k_velocity}"/>
+        </joint>
+<!-- ##################################################################################################### -->
+
+        <link name="wheel_link_backLeft">
+            <visual>
+                <geometry>
+                    <mesh filename="package://kukabot_description/meshes/base/back-left_wheel.dae" />
+                    <!-- <sphere radius="${wheel_radius}"/> -->
+                </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <material name="Orange"/>
+            </visual>
+
+            <collision>
+                <geometry>
+                    <cylinder radius="${wheel_radius}" length="${wheel_radius}"/>
+                </geometry>
+                <origin xyz="0 0 0" rpy="${M_PI/2} 0 0"/>
+            </collision>            
+            <inertial>
+                <mass value="${wheel_mass}"/>
+                <origin xyz="0 0 0"/>
+                <inertia ixx="0.012411765597" ixy="-0.000711733678" ixz="0.00050272983" 
+                         iyy="0.015218160428" iyz="-0.000004273467" 
+                         izz="0.011763977943"/>
+            </inertial>
+        </link>
+
+        <joint name="wheel_joint_backLeft" type="continuous">
+            <parent link="caster_link_backLeft"/>
+            <child link="wheel_link_backLeft"/>
+            <origin xyz="${wheel_offset_x} ${wheel_offset_y} ${wheel_offset_z}" rpy="0 0 0"/>
+            <axis xyz="0 1 0"/>
+
+            <limit effort="${wheel_joint_effort}" velocity="${wheel_joint_velocity}"/>
+
+            <dynamics damping="${wheel_joint_damping}" friction="${wheel_joint_friction}"/>
+
+            <safety_controller k_velocity="${wheel_joint_safety_k_velocity}"/>
+        </joint>
+<!-- ##################################################################################################### -->
+
+        <link name="wheel_link_backRight">
+            <visual>
+                <geometry>
+                    <mesh filename="package://kukabot_description/meshes/base/back-right_wheel.dae" />
+                    <!-- <sphere radius="${wheel_radius}"/> -->
+                </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <material name="Orange"/>
+            </visual>
+
+            <collision>
+                <geometry>
+                    <cylinder radius="${wheel_radius}" length="${wheel_radius}"/>
+                </geometry>
+                <origin xyz="0 0 0" rpy="${M_PI/2} 0 0"/>
+            </collision>            
+            <inertial>
+                <mass value="${wheel_mass}"/>
+                <origin xyz="0 0 0"/>
+                <inertia ixx="0.012411765597" ixy="-0.000711733678" ixz="0.00050272983" 
+                         iyy="0.015218160428" iyz="-0.000004273467" 
+                         izz="0.011763977943"/>
+            </inertial>
+        </link>
+
+        <joint name="wheel_joint_backRight" type="continuous">
+            <parent link="caster_link_backRight"/>
+            <child link="wheel_link_backRight"/>
             <origin xyz="${wheel_offset_x} ${wheel_offset_y} ${wheel_offset_z}" rpy="0 0 0"/>
             <axis xyz="0 1 0"/>
 

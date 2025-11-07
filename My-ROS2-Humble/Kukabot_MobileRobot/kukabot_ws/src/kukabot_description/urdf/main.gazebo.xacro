@@ -6,7 +6,7 @@
 
         <gazebo>
             <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-                <parameters>$(find kukabot_bringup)/config/kukabot_sim.yaml</parameters>
+                <parameters>$(find kukabot_bringup)/config/kukabot_sim_controller.yaml</parameters>
             </plugin>
         </gazebo>
 

@@ -16,7 +16,7 @@
     <!-- Base -->
     <xacro:kukabase                 name="base"/>
     <xacro:kukacaster               name="base"/>
-    <xacro:kukawheel                prefix="frontLeft"/>
+    <xacro:kukawheel/>
 
     <!-- Base -->
     <xacro:kukabase_gazebo/>
@@ -29,6 +29,9 @@
 
     <!-- Wheel -->
     <xacro:kukawheel_gazebo         prefix="frontLeft"/>
+    <xacro:kukawheel_gazebo         prefix="frontRight"/>
+    <xacro:kukawheel_gazebo         prefix="backLeft"/>
+    <xacro:kukawheel_gazebo         prefix="backRight"/>
 
     <xacro:main_gazebo/>
     <xacro:main_ros2_control/>

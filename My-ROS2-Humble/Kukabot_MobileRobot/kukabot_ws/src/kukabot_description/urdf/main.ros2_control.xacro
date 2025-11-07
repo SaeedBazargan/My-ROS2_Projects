@@ -20,6 +20,43 @@
                 <state_interface name="velocity"/>
                 
             </joint>
+
+            <joint name="wheel_joint_frontRight">
+
+                <command_interface name="velocity">
+                    <param name="min">-1</param>
+                    <param name="max">1</param>
+                </command_interface>
+
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                
+            </joint>
+
+            <joint name="wheel_joint_backLeft">
+
+                <command_interface name="velocity">
+                    <param name="min">-1</param>
+                    <param name="max">1</param>
+                </command_interface>
+
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                
+            </joint>
+
+            <joint name="wheel_joint_backRight">
+
+                <command_interface name="velocity">
+                    <param name="min">-1</param>
+                    <param name="max">1</param>
+                </command_interface>
+
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                
+            </joint>
+            
         </ros2_control>
 
     </xacro:macro>
