@@ -6,101 +6,101 @@ using namespace std::placeholders;
 class move_keyboardcommandNode : public rclcpp::Node
 {
 private:
-    // Publisher to send wheel speed commands
     rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr pub_;
-    // Current wheel velocity command: [front_left, front_right, rear_left, rear_right]
-    std::array<double, 4> wheel_cmd_{0.0, 0.0, 0.0, 0.0};
+    std::thread input_thread_;
+    bool running_;
 
-    // ------------------------------------------------------------------------
-    // Send wheel velocity command to the robot
-    // ------------------------------------------------------------------------    
-    void set_velocity(double fl, double fr, double rl, double rr)
+    // Publish wheel speeds
+    void sendCommand(const std::array<double, 4> &cmd)
     {
         std_msgs::msg::Float64MultiArray msg;
-        msg.data = {fl, fr, rl, rr};
+
+        msg.data = {cmd[0], cmd[1], cmd[2], cmd[3]};
         pub_->publish(msg);
 
-        RCLCPP_INFO(this->get_logger(), "Sent: [%.2f %.2f %.2f %.2f]", fl, fr, rl, rr);
+        RCLCPP_INFO(this->get_logger(), "Sent: [%.2f %.2f %.2f %.2f]", cmd[0], cmd[1], cmd[2], cmd[3]);
     }
 
-    // ------------------------------------------------------------------------
-    // Interpret key press and select matching wheel velocity pattern
-    // ------------------------------------------------------------------------
-    void handle_keypress(std::string &c)
+    // Handle keyboard input and send movement commands
+    void handleKey(const std::string &key)
     {
-        if(c == "w" || c == "W")
+        std::array<double, 4> cmd;
+
+        if(key == "w" || key == "W")
         {
-            wheel_cmd_ = {5.0, 5.0, 5.0, 5.0};
-            set_velocity(wheel_cmd_[0], wheel_cmd_[1], wheel_cmd_[2], wheel_cmd_[3]);
-            RCLCPP_INFO(this->get_logger(), "Forward (speed %.2f)", 5.0);
+            cmd = {0.5,  0.5,  0.5,  0.5};
+            RCLCPP_INFO(this->get_logger(), "Forward");
         }
-        else if(c == "s" || c == "S")
+        else if(key == "s" || key == "S")
         {
-            wheel_cmd_ = {-5.0, -5.0, -5.0, -5.0};
-            set_velocity(wheel_cmd_[0], wheel_cmd_[1], wheel_cmd_[2], wheel_cmd_[3]);
-            RCLCPP_INFO(this->get_logger(), "Backward (speed %.2f)", 5.0);
+            cmd = {-0.5, -0.5, -0.5, -0.5};
+            RCLCPP_INFO(this->get_logger(), "Backward");
         }
-        else if(c == "a" || c == "A")
+        else if(key == "a" || key == "A")
         {
-            wheel_cmd_ = {-5.0, 5.0, -5.0, 5.0};
-            set_velocity(wheel_cmd_[0], wheel_cmd_[1], wheel_cmd_[2], wheel_cmd_[3]);
-            RCLCPP_INFO(this->get_logger(), "Rotate left (speed %.2f)", 5.0);
+            cmd = {-0.5, 0.5, -0.5, 0.5};
+            RCLCPP_INFO(this->get_logger(), "Rotate Left");
         }
-        else if(c == "d" || c == "D")
+        else if(key == "d" || key == "D")
         {
-            wheel_cmd_ = {5.0, -5.0, 5.0, -5.0};
-            set_velocity(wheel_cmd_[0], wheel_cmd_[1], wheel_cmd_[2], wheel_cmd_[3]);
-            RCLCPP_INFO(this->get_logger(), "Rotate right (speed %.2f)", 5.0);
+            cmd = {0.5, -0.5, 0.5, -0.5};
+            RCLCPP_INFO(this->get_logger(), "Rotate Right");
         }
-        else if(c == "x" || c == "X")
+        else if(key == "x" || key == "X")
         {
-            wheel_cmd_ = {0.0, 0.0, 0.0, 0.0};
-            set_velocity(wheel_cmd_[0], wheel_cmd_[1], wheel_cmd_[2], wheel_cmd_[3]);
+            cmd = {0.0, 0.0, 0.0, 0.0};
             RCLCPP_INFO(this->get_logger(), "Stop");
         }
-        else if(c == "q" || c == "Q")
+        else if(key == "q" || key == "Q")
         {
             RCLCPP_INFO(this->get_logger(), "Quit requested");
-            rclcpp::shutdown();
+            running_ = false;    // signal thread stop
+            rclcpp::shutdown();  // allow clean exit
+
+            return;
         }
         else
         {
             RCLCPP_WARN(this->get_logger(), "Unknown command");
+
+            return;
         }
+
+        sendCommand(cmd);
     }
+
+    // Separate thread for keyboard input (blocking)
+    void keyboardLoop()
+    {
+        std::string key;
+        while(running_ && rclcpp::ok())
+        {
+            std::cout << "Command: ";
+            std::cin >> key;
+            handleKey(key);
+        }
+    }    
 
 public:
     move_keyboardcommandNode() : Node("move_robot")
     {
-        // Publisher queue depth = 10 messages
+        running_ = true;
         pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
             "/forward_velocity_controller/commands",
             10);
+        
+        RCLCPP_INFO(this->get_logger(), "Keyboard Teleop Started (w/s/a/d for move, x stop, q quit)");
 
-        RCLCPP_INFO(this->get_logger(), "Keyboard Commander Started");
-        RCLCPP_INFO(this->get_logger(), "w: forward, s: backward, a: left, d: right, x: stop, q: quit");
-
-        // Blocking input loop
-        run();
+        // Start keyboard input thread (non-blocking to ROS)
+        input_thread_ = std::thread(&move_keyboardcommandNode::keyboardLoop, this);
     }
 
-    // ------------------------------------------------------------------------
-    // Blocking input loop
-    // Continuously reads user key input and sends robot commands
-    // ------------------------------------------------------------------------
-    void run()
+    ~move_keyboardcommandNode()
     {
-        std::string input;
-
-        while(rclcpp::ok())
+        running_ = false;
+        if(input_thread_.joinable())
         {
-            std::cout << "\n Command: ";
-            std::cin >> input;
-
-            handle_keypress(input);
-    
-            // sleep small amount so CPU not pegged
-            usleep(20000); // 20 ms
+            input_thread_.join();
         }
     }
 };
@@ -109,8 +109,7 @@ int main(int argc, char**argv)
 {
     rclcpp::init(argc, argv);
     auto node = std::make_shared<move_keyboardcommandNode>();
-    // node->run();
-    // rclcpp::spin(node);
+    rclcpp::spin(node);
     rclcpp::shutdown();
 
     return 0;
