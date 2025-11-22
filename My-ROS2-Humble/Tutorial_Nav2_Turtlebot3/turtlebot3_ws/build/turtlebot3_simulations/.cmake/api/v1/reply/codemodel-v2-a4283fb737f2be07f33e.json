@@ -1,0 +1,70 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7e6f7c2b7d346aba508a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "turtlebot3_simulations",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "turtlebot3_simulations_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtlebot3_simulations_uninstall-4046ac8184593da97faa.json",
+					"name" : "turtlebot3_simulations_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e38053694c1876419167.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_simulations",
+		"source" : "/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/src/turtlebot3_simulations"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

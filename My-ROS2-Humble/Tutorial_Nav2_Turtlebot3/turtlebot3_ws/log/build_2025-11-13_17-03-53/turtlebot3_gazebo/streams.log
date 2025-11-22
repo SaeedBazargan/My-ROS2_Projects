@@ -1,0 +1,368 @@
+[0.022s] Invoking command in '/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/src/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo
+[0.171s] -- The C compiler identification is GNU 11.4.0
+[0.332s] -- The CXX compiler identification is GNU 11.4.0
+[0.346s] -- Detecting C compiler ABI info
+[0.477s] -- Detecting C compiler ABI info - done
+[0.497s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.499s] -- Detecting C compile features
+[0.499s] -- Detecting C compile features - done
+[0.505s] -- Detecting CXX compiler ABI info
+[0.656s] -- Detecting CXX compiler ABI info - done
+[0.673s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.674s] -- Detecting CXX compile features
+[0.675s] -- Detecting CXX compile features - done
+[0.678s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.968s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.163s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.163s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[1.163s]   does not match the name of the calling package (gazebo).  This can lead to
+[1.163s]   problems in calling code that expects `find_package` result variables
+[1.163s]   (e.g., `_FOUND`) to follow a certain pattern.
+[1.164s] Call Stack (most recent call first):
+[1.164s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[1.164s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[1.164s]   CMakeLists.txt:23 (find_package)
+[1.164s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.164s] [0m
+[1.164s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.173s] -- Checking for module 'bullet>=2.82'
+[1.193s] --   Found bullet, version 3.05
+[1.384s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.464s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.511s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.797s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.829s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.840s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.855s] -- Searching for dependencies of ignition-math6
+[1.861s] -- Looking for OGRE...
+[1.862s] -- OGRE_PREFIX_WATCH changed.
+[1.870s] -- Checking for module 'OGRE'
+[1.890s] --   Found OGRE, version 1.9.0
+[1.938s] -- Found Ogre Ghadamon (1.9.0)
+[1.963s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.979s] -- Looking for OGRE_Paging...
+[1.987s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.987s] -- Looking for OGRE_Terrain...
+[1.998s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.998s] -- Looking for OGRE_Property...
+[2.006s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.006s] -- Looking for OGRE_RTShaderSystem...
+[2.013s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.014s] -- Looking for OGRE_Volume...
+[2.024s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.024s] -- Looking for OGRE_Overlay...
+[2.037s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.245s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.250s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.250s] -- Searching for dependencies of ignition-transport8
+[2.277s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[2.295s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.302s] -- Checking for module 'libzmq >= 4'
+[2.323s] --   Found libzmq , version 4.3.4
+[2.380s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.389s] -- Checking for module 'uuid'
+[2.408s] --   Found uuid, version 2.37.2
+[2.459s] -- Found UUID: TRUE  
+[2.463s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.464s] -- Searching for dependencies of ignition-msgs5
+[2.489s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.496s] -- Checking for module 'tinyxml2'
+[2.513s] --   Found tinyxml2, version 9.0.0
+[2.566s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.570s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.571s] -- Searching for dependencies of ignition-common3
+[2.572s] -- Looking for dlfcn.h - found
+[2.574s] -- Looking for libdl - found
+[2.577s] -- Found DL: TRUE  
+[2.603s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[2.605s] -- Searching for <ignition-common3> component [graphics]
+[2.610s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.610s] -- Searching for dependencies of ignition-common3-graphics
+[2.611s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.618s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.619s] -- Searching for dependencies of ignition-fuel_tools4
+[2.745s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.761s] -- Checking for module 'jsoncpp'
+[2.780s] --   Found jsoncpp, version 1.9.5
+[2.832s] -- Found JSONCPP: TRUE  
+[2.841s] -- Checking for module 'libzip'
+[2.860s] --   Found libzip, version 1.7.3
+[2.912s] -- Found ZIP: TRUE  
+[2.913s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.914s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.914s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.924s] -- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[2.928s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.973s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.980s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.993s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.010s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.034s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.085s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.109s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[3.163s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.167s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[3.195s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.209s] -- Found Threads: TRUE  
+[3.266s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.290s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[3.406s] -- Configuring done
+[3.550s] -- Generating done
+[3.566s] -- Build files have been written to: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_gazebo
+[3.584s] Invoked command in '/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/src/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo
+[3.587s] Invoking command in '/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_gazebo -- -j4 -l4
+[3.684s] [  8%] [32mBuilding CXX object CMakeFiles/traffic_light_plugin.dir/src/traffic_light_plugin.cpp.o[0m
+[3.690s] [ 16%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/src/obstacle1.cpp.o[0m
+[3.697s] [ 25%] [32mBuilding CXX object CMakeFiles/traffic_bar_plugin.dir/src/traffic_bar_plugin.cpp.o[0m
+[3.705s] [ 33%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[31.414s] [ 41%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[32.893s] [ 41%] Built target turtlebot3_drive
+[32.933s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/src/obstacle2.cpp.o[0m
+[34.779s] [ 58%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[35.470s] [ 58%] Built target obstacle1
+[35.509s] [ 66%] [32mBuilding CXX object CMakeFiles/obstacles.dir/src/obstacles.cpp.o[0m
+[35.843s] [ 75%] [32m[1mLinking CXX shared library libtraffic_light_plugin.so[0m
+[36.111s] [ 83%] [32m[1mLinking CXX shared library libtraffic_bar_plugin.so[0m
+[36.569s] [ 83%] Built target traffic_light_plugin
+[36.670s] [ 83%] Built target traffic_bar_plugin
+[49.976s] [ 91%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[50.341s] [ 91%] Built target obstacle2
+[51.295s] [100%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[51.617s] [100%] Built target obstacles
+[51.633s] Invoked command in '/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_gazebo -- -j4 -l4
+[51.635s] Invoking command in '/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_gazebo
+[51.644s] -- Install configuration: ""
+[51.645s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[51.651s] -- Set runtime path of "/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive" to ""
+[51.652s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch
+[51.652s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[51.652s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[51.652s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multi_spawn_turtlebot3.launch.py
+[51.653s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multi_robot.launch.py
+[51.653s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[51.653s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[51.653s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[51.653s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[51.654s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[51.654s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_autorace_2020.launch.py
+[51.654s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[51.654s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[51.655s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models
+[51.655s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam
+[51.655s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model.sdf
+[51.655s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model.config
+[51.655s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model-1_4.sdf
+[51.656s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger
+[51.656s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[51.656s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[51.656s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[51.657s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world
+[51.657s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes
+[51.657s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[51.657s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[51.657s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[51.657s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[51.658s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[51.658s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common
+[51.658s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes
+[51.658s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[51.659s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors
+[51.659s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/astra.dae
+[51.670s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/r200.jpg
+[51.670s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/r200.dae
+[51.670s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/lds.stl
+[51.671s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/astra.jpg
+[51.671s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[51.672s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases
+[51.672s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/waffle_base.stl
+[51.690s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/waffle_pi_base.stl
+[51.699s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/burger_base.stl
+[51.704s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[51.705s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels
+[51.705s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels/right_tire.stl
+[51.706s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels/left_tire.stl
+[51.708s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[51.708s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[51.708s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[51.708s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[51.709s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi
+[51.709s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[51.709s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[51.709s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[51.710s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle
+[51.710s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[51.710s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[51.710s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[51.710s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020
+[51.710s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction
+[51.711s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/model.sdf
+[51.711s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/model.config
+[51.711s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials
+[51.712s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/textures
+[51.712s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/textures/traffic_construction.png
+[51.712s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/scripts
+[51.713s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/scripts/traffic_construction.material
+[51.713s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel
+[51.713s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/model.sdf
+[51.713s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/model.config
+[51.713s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials
+[51.713s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/textures
+[51.714s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/textures/tunnel.png
+[51.714s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/scripts
+[51.714s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/scripts/tunnel.material
+[51.714s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar
+[51.715s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/model.sdf
+[51.715s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/model.config
+[51.715s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials
+[51.715s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/textures
+[51.716s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/textures/traffic_bar.png
+[51.716s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/scripts
+[51.716s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/scripts/traffic_bar.material
+[51.716s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right
+[51.716s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/model.sdf
+[51.716s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/model.config
+[51.717s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials
+[51.717s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/textures
+[51.717s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/textures/traffic_right.png
+[51.717s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/scripts
+[51.717s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/scripts/traffic_right.material
+[51.717s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking
+[51.718s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/model.sdf
+[51.718s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/model.config
+[51.718s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials
+[51.718s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/textures
+[51.718s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/textures/traffic_parking.png
+[51.719s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/scripts
+[51.719s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/scripts/traffic_parking.material
+[51.719s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left
+[51.719s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/model.sdf
+[51.719s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/model.config
+[51.719s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials
+[51.720s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/textures
+[51.720s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/textures/traffic_pl_left.png
+[51.720s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/scripts
+[51.720s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/scripts/traffic_pl_left.material
+[51.720s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left
+[51.721s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/model.sdf
+[51.721s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/model.config
+[51.721s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials
+[51.721s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/textures
+[51.721s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/textures/traffic_left.png
+[51.722s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/scripts
+[51.722s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/scripts/traffic_is_left.material
+[51.722s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop
+[51.722s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/model.sdf
+[51.722s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/model.config
+[51.723s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials
+[51.723s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/textures
+[51.723s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/textures/traffic_stop.png
+[51.723s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/scripts
+[51.723s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/scripts/traffic_stop.material
+[51.724s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light
+[51.724s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/model.sdf
+[51.724s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/model.config
+[51.724s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials
+[51.724s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures
+[51.724s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light_red.png
+[51.725s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light_green.png
+[51.725s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light_yellow.png
+[51.725s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light.png
+[51.725s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/scripts
+[51.725s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/scripts/traffic_light.material
+[51.726s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection
+[51.726s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/model.sdf
+[51.726s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/model.config
+[51.726s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials
+[51.726s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/textures
+[51.727s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/textures/traffic_intersection.png
+[51.727s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/scripts
+[51.727s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/scripts/traffic_intersection.material
+[51.727s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course
+[51.727s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/model.sdf
+[51.728s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/model.config
+[51.728s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials
+[51.728s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/textures
+[51.728s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/textures/course.png
+[51.728s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/scripts
+[51.729s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/scripts/course.material
+[51.729s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry
+[51.729s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/model.sdf
+[51.729s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/model.config
+[51.729s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials
+[51.729s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/textures
+[51.730s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/textures/traffic_noentry.png
+[51.730s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/scripts
+[51.730s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/scripts/traffic_noentry.material
+[51.730s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker
+[51.731s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/model.sdf
+[51.731s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/model.config
+[51.731s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials
+[51.731s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/checker.png
+[51.732s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/textures
+[51.732s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/textures/checker.png
+[51.732s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/scripts
+[51.732s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/scripts/checker.material
+[51.733s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world
+[51.733s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles
+[51.733s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[51.733s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[51.734s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2
+[51.734s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[51.734s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[51.734s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls
+[51.734s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[51.734s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[51.735s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[51.735s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box
+[51.735s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[51.735s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[51.735s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1
+[51.736s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[51.736s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[51.736s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[51.736s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house
+[51.737s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[51.737s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[51.737s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz
+[51.737s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[51.738s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf
+[51.738s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[51.738s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger_cam.urdf
+[51.738s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[51.738s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[51.739s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[51.739s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds
+[51.739s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[51.739s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[51.740s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[51.740s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[51.740s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[51.740s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autorace_2020.world
+[51.740s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[51.741s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[51.741s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/include/
+[51.741s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo
+[51.742s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/traffic_bar_plugin.hpp
+[51.742s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/traffic_light_plugin.hpp
+[51.742s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[51.742s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacles.hpp
+[51.742s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacle2.hpp
+[51.743s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacle1.hpp
+[51.743s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[51.743s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[51.744s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[51.744s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[51.744s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[51.744s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[51.745s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[51.745s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[51.745s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[51.746s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[51.746s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[51.746s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[51.746s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[51.747s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[51.747s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[51.747s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[51.747s] -- Installing: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[51.750s] Invoked command in '/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/Tutorial_Nav2_Turtlebot3/turtlebot3_ws/build/turtlebot3_gazebo
