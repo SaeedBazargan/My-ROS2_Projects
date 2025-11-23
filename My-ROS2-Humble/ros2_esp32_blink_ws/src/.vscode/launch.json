@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/src/gpio_pkg/src",
+      "program": "/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/src/gpio_pkg/src/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

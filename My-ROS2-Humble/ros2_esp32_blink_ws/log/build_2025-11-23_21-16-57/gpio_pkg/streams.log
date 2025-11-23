@@ -1,0 +1,20 @@
+[0.024s] Invoking command in '/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/build/gpio_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saeedbzrgn/STM32Cube/microros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/build/gpio_pkg -- -j4 -l4
+[0.116s] Invoked command in '/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/build/gpio_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saeedbzrgn/STM32Cube/microros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/build/gpio_pkg -- -j4 -l4
+[0.137s] Invoking command in '/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/build/gpio_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saeedbzrgn/STM32Cube/microros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/build/gpio_pkg
+[0.152s] -- Install configuration: ""
+[0.153s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/ament_index/resource_index/package_run_dependencies/gpio_pkg
+[0.153s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/ament_index/resource_index/parent_prefix_path/gpio_pkg
+[0.153s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/environment/ament_prefix_path.sh
+[0.153s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/environment/ament_prefix_path.dsv
+[0.154s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/environment/path.sh
+[0.154s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/environment/path.dsv
+[0.154s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/local_setup.bash
+[0.154s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/local_setup.sh
+[0.154s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/local_setup.zsh
+[0.154s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/local_setup.dsv
+[0.154s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/package.dsv
+[0.155s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/ament_index/resource_index/packages/gpio_pkg
+[0.155s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/cmake/gpio_pkgConfig.cmake
+[0.155s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/cmake/gpio_pkgConfig-version.cmake
+[0.155s] -- Up-to-date: /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/install/gpio_pkg/share/gpio_pkg/package.xml
+[0.157s] Invoked command in '/home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/build/gpio_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/saeedbzrgn/STM32Cube/microros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/saeedbzrgn/Desktop/My-ROS2_Projects/My-ROS2-Humble/ros2_esp32_blink_ws/build/gpio_pkg
