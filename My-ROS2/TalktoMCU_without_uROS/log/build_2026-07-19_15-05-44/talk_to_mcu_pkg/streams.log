@@ -1,0 +1,40 @@
+[0.017s] Invoking command in '/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg': CMAKE_PREFIX_PATH=/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces:/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg -- -j4 -l4
+[0.101s] [ 33%] [32mBuilding CXX object CMakeFiles/serialDemo.dir/src/serialtest.cpp.o[0m
+[0.102s] [ 66%] [32mBuilding CXX object CMakeFiles/serialDemo.dir/src/MySerial.cpp.o[0m
+[0.482s] In file included from [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/MySerial.cpp:1[m[K:
+[0.482s] [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/include/talk_to_mcu_pkg/MySerial.hpp:19:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool SerialPort::[01;32m[KisOpen[m[K()[m[K’ conflicts with a previous declaration
+[0.482s]    19 |     bool isOpen([01;31m[K)[m[K;
+[0.482s]       |                 [01;31m[K^[m[K
+[0.483s] [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/include/talk_to_mcu_pkg/MySerial.hpp:11:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kbool SerialPort::isOpen[m[K’
+[0.483s]    11 |     bool [01;36m[KisOpen[m[K;
+[0.483s]       |          [01;36m[K^~~~~~[m[K
+[0.600s] [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/MySerial.cpp:[m[K In function ‘[01m[Kbool[01;32m[K isOpen[m[K()[m[K’:
+[0.600s] [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/MySerial.cpp:61:12:[m[K [01;35m[Kwarning: [m[Kthe address of ‘[01m[Kbool[01;32m[K isOpen[m[K()[m[K’ will never be NULL [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waddress-Waddress]8;;[m[K]
+[0.601s]    61 |     return [01;35m[KisOpen[m[K;
+[0.601s]       |            [01;35m[K^~~~~~[m[K
+[0.601s] [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/MySerial.cpp:59:6:[m[K [01;36m[Knote: [m[K‘[01m[Kbool[01;32m[K isOpen[m[K()[m[K’ declared here
+[0.602s]    59 | bool [01;36m[KisOpen[m[K()
+[0.602s]       |      [01;36m[K^~~~~~[m[K
+[0.672s] gmake[2]: *** [CMakeFiles/serialDemo.dir/build.make:90: CMakeFiles/serialDemo.dir/src/MySerial.cpp.o] Error 1
+[0.672s] gmake[2]: *** Waiting for unfinished jobs....
+[3.159s] In file included from [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/serialtest.cpp:6[m[K:
+[3.160s] [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/include/talk_to_mcu_pkg/MySerial.hpp:19:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool SerialPort::[01;32m[KisOpen[m[K()[m[K’ conflicts with a previous declaration
+[3.160s]    19 |     bool isOpen([01;31m[K)[m[K;
+[3.160s]       |                 [01;31m[K^[m[K
+[3.160s] [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/include/talk_to_mcu_pkg/MySerial.hpp:11:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kbool SerialPort::isOpen[m[K’
+[3.160s]    11 |     bool [01;36m[KisOpen[m[K;
+[3.161s]       |          [01;36m[K^~~~~~[m[K
+[3.172s] [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/serialtest.cpp:[m[K In destructor ‘[01m[Kvirtual SerialNode::[01;32m[K~SerialNode[m[K()[m[K’:
+[3.172s] [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/serialtest.cpp:52:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool SerialPort::isOpen[m[K’ is private within this context
+[3.173s]    52 |         if(serial.[01;31m[KisOpen[m[K())  // Assuming you have an isOpen() method
+[3.173s]       |                   [01;31m[K^~~~~~[m[K
+[3.173s] [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/include/talk_to_mcu_pkg/MySerial.hpp:11:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+[3.173s]    11 |     bool [01;36m[KisOpen[m[K;
+[3.173s]       |          [01;36m[K^~~~~~[m[K
+[3.174s] [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/serialtest.cpp:52:25:[m[K [01;31m[Kerror: [m[Kexpression cannot be used as a function
+[3.174s]    52 |         if([01;31m[Kserial.isOpen()[m[K)  // Assuming you have an isOpen() method
+[3.174s]       |            [01;31m[K~~~~~~~~~~~~~^~[m[K
+[4.235s] gmake[2]: *** [CMakeFiles/serialDemo.dir/build.make:76: CMakeFiles/serialDemo.dir/src/serialtest.cpp.o] Error 1
+[4.235s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/serialDemo.dir/all] Error 2
+[4.236s] gmake: *** [Makefile:146: all] Error 2
+[4.240s] Invoked command in '/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg' returned '2': CMAKE_PREFIX_PATH=/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces:/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg -- -j4 -l4

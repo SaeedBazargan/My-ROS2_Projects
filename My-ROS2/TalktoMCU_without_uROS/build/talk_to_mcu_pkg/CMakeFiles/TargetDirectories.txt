@@ -1,0 +1,11 @@
+/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg/CMakeFiles/uninstall.dir
+/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg/CMakeFiles/talk_to_mcu_pkg_uninstall.dir
+/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg/CMakeFiles/serialDemo.dir
+/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg/CMakeFiles/cameraDemo.dir
+/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg/CMakeFiles/test.dir
+/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg/CMakeFiles/edit_cache.dir
+/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg/CMakeFiles/rebuild_cache.dir
+/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg/CMakeFiles/list_install_components.dir
+/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg/CMakeFiles/install.dir
+/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg/CMakeFiles/install/local.dir
+/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg/CMakeFiles/install/strip.dir

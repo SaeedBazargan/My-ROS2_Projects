@@ -1,0 +1,44 @@
+[0.013s] Invoking command in '/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg': CMAKE_PREFIX_PATH=/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces:/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg -- -j4 -l4
+[0.047s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.343s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.380s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.392s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.406s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.424s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.505s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.507s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.594s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.688s] -- Found talk_to_mcu_interfaces: 0.0.0 (/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces/share/talk_to_mcu_interfaces/cmake)
+[0.825s] -- Configuring done (0.8s)
+[0.855s] -- Generating done (0.0s)
+[0.864s] -- Build files have been written to: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg
+[0.911s] [ 20%] [32mBuilding CXX object CMakeFiles/cameraDemo.dir/src/cameratest.cpp.o[0m
+[0.933s] [ 40%] [32mBuilding CXX object CMakeFiles/serialDemo.dir/src/serialtest.cpp.o[0m
+[0.936s] [ 60%] [32mBuilding CXX object CMakeFiles/serialDemo.dir/src/MySerial.cpp.o[0m
+[5.831s] [ 80%] [32m[1mLinking CXX executable serialDemo[0m
+[6.030s] [ 80%] Built target serialDemo
+[7.505s] [100%] [32m[1mLinking CXX executable cameraDemo[0m
+[8.705s] [100%] Built target cameraDemo
+[8.720s] Invoked command in '/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg' returned '0': CMAKE_PREFIX_PATH=/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces:/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg -- -j4 -l4
+[8.722s] Invoking command in '/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg': CMAKE_PREFIX_PATH=/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces:/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg
+[8.733s] -- Install configuration: ""
+[8.733s] -- Installing: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/lib/talk_to_mcu_pkg/serialDemo
+[8.734s] -- Set non-toolchain portion of runtime path of "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/lib/talk_to_mcu_pkg/serialDemo" to ""
+[8.734s] -- Installing: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/lib/talk_to_mcu_pkg/cameraDemo
+[8.735s] -- Set non-toolchain portion of runtime path of "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/lib/talk_to_mcu_pkg/cameraDemo" to ""
+[8.736s] -- Installing: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/ament_index/resource_index/package_run_dependencies/talk_to_mcu_pkg
+[8.736s] -- Installing: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/ament_index/resource_index/parent_prefix_path/talk_to_mcu_pkg
+[8.736s] -- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/environment/ament_prefix_path.sh
+[8.737s] -- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/environment/ament_prefix_path.dsv
+[8.737s] -- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/environment/path.sh
+[8.737s] -- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/environment/path.dsv
+[8.738s] -- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/local_setup.bash
+[8.738s] -- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/local_setup.sh
+[8.738s] -- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/local_setup.zsh
+[8.738s] -- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/local_setup.dsv
+[8.738s] -- Installing: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/package.dsv
+[8.739s] -- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/ament_index/resource_index/packages/talk_to_mcu_pkg
+[8.739s] -- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/cmake/talk_to_mcu_pkgConfig.cmake
+[8.739s] -- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/cmake/talk_to_mcu_pkgConfig-version.cmake
+[8.739s] -- Installing: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/package.xml
+[8.741s] Invoked command in '/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg' returned '0': CMAKE_PREFIX_PATH=/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces:/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_pkg

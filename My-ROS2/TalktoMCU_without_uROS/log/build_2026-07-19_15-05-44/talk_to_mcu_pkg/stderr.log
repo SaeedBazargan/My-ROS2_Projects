@@ -1,0 +1,36 @@
+In file included from [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/MySerial.cpp:1[m[K:
+[01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/include/talk_to_mcu_pkg/MySerial.hpp:19:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool SerialPort::[01;32m[KisOpen[m[K()[m[K’ conflicts with a previous declaration
+   19 |     bool isOpen([01;31m[K)[m[K;
+      |                 [01;31m[K^[m[K
+[01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/include/talk_to_mcu_pkg/MySerial.hpp:11:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kbool SerialPort::isOpen[m[K’
+   11 |     bool [01;36m[KisOpen[m[K;
+      |          [01;36m[K^~~~~~[m[K
+[01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/MySerial.cpp:[m[K In function ‘[01m[Kbool[01;32m[K isOpen[m[K()[m[K’:
+[01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/MySerial.cpp:61:12:[m[K [01;35m[Kwarning: [m[Kthe address of ‘[01m[Kbool[01;32m[K isOpen[m[K()[m[K’ will never be NULL [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waddress-Waddress]8;;[m[K]
+   61 |     return [01;35m[KisOpen[m[K;
+      |            [01;35m[K^~~~~~[m[K
+[01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/MySerial.cpp:59:6:[m[K [01;36m[Knote: [m[K‘[01m[Kbool[01;32m[K isOpen[m[K()[m[K’ declared here
+   59 | bool [01;36m[KisOpen[m[K()
+      |      [01;36m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/serialDemo.dir/build.make:90: CMakeFiles/serialDemo.dir/src/MySerial.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/serialtest.cpp:6[m[K:
+[01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/include/talk_to_mcu_pkg/MySerial.hpp:19:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool SerialPort::[01;32m[KisOpen[m[K()[m[K’ conflicts with a previous declaration
+   19 |     bool isOpen([01;31m[K)[m[K;
+      |                 [01;31m[K^[m[K
+[01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/include/talk_to_mcu_pkg/MySerial.hpp:11:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kbool SerialPort::isOpen[m[K’
+   11 |     bool [01;36m[KisOpen[m[K;
+      |          [01;36m[K^~~~~~[m[K
+[01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/serialtest.cpp:[m[K In destructor ‘[01m[Kvirtual SerialNode::[01;32m[K~SerialNode[m[K()[m[K’:
+[01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/serialtest.cpp:52:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool SerialPort::isOpen[m[K’ is private within this context
+   52 |         if(serial.[01;31m[KisOpen[m[K())  // Assuming you have an isOpen() method
+      |                   [01;31m[K^~~~~~[m[K
+[01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/include/talk_to_mcu_pkg/MySerial.hpp:11:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   11 |     bool [01;36m[KisOpen[m[K;
+      |          [01;36m[K^~~~~~[m[K
+[01m[K/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_pkg/src/serialtest.cpp:52:25:[m[K [01;31m[Kerror: [m[Kexpression cannot be used as a function
+   52 |         if([01;31m[Kserial.isOpen()[m[K)  // Assuming you have an isOpen() method
+      |            [01;31m[K~~~~~~~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/serialDemo.dir/build.make:76: CMakeFiles/serialDemo.dir/src/serialtest.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/serialDemo.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

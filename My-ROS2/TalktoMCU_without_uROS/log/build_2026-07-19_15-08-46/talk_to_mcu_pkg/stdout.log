@@ -1,0 +1,21 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/serialDemo.dir/src/serialtest.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable serialDemo[0m
+[100%] Built target serialDemo
+-- Install configuration: ""
+-- Installing: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/lib/talk_to_mcu_pkg/serialDemo
+-- Set non-toolchain portion of runtime path of "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/lib/talk_to_mcu_pkg/serialDemo" to ""
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/ament_index/resource_index/package_run_dependencies/talk_to_mcu_pkg
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/ament_index/resource_index/parent_prefix_path/talk_to_mcu_pkg
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/environment/path.sh
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/environment/path.dsv
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/local_setup.bash
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/local_setup.sh
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/local_setup.zsh
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/local_setup.dsv
+-- Installing: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/package.dsv
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/ament_index/resource_index/packages/talk_to_mcu_pkg
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/cmake/talk_to_mcu_pkgConfig.cmake
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/cmake/talk_to_mcu_pkgConfig-version.cmake
+-- Up-to-date: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_pkg/share/talk_to_mcu_pkg/package.xml

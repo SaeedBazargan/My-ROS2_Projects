@@ -1,0 +1,8 @@
+setup.py
+talk_to_mcu_interfaces/__init__.py
+talk_to_mcu_interfaces.egg-info/PKG-INFO
+talk_to_mcu_interfaces.egg-info/SOURCES.txt
+talk_to_mcu_interfaces.egg-info/dependency_links.txt
+talk_to_mcu_interfaces.egg-info/top_level.txt
+talk_to_mcu_interfaces/msg/__init__.py
+talk_to_mcu_interfaces/msg/_num.py

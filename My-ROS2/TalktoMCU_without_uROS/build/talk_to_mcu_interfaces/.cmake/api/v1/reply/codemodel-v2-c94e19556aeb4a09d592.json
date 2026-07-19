@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0d7cbb60300af5d78614.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "talk_to_mcu_interfaces__py",
+					"jsonFile" : "directory-talk_to_mcu_interfaces__py-43e47d67e1d5e0c485de.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_interfaces/talk_to_mcu_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "talk_to_mcu_interfaces__rs",
+					"jsonFile" : "directory-talk_to_mcu_interfaces__rs-5ae382d8f616e067af29.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_interfaces/talk_to_mcu_interfaces__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "talk_to_mcu_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_talk_to_mcu_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_talk_to_mcu_interfaces_egg-2a236efaa0a7b35a2667.json",
+					"name" : "ament_cmake_python_build_talk_to_mcu_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_talk_to_mcu_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_talk_to_mcu_interfaces-b3d8f09530d4efd13cc1.json",
+					"name" : "ament_cmake_python_copy_talk_to_mcu_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces-2a5f78c4692d290de7f0.json",
+					"name" : "talk_to_mcu_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces__cpp-2fb72c279ad8872db7be.json",
+					"name" : "talk_to_mcu_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "talk_to_mcu_interfaces__py::@e01131dbcd789f0d0e84",
+					"jsonFile" : "target-talk_to_mcu_interfaces__py-ef9be31d2f40c9088d02.json",
+					"name" : "talk_to_mcu_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces__rosidl_generator_c-fb151dca1d6a7f0b827e.json",
+					"name" : "talk_to_mcu_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces__rosidl_generator_py-57163bc8ac1731a4b39e.json",
+					"name" : "talk_to_mcu_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces__rosidl_generator_type_description-6a3bada7cf66e8677517.json",
+					"name" : "talk_to_mcu_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces__rosidl_typesupport_c-9582e86e69d1aa2138ce.json",
+					"name" : "talk_to_mcu_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces__rosidl_typesupport_cpp-8d3fb479bcb86aaffd88.json",
+					"name" : "talk_to_mcu_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces__rosidl_typesupport_fastrtps_c-5f66a20d3d1a55740b17.json",
+					"name" : "talk_to_mcu_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces__rosidl_typesupport_fastrtps_cpp-a115c4b7c1d8c85443f3.json",
+					"name" : "talk_to_mcu_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces__rosidl_typesupport_introspection_c-98d1d58d46bf49b8cc60.json",
+					"name" : "talk_to_mcu_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces__rosidl_typesupport_introspection_cpp-aa435564b04003d795e6.json",
+					"name" : "talk_to_mcu_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "talk_to_mcu_interfaces__rs::@53b87d43f0de238dee66",
+					"jsonFile" : "target-talk_to_mcu_interfaces__rs-36ad238f615209c925ce.json",
+					"name" : "talk_to_mcu_interfaces__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces_s__rosidl_typesupport_c-ff45ce44e87f21422f17.json",
+					"name" : "talk_to_mcu_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces_s__rosidl_typesupport_fastrtps_c-7020724c1792cd6ccfa7.json",
+					"name" : "talk_to_mcu_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces_s__rosidl_typesupport_introspection_c-242dd82b049517d25304.json",
+					"name" : "talk_to_mcu_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talk_to_mcu_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talk_to_mcu_interfaces_uninstall-1c31dd412566c4e68740.json",
+					"name" : "talk_to_mcu_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-25592cff85fecae1eea6.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_interfaces",
+		"source" : "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/src/talk_to_mcu_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

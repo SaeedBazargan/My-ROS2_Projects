@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "talk_to_mcu_interfaces__rs",
+		"source" : "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_interfaces/talk_to_mcu_interfaces__rs"
+	}
+}
