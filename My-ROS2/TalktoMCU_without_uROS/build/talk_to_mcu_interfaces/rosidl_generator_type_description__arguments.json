@@ -1,7 +1,0 @@
-{
-  "package_name": "talk_to_mcu_interfaces",
-  "output_dir": "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_interfaces/rosidl_generator_type_description/talk_to_mcu_interfaces",
-  "idl_tuples": [
-    "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/build/talk_to_mcu_interfaces/rosidl_adapter/talk_to_mcu_interfaces:msg/Num.idl"
-  ]
-}
