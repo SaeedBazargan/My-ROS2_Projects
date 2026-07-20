@@ -1,3 +1,0 @@
-[ 33%] [32mBuilding CXX object CMakeFiles/serialDemo.dir/src/serialtest.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/serialDemo.dir/src/MySerial.cpp.o[0m
-[100%] [32m[1mLinking CXX executable serialDemo[0m

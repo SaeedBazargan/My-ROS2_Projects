@@ -4,11 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                // "${workspaceFolder}/build/**",
-                // "${workspaceFolder}/install/**",
-                // "${workspaceFolder}/install/talk_to_mcu_interfaces/include/**",
                 "/opt/ros/jazzy/include/**",
-                "/usr/include/**"
+                "/usr/include/**",
+                "/usr/include/opencv4"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

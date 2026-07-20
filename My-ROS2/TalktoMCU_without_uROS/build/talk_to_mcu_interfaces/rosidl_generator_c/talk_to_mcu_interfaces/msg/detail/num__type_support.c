@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "talk_to_mcu_interfaces/msg/detail/num__type_support.h"
-#include "talk_to_mcu_interfaces/msg/detail/num__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "talk_to_mcu_interfaces/msg/detail/num__functions.h"
+#include "talk_to_mcu_interfaces/msg/detail/num__type_support.h"
+#include "talk_to_mcu_interfaces/msg/detail/num__struct.h"
 
 #ifdef __cplusplus
 extern "C"

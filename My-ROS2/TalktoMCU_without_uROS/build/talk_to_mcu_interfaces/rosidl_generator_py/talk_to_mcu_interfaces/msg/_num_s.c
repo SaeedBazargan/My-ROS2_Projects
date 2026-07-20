@@ -50,13 +50,40 @@ bool talk_to_mcu_interfaces__msg__num__convert_from_py(PyObject * _pymsg, void *
     assert(strncmp("talk_to_mcu_interfaces.msg._num.Num", full_classname_dest, 35) == 0);
   }
   talk_to_mcu_interfaces__msg__Num * ros_message = _ros_message;
-  {  // data
-    PyObject * field = PyObject_GetAttrString(_pymsg, "data");
+  {  // x
+    PyObject * field = PyObject_GetAttrString(_pymsg, "x");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->data = (int32_t)PyLong_AsLong(field);
+    ros_message->x = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
+  {  // y
+    PyObject * field = PyObject_GetAttrString(_pymsg, "y");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->y = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
+  {  // width
+    PyObject * field = PyObject_GetAttrString(_pymsg, "width");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->width = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
+  {  // height
+    PyObject * field = PyObject_GetAttrString(_pymsg, "height");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->height = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -81,11 +108,44 @@ PyObject * talk_to_mcu_interfaces__msg__num__convert_to_py(void * raw_ros_messag
     }
   }
   talk_to_mcu_interfaces__msg__Num * ros_message = (talk_to_mcu_interfaces__msg__Num *)raw_ros_message;
-  {  // data
+  {  // x
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->data);
+    field = PyLong_FromLong(ros_message->x);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "data", field);
+      int rc = PyObject_SetAttrString(_pymessage, "x", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // y
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->y);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "y", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // width
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->width);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "width", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // height
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->height);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "height", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

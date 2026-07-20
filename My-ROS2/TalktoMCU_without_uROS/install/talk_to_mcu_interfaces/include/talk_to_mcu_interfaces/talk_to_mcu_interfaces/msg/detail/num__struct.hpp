@@ -42,7 +42,10 @@ struct Num_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->data = 0l;
+      this->x = 0l;
+      this->y = 0l;
+      this->width = 0l;
+      this->height = 0l;
     }
   }
 
@@ -52,20 +55,50 @@ struct Num_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->data = 0l;
+      this->x = 0l;
+      this->y = 0l;
+      this->width = 0l;
+      this->height = 0l;
     }
   }
 
   // field types and members
-  using _data_type =
+  using _x_type =
     int32_t;
-  _data_type data;
+  _x_type x;
+  using _y_type =
+    int32_t;
+  _y_type y;
+  using _width_type =
+    int32_t;
+  _width_type width;
+  using _height_type =
+    int32_t;
+  _height_type height;
 
   // setters for named parameter idiom
-  Type & set__data(
+  Type & set__x(
     const int32_t & _arg)
   {
-    this->data = _arg;
+    this->x = _arg;
+    return *this;
+  }
+  Type & set__y(
+    const int32_t & _arg)
+  {
+    this->y = _arg;
+    return *this;
+  }
+  Type & set__width(
+    const int32_t & _arg)
+  {
+    this->width = _arg;
+    return *this;
+  }
+  Type & set__height(
+    const int32_t & _arg)
+  {
+    this->height = _arg;
     return *this;
   }
 
@@ -111,7 +144,16 @@ struct Num_
   // comparison operators
   bool operator==(const Num_ & other) const
   {
-    if (this->data != other.data) {
+    if (this->x != other.x) {
+      return false;
+    }
+    if (this->y != other.y) {
+      return false;
+    }
+    if (this->width != other.width) {
+      return false;
+    }
+    if (this->height != other.height) {
       return false;
     }
     return true;

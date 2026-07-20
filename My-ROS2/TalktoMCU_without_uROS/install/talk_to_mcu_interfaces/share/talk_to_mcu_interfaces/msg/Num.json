@@ -4,7 +4,37 @@
       "type_name": "talk_to_mcu_interfaces/msg/Num",
       "fields": [
         {
-          "name": "data",
+          "name": "x",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "y",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "width",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "height",
           "type": {
             "type_id": 6,
             "capacity": 0,
@@ -20,7 +50,7 @@
   "type_hashes": [
     {
       "type_name": "talk_to_mcu_interfaces/msg/Num",
-      "hash_string": "RIHS01_a46d3c8e568c4f92f3a24a3abeb5a16a46b62f12d87ddc7a4b7c1b79fce98a31"
+      "hash_string": "RIHS01_7ad8ab70d30ede52a82aa833cfa6875019730ef40ccffc0b0851b574e5b32615"
     }
   ]
 }

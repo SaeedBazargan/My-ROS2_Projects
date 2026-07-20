@@ -74,6 +74,16 @@ private:
         }
     }
 
+    void subCallback(const talk_to_mcu_interfaces::msg::Num::SharedPtr msg)
+    {
+        // Print to console
+        std::cout << "Red circle found at: Bounding Box: x=" << msg->x << ", y=" << msg->y 
+                    << ", w=" << msg->width << ", h=" << msg->height 
+                    << std::endl;
+    }
+    
+    rclcpp::Subscription<talk_to_mcu_interfaces::msg::Num>::SharedPtr sub_camera_;
+
 public:
     SerialNode() : Node("serialDemo")
     {
@@ -93,6 +103,9 @@ public:
             std::chrono::milliseconds(2000),
             std::bind(&SerialNode::timer_callback, this)
         );
+
+        sub_camera_ = this->create_subscription<talk_to_mcu_interfaces::msg::Num>("ball_topic", 10,
+        std::bind(&SerialNode::subCallback, this, std::placeholders::_1));
     }
 
     ~SerialNode()

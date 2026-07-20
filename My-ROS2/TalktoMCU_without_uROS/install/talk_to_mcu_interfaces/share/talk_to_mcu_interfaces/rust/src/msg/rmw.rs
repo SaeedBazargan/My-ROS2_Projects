@@ -28,7 +28,22 @@ pub struct Num {
 
     // This member is not documented.
     #[allow(missing_docs)]
-    pub data: i32,
+    pub x: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub y: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub width: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub height: i32,
 
 }
 

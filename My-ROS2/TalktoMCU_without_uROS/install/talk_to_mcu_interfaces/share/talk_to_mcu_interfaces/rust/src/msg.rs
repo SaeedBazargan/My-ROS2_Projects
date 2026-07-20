@@ -14,7 +14,22 @@ pub struct Num {
 
     // This member is not documented.
     #[allow(missing_docs)]
-    pub data: i32,
+    pub x: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub y: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub width: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub height: i32,
 
 }
 
@@ -32,17 +47,26 @@ impl rosidl_runtime_rs::Message for Num {
   fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
     match msg_cow {
       std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
-        data: msg.data,
+        x: msg.x,
+        y: msg.y,
+        width: msg.width,
+        height: msg.height,
       }),
       std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
-      data: msg.data,
+      x: msg.x,
+      y: msg.y,
+      width: msg.width,
+      height: msg.height,
       })
     }
   }
 
   fn from_rmw_message(msg: Self::RmwMsg) -> Self {
     Self {
-      data: msg.data,
+      x: msg.x,
+      y: msg.y,
+      width: msg.width,
+      height: msg.height,
     }
   }
 }

@@ -36,8 +36,17 @@ cdr_serialize(
   const talk_to_mcu_interfaces::msg::Num & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: data
-  cdr << ros_message.data;
+  // Member: x
+  cdr << ros_message.x;
+
+  // Member: y
+  cdr << ros_message.y;
+
+  // Member: width
+  cdr << ros_message.width;
+
+  // Member: height
+  cdr << ros_message.height;
 
   return true;
 }
@@ -48,8 +57,17 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   talk_to_mcu_interfaces::msg::Num & ros_message)
 {
-  // Member: data
-  cdr >> ros_message.data;
+  // Member: x
+  cdr >> ros_message.x;
+
+  // Member: y
+  cdr >> ros_message.y;
+
+  // Member: width
+  cdr >> ros_message.width;
+
+  // Member: height
+  cdr >> ros_message.height;
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -68,9 +86,30 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: data
+  // Member: x
   {
-    size_t item_size = sizeof(ros_message.data);
+    size_t item_size = sizeof(ros_message.x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: y
+  {
+    size_t item_size = sizeof(ros_message.y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: width
+  {
+    size_t item_size = sizeof(ros_message.width);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: height
+  {
+    size_t item_size = sizeof(ros_message.height);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -98,7 +137,28 @@ max_serialized_size_Num(
   full_bounded = true;
   is_plain = true;
 
-  // Member: data
+  // Member: x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: width
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: height
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -114,7 +174,7 @@ max_serialized_size_Num(
     using DataType = talk_to_mcu_interfaces::msg::Num;
     is_plain =
       (
-      offsetof(DataType, data) +
+      offsetof(DataType, height) +
       last_member_size
       ) == ret_val;
   }
@@ -128,8 +188,17 @@ cdr_serialize_key(
   const talk_to_mcu_interfaces::msg::Num & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: data
-  cdr << ros_message.data;
+  // Member: x
+  cdr << ros_message.x;
+
+  // Member: y
+  cdr << ros_message.y;
+
+  // Member: width
+  cdr << ros_message.width;
+
+  // Member: height
+  cdr << ros_message.height;
 
   return true;
 }
@@ -147,9 +216,30 @@ get_serialized_size_key(
   (void)padding;
   (void)wchar_size;
 
-  // Member: data
+  // Member: x
   {
-    size_t item_size = sizeof(ros_message.data);
+    size_t item_size = sizeof(ros_message.x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: y
+  {
+    size_t item_size = sizeof(ros_message.y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: width
+  {
+    size_t item_size = sizeof(ros_message.width);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: height
+  {
+    size_t item_size = sizeof(ros_message.height);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -176,7 +266,31 @@ max_serialized_size_key_Num(
   full_bounded = true;
   is_plain = true;
 
-  // Member: data
+  // Member: x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: width
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: height
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -192,7 +306,7 @@ max_serialized_size_key_Num(
     using DataType = talk_to_mcu_interfaces::msg::Num;
     is_plain =
       (
-      offsetof(DataType, data) +
+      offsetof(DataType, height) +
       last_member_size
       ) == ret_val;
   }

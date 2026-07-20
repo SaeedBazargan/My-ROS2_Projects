@@ -38,9 +38,9 @@ void Num_fini_function(void * message_memory)
   typed_message->~Num();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Num_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Num_message_member_array[4] = {
   {
-    "data",  // name
+    "x",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
@@ -48,7 +48,61 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Num_message_m
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(talk_to_mcu_interfaces::msg::Num, data),  // bytes offset in struct
+    offsetof(talk_to_mcu_interfaces::msg::Num, x),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "y",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(talk_to_mcu_interfaces::msg::Num, y),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "width",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(talk_to_mcu_interfaces::msg::Num, width),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "height",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(talk_to_mcu_interfaces::msg::Num, height),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -62,7 +116,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Num_message_m
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Num_message_members = {
   "talk_to_mcu_interfaces::msg",  // message namespace
   "Num",  // message name
-  1,  // number of fields
+  4,  // number of fields
   sizeof(talk_to_mcu_interfaces::msg::Num),
   false,  // has_any_key_member_
   Num_message_member_array,  // message members

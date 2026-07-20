@@ -22,7 +22,10 @@ extern "C"
 /// Struct defined in msg/Num in the package talk_to_mcu_interfaces.
 typedef struct talk_to_mcu_interfaces__msg__Num
 {
-  int32_t data;
+  int32_t x;
+  int32_t y;
+  int32_t width;
+  int32_t height;
 } talk_to_mcu_interfaces__msg__Num;
 
 // Struct for a sequence of talk_to_mcu_interfaces__msg__Num.

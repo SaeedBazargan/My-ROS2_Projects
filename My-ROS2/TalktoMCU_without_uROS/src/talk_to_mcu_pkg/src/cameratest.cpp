@@ -3,6 +3,7 @@
 #include <cmath>
 
 #include "rclcpp/rclcpp.hpp"
+#include "talk_to_mcu_interfaces/msg/num.hpp"
 #include <opencv2/opencv.hpp>
 
 class CameraNode : public rclcpp::Node
@@ -29,7 +30,6 @@ private:
 
     // Minimum area to detect (to ignore small noise)
     const double MIN_AREA = 100; // pixels
-
 
     // Function to check if a contour is circular
     bool isCircular(const std::vector<cv::Point>& contour, double& circularity, double min_circularity = 0.7)
@@ -124,17 +124,24 @@ private:
                 // Display center point
                 cv::circle(frame, center, 3, cv::Scalar(0, 0, 255), -1);
                 
+                auto msg = talk_to_mcu_interfaces::msg::Num();
+                msg.x = x;
+                msg.y = y;
+                msg.width = w;
+                msg.height = h;
+                pub_camera_->publish(msg);
+
                 // Put text with information
                 std::string text = "Red Circle Detected!";
                 cv::putText(frame, text, cv::Point(10, 30), 
                            cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 255, 0), 2);
                                 
-                // Print to console
-                std::cout << "Red circle found at: Center=(" << center.x << ", " << center.y 
-                          << "), Radius=" << radius 
-                          << ", Bounding Box: x=" << x << ", y=" << y 
-                          << ", w=" << w << ", h=" << h 
-                          << std::endl;
+                // // Print to console
+                // std::cout << "Red circle found at: Center=(" << center.x << ", " << center.y 
+                //           << "), Radius=" << radius 
+                //           << ", Bounding Box: x=" << x << ", y=" << y 
+                //           << ", w=" << w << ", h=" << h 
+                //           << std::endl;
             }
         }
         
@@ -148,7 +155,10 @@ private:
             RCLCPP_INFO(this->get_logger(), "Quit key pressed, shutting down...");
             rclcpp::shutdown();
         }
-    }    
+    }
+
+    rclcpp::Publisher<talk_to_mcu_interfaces::msg::Num>::SharedPtr pub_camera_;
+
 public:
     CameraNode() : Node("cameraDemo")
     {
@@ -173,6 +183,8 @@ public:
             std::chrono::milliseconds(33),  // ~30 fps
             std::bind(&CameraNode::timer_callback, this)
         );
+
+        pub_camera_ = this->create_publisher<talk_to_mcu_interfaces::msg::Num>("ball_topic", 10);
     }
 
     ~CameraNode()

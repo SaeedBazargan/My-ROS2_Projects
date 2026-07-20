@@ -684,6 +684,12 @@ CMakeFiles/cameraDemo.dir/src/cameratest.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_map.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_service.hpp \
+ /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces/include/talk_to_mcu_interfaces/talk_to_mcu_interfaces/msg/num.hpp \
+ /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces/include/talk_to_mcu_interfaces/talk_to_mcu_interfaces/msg/detail/num__struct.hpp \
+ /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces/include/talk_to_mcu_interfaces/talk_to_mcu_interfaces/msg/detail/num__builder.hpp \
+ /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces/include/talk_to_mcu_interfaces/talk_to_mcu_interfaces/msg/detail/num__traits.hpp \
+ /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces/include/talk_to_mcu_interfaces/talk_to_mcu_interfaces/msg/detail/num__type_support.hpp \
+ /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/TalktoMCU_without_uROS/install/talk_to_mcu_interfaces/include/talk_to_mcu_interfaces/talk_to_mcu_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

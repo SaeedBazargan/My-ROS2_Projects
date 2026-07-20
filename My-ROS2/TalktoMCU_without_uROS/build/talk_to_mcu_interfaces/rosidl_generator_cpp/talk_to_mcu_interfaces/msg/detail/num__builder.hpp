@@ -24,16 +24,64 @@ namespace msg
 namespace builder
 {
 
-class Init_Num_data
+class Init_Num_height
 {
 public:
-  Init_Num_data()
+  explicit Init_Num_height(::talk_to_mcu_interfaces::msg::Num & msg)
+  : msg_(msg)
+  {}
+  ::talk_to_mcu_interfaces::msg::Num height(::talk_to_mcu_interfaces::msg::Num::_height_type arg)
+  {
+    msg_.height = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::talk_to_mcu_interfaces::msg::Num msg_;
+};
+
+class Init_Num_width
+{
+public:
+  explicit Init_Num_width(::talk_to_mcu_interfaces::msg::Num & msg)
+  : msg_(msg)
+  {}
+  Init_Num_height width(::talk_to_mcu_interfaces::msg::Num::_width_type arg)
+  {
+    msg_.width = std::move(arg);
+    return Init_Num_height(msg_);
+  }
+
+private:
+  ::talk_to_mcu_interfaces::msg::Num msg_;
+};
+
+class Init_Num_y
+{
+public:
+  explicit Init_Num_y(::talk_to_mcu_interfaces::msg::Num & msg)
+  : msg_(msg)
+  {}
+  Init_Num_width y(::talk_to_mcu_interfaces::msg::Num::_y_type arg)
+  {
+    msg_.y = std::move(arg);
+    return Init_Num_width(msg_);
+  }
+
+private:
+  ::talk_to_mcu_interfaces::msg::Num msg_;
+};
+
+class Init_Num_x
+{
+public:
+  Init_Num_x()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::talk_to_mcu_interfaces::msg::Num data(::talk_to_mcu_interfaces::msg::Num::_data_type arg)
+  Init_Num_y x(::talk_to_mcu_interfaces::msg::Num::_x_type arg)
   {
-    msg_.data = std::move(arg);
-    return std::move(msg_);
+    msg_.x = std::move(arg);
+    return Init_Num_y(msg_);
   }
 
 private:
@@ -51,7 +99,7 @@ template<>
 inline
 auto build<::talk_to_mcu_interfaces::msg::Num>()
 {
-  return talk_to_mcu_interfaces::msg::builder::Init_Num_data();
+  return talk_to_mcu_interfaces::msg::builder::Init_Num_x();
 }
 
 }  // namespace talk_to_mcu_interfaces

@@ -48,9 +48,24 @@ bool cdr_serialize_talk_to_mcu_interfaces__msg__Num(
   const talk_to_mcu_interfaces__msg__Num * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: data
+  // Field name: x
   {
-    cdr << ros_message->data;
+    cdr << ros_message->x;
+  }
+
+  // Field name: y
+  {
+    cdr << ros_message->y;
+  }
+
+  // Field name: width
+  {
+    cdr << ros_message->width;
+  }
+
+  // Field name: height
+  {
+    cdr << ros_message->height;
   }
 
   return true;
@@ -61,9 +76,24 @@ bool cdr_deserialize_talk_to_mcu_interfaces__msg__Num(
   eprosima::fastcdr::Cdr & cdr,
   talk_to_mcu_interfaces__msg__Num * ros_message)
 {
-  // Field name: data
+  // Field name: x
   {
-    cdr >> ros_message->data;
+    cdr >> ros_message->x;
+  }
+
+  // Field name: y
+  {
+    cdr >> ros_message->y;
+  }
+
+  // Field name: width
+  {
+    cdr >> ros_message->width;
+  }
+
+  // Field name: height
+  {
+    cdr >> ros_message->height;
   }
 
   return true;
@@ -84,9 +114,30 @@ size_t get_serialized_size_talk_to_mcu_interfaces__msg__Num(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: data
+  // Field name: x
   {
-    size_t item_size = sizeof(ros_message->data);
+    size_t item_size = sizeof(ros_message->x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: y
+  {
+    size_t item_size = sizeof(ros_message->y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: width
+  {
+    size_t item_size = sizeof(ros_message->width);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: height
+  {
+    size_t item_size = sizeof(ros_message->height);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -113,7 +164,31 @@ size_t max_serialized_size_talk_to_mcu_interfaces__msg__Num(
   full_bounded = true;
   is_plain = true;
 
-  // Field name: data
+  // Field name: x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: width
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: height
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -130,7 +205,7 @@ size_t max_serialized_size_talk_to_mcu_interfaces__msg__Num(
     using DataType = talk_to_mcu_interfaces__msg__Num;
     is_plain =
       (
-      offsetof(DataType, data) +
+      offsetof(DataType, height) +
       last_member_size
       ) == ret_val;
   }
@@ -142,9 +217,24 @@ bool cdr_serialize_key_talk_to_mcu_interfaces__msg__Num(
   const talk_to_mcu_interfaces__msg__Num * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: data
+  // Field name: x
   {
-    cdr << ros_message->data;
+    cdr << ros_message->x;
+  }
+
+  // Field name: y
+  {
+    cdr << ros_message->y;
+  }
+
+  // Field name: width
+  {
+    cdr << ros_message->width;
+  }
+
+  // Field name: height
+  {
+    cdr << ros_message->height;
   }
 
   return true;
@@ -165,9 +255,30 @@ size_t get_serialized_size_key_talk_to_mcu_interfaces__msg__Num(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: data
+  // Field name: x
   {
-    size_t item_size = sizeof(ros_message->data);
+    size_t item_size = sizeof(ros_message->x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: y
+  {
+    size_t item_size = sizeof(ros_message->y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: width
+  {
+    size_t item_size = sizeof(ros_message->width);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: height
+  {
+    size_t item_size = sizeof(ros_message->height);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -192,7 +303,31 @@ size_t max_serialized_size_key_talk_to_mcu_interfaces__msg__Num(
 
   full_bounded = true;
   is_plain = true;
-  // Field name: data
+  // Field name: x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: width
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: height
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -208,7 +343,7 @@ size_t max_serialized_size_key_talk_to_mcu_interfaces__msg__Num(
     using DataType = talk_to_mcu_interfaces__msg__Num;
     is_plain =
       (
-      offsetof(DataType, data) +
+      offsetof(DataType, height) +
       last_member_size
       ) == ret_val;
   }

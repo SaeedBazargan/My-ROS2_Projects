@@ -17,7 +17,10 @@ talk_to_mcu_interfaces__msg__Num__init(talk_to_mcu_interfaces__msg__Num * msg)
   if (!msg) {
     return false;
   }
-  // data
+  // x
+  // y
+  // width
+  // height
   return true;
 }
 
@@ -27,7 +30,10 @@ talk_to_mcu_interfaces__msg__Num__fini(talk_to_mcu_interfaces__msg__Num * msg)
   if (!msg) {
     return;
   }
-  // data
+  // x
+  // y
+  // width
+  // height
 }
 
 bool
@@ -36,8 +42,20 @@ talk_to_mcu_interfaces__msg__Num__are_equal(const talk_to_mcu_interfaces__msg__N
   if (!lhs || !rhs) {
     return false;
   }
-  // data
-  if (lhs->data != rhs->data) {
+  // x
+  if (lhs->x != rhs->x) {
+    return false;
+  }
+  // y
+  if (lhs->y != rhs->y) {
+    return false;
+  }
+  // width
+  if (lhs->width != rhs->width) {
+    return false;
+  }
+  // height
+  if (lhs->height != rhs->height) {
     return false;
   }
   return true;
@@ -51,8 +69,14 @@ talk_to_mcu_interfaces__msg__Num__copy(
   if (!input || !output) {
     return false;
   }
-  // data
-  output->data = input->data;
+  // x
+  output->x = input->x;
+  // y
+  output->y = input->y;
+  // width
+  output->width = input->width;
+  // height
+  output->height = input->height;
   return true;
 }
 

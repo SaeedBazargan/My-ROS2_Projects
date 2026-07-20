@@ -11,10 +11,10 @@ talk_to_mcu_interfaces__msg__Num__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0xa4, 0x6d, 0x3c, 0x8e, 0x56, 0x8c, 0x4f, 0x92,
-      0xf3, 0xa2, 0x4a, 0x3a, 0xbe, 0xb5, 0xa1, 0x6a,
-      0x46, 0xb6, 0x2f, 0x12, 0xd8, 0x7d, 0xdc, 0x7a,
-      0x4b, 0x7c, 0x1b, 0x79, 0xfc, 0xe9, 0x8a, 0x31,
+      0x7a, 0xd8, 0xab, 0x70, 0xd3, 0x0e, 0xde, 0x52,
+      0xa8, 0x2a, 0xa8, 0x33, 0xcf, 0xa6, 0x87, 0x50,
+      0x19, 0x73, 0x0e, 0xf4, 0x0c, 0xcf, 0xfc, 0x0b,
+      0x08, 0x51, 0xb5, 0x74, 0xe5, 0xb3, 0x26, 0x15,
     }};
   return &hash;
 }
@@ -31,11 +31,44 @@ talk_to_mcu_interfaces__msg__Num__get_type_hash(
 static char talk_to_mcu_interfaces__msg__Num__TYPE_NAME[] = "talk_to_mcu_interfaces/msg/Num";
 
 // Define type names, field names, and default values
-static char talk_to_mcu_interfaces__msg__Num__FIELD_NAME__data[] = "data";
+static char talk_to_mcu_interfaces__msg__Num__FIELD_NAME__x[] = "x";
+static char talk_to_mcu_interfaces__msg__Num__FIELD_NAME__y[] = "y";
+static char talk_to_mcu_interfaces__msg__Num__FIELD_NAME__width[] = "width";
+static char talk_to_mcu_interfaces__msg__Num__FIELD_NAME__height[] = "height";
 
 static rosidl_runtime_c__type_description__Field talk_to_mcu_interfaces__msg__Num__FIELDS[] = {
   {
-    {talk_to_mcu_interfaces__msg__Num__FIELD_NAME__data, 4, 4},
+    {talk_to_mcu_interfaces__msg__Num__FIELD_NAME__x, 1, 1},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {talk_to_mcu_interfaces__msg__Num__FIELD_NAME__y, 1, 1},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {talk_to_mcu_interfaces__msg__Num__FIELD_NAME__width, 5, 5},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {talk_to_mcu_interfaces__msg__Num__FIELD_NAME__height, 6, 6},
     {
       rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
       0,
@@ -55,7 +88,7 @@ talk_to_mcu_interfaces__msg__Num__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {talk_to_mcu_interfaces__msg__Num__TYPE_NAME, 30, 30},
-      {talk_to_mcu_interfaces__msg__Num__FIELDS, 1, 1},
+      {talk_to_mcu_interfaces__msg__Num__FIELDS, 4, 4},
     },
     {NULL, 0, 0},
   };
@@ -66,7 +99,10 @@ talk_to_mcu_interfaces__msg__Num__get_type_description(
 }
 
 static char toplevel_type_raw_source[] =
-  "int32 data";
+  "int32 x\n"
+  "int32 y\n"
+  "int32 width\n"
+  "int32 height";
 
 static char msg_encoding[] = "msg";
 
@@ -80,7 +116,7 @@ talk_to_mcu_interfaces__msg__Num__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {talk_to_mcu_interfaces__msg__Num__TYPE_NAME, 30, 30},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 11, 11},
+    {toplevel_type_raw_source, 41, 41},
   };
   return &source;
 }

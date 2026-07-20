@@ -62,17 +62,26 @@ class Num(metaclass=Metaclass_Num):
     """Message class 'Num'."""
 
     __slots__ = [
-        '_data',
+        '_x',
+        '_y',
+        '_width',
+        '_height',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
-        'data': 'int32',
+        'x': 'int32',
+        'y': 'int32',
+        'width': 'int32',
+        'height': 'int32',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
@@ -85,7 +94,10 @@ class Num(metaclass=Metaclass_Num):
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.data = kwargs.get('data', int())
+        self.x = kwargs.get('x', int())
+        self.y = kwargs.get('y', int())
+        self.width = kwargs.get('width', int())
+        self.height = kwargs.get('height', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -117,7 +129,13 @@ class Num(metaclass=Metaclass_Num):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.data != other.data:
+        if self.x != other.x:
+            return False
+        if self.y != other.y:
+            return False
+        if self.width != other.width:
+            return False
+        if self.height != other.height:
             return False
         return True
 
@@ -127,16 +145,61 @@ class Num(metaclass=Metaclass_Num):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def data(self):
-        """Message field 'data'."""
-        return self._data
+    def x(self):
+        """Message field 'x'."""
+        return self._x
 
-    @data.setter
-    def data(self, value):
+    @x.setter
+    def x(self, value):
         if self._check_fields:
             assert \
                 isinstance(value, int), \
-                "The 'data' field must be of type 'int'"
+                "The 'x' field must be of type 'int'"
             assert value >= -2147483648 and value < 2147483648, \
-                "The 'data' field must be an integer in [-2147483648, 2147483647]"
-        self._data = value
+                "The 'x' field must be an integer in [-2147483648, 2147483647]"
+        self._x = value
+
+    @builtins.property
+    def y(self):
+        """Message field 'y'."""
+        return self._y
+
+    @y.setter
+    def y(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'y' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'y' field must be an integer in [-2147483648, 2147483647]"
+        self._y = value
+
+    @builtins.property
+    def width(self):
+        """Message field 'width'."""
+        return self._width
+
+    @width.setter
+    def width(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'width' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'width' field must be an integer in [-2147483648, 2147483647]"
+        self._width = value
+
+    @builtins.property
+    def height(self):
+        """Message field 'height'."""
+        return self._height
+
+    @height.setter
+    def height(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'height' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'height' field must be an integer in [-2147483648, 2147483647]"
+        self._height = value
