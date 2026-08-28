@@ -1,0 +1,53 @@
+# https://github.com/ros-controls/ros2_controllers/
+
+controller_manager:
+  ros__parameters:
+    update_rate: 50
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    omni_wheel_drive_controller:
+      type: omni_wheel_drive_controller/OmniWheelDriveController
+
+omni_wheel_drive_controller:
+  ros__parameters:
+    # 4 wheels ordered counter-clockwise from robot's x-axis
+    wheel_names: ["Omni1_MX1_Joint", "Omni2_MX2_Joint", "Omni4_MX4_Joint", "Omni3_MX3_Joint"]
+    wheel_offset: 0.7854
+
+
+
+    # Offset of first wheel from x-axis (radians)
+    # For 4-wheel configuration with wheels at 45°, 135°, 225°, 315°:
+    # wheel_offset: 0.7854  # π/4 radians
+    
+    # Distance from robot center to each wheel (meters)
+    robot_radius: 0.090
+    
+    # Radius of each wheel (meters)
+    wheel_radius: 0.025
+    
+    # Frame IDs
+    odom_frame_id: "odom"
+    base_frame_id: "base_footprint"
+    
+    # Publish TF from odom to base_footprint
+    enable_odom_tf: true
+    
+    # Feedback mode (true = closed-loop with encoders, false = open-loop)
+    position_feedback: true
+    
+    # Odometry calculation mode
+    open_loop: false
+    
+    # Covariance matrices for EKF/UKF
+    diagonal_covariance:
+      pose: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+      twist: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+    
+    # Optional: Velocity and acceleration limits
+    # cmd_vel_timeout: 0.5
+    # linear.x.max_velocity: 1.0
+    # linear.x.min_velocity: -1.0
+    # angular.z.max_velocity: 2.0

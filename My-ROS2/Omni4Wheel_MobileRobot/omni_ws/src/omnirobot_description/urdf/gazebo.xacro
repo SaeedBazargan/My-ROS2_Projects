@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <gazebo reference="base_link">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <gazebo reference="Omni1_MX1_Joint">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="Omni2_MX2_Joint">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="Omni3_MX3_Joint">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="Omni4_MX4_Joint">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+</robot>

@@ -28,22 +28,22 @@ private:
 
         if(key == "w" || key == "W")
         {
-            cmd = {0.5,  0.5,  0.5,  0.5};
+            cmd = {1.0,  1.0,  1.0,  1.0};
             RCLCPP_INFO(this->get_logger(), "Forward");
         }
         else if(key == "s" || key == "S")
         {
-            cmd = {-0.5, -0.5, -0.5, -0.5};
+            cmd = {-1.0, -1.0, -1.0, -1.0};
             RCLCPP_INFO(this->get_logger(), "Backward");
         }
         else if(key == "a" || key == "A")
         {
-            cmd = {-0.5, 0.5, -0.5, 0.5};
+            cmd = {-1.0, 1.0, -1.0, 1.0};
             RCLCPP_INFO(this->get_logger(), "Rotate Left");
         }
         else if(key == "d" || key == "D")
         {
-            cmd = {0.5, -0.5, 0.5, -0.5};
+            cmd = {1.0, -1.0, 1.0, -1.0};
             RCLCPP_INFO(this->get_logger(), "Rotate Right");
         }
         else if(key == "x" || key == "X")
