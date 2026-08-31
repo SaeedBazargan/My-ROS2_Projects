@@ -5,6 +5,10 @@
         <material>Gazebo/Blue</material>
     </gazebo>
 
+    <gazebo reference="l_Body001">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
     <gazebo reference="Omni1_MX1_Joint">
         <material>Gazebo/Black</material>
     </gazebo>
