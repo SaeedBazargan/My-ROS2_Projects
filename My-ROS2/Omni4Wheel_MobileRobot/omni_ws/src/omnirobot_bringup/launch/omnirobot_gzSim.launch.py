@@ -12,6 +12,7 @@ def generate_launch_description():
     urdf_path = os.path.join(get_package_share_path('omnirobot_description'), 'urdf', 'gazebo_ros2_control.xacro')
     rviz_config_path = os.path.join(get_package_share_path('omnirobot_description'), 'rviz', 'rviz_config.rviz')
     gazebo_config_path = os.path.join(get_package_share_path('omnirobot_bringup'), 'config', 'gz_sim_bridge.yaml')
+    world_path = os.path.join(get_package_share_path('omnirobot_description'), 'models', 'model.sdf')
 
     # Convert xacro to URDF string
     robot_description = ParameterValue(Command(["xacro ", urdf_path]), value_type=str)
@@ -34,13 +35,30 @@ def generate_launch_description():
                 executable="create",
                 arguments=[
                     "-topic", "robot_description",
-                    "-name", "omnirobot"
+                    "-name", "omnirobot",
+                    "-x", "0.1",
+                    "-y", "-3",
+                    "-z", "0.1"                    
                 ],
                 output="screen",
             )
         ]
     )
 
+    spawn_world = TimerAction(
+        period=2.0,
+        actions=[
+            Node(
+                package="ros_gz_sim",
+                executable="create",
+                arguments=[
+                    "-file", world_path,
+                    "-name", "line_track",
+                ],
+                output="screen",
+            )
+        ]
+    )
     ros_gazebo_bridge_node = Node(
         package="ros_gz_bridge",
         executable="parameter_bridge",
@@ -95,8 +113,9 @@ def generate_launch_description():
         robot_state_publisher_node,
         start_gazebo,
         ros_gazebo_sim_node,
+        spawn_world,
         ros_gazebo_bridge_node,
         joint_state_broadcaster_spawner,
         omni_wheel_drive_controller_spawner,
-        rviz_node,
+        # rviz_node,
     ])

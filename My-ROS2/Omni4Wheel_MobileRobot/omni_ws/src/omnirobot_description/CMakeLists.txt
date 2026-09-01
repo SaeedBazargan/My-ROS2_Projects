@@ -13,6 +13,7 @@ install(DIRECTORY
   meshes
   rviz
   launch
+  models
 
   DESTINATION 
   share/${PROJECT_NAME}
