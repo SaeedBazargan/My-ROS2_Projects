@@ -1,0 +1,27 @@
+// c_cpp_properties.json:
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/src/**",
+                "${workspaceFolder}/build/**",
+                "${workspaceFolder}/install/**",
+                "/opt/ros/jazzy/include/**",
+                "/usr/include/**",
+                "/usr/include/opencv4",
+                "/usr/include/x86_64-linux-gnu"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
+
+// Always add:
+/* "/opt/ros/jazzy/include/**",
+"${workspaceFolder}/install/**",
+"${workspaceFolder}/build/**" */
+

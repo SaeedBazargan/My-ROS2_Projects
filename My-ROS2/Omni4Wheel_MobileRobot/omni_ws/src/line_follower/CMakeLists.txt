@@ -20,6 +20,7 @@ ament_target_dependencies(
   line_follower
   rclcpp
   sensor_msgs
+  geometry_msgs
   cv_bridge
 )
 
