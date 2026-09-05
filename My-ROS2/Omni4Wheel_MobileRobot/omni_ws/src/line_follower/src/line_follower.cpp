@@ -6,15 +6,15 @@
 #include "cv_bridge/cv_bridge.hpp"
 #include <opencv2/opencv.hpp>
 
-class ImageSubscriber : public rclcpp::Node
+class LineFollowerNode : public rclcpp::Node
 {
 public:
-    ImageSubscriber() : Node("image_subscriber")
+    LineFollowerNode() : Node("line_follower_node")
     {
         subscription_ = this->create_subscription<sensor_msgs::msg::Image>(
             "/camera/image_raw",
             10,
-            std::bind(&ImageSubscriber::listener_callback, this, std::placeholders::_1)
+            std::bind(&LineFollowerNode::listener_callback, this, std::placeholders::_1)
         );
 
         publisher_ = this->create_publisher<geometry_msgs::msg::TwistStamped>(
@@ -22,7 +22,7 @@ public:
             10
         );
 
-        RCLCPP_INFO(this->get_logger(), "Image subscriber started.");
+        RCLCPP_INFO(this->get_logger(), "Line follower started.");
     }
 
 private:
@@ -170,8 +170,8 @@ private:
 int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
-    auto image_subscriber = std::make_shared<ImageSubscriber>();
-    rclcpp::spin(image_subscriber);
+    auto node = std::make_shared<LineFollowerNode>();
+    rclcpp::spin(node);
     cv::destroyAllWindows();
     rclcpp::shutdown();
 
