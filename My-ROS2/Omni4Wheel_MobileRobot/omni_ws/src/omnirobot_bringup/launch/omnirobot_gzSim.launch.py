@@ -26,7 +26,8 @@ def generate_launch_description():
     start_gazebo = IncludeLaunchDescription(PythonLaunchDescriptionSource(
         os.path.join(get_package_share_path("ros_gz_sim"), "launch", "gz_sim.launch.py")),
         launch_arguments={'gz_args': "-r empty.sdf"}.items())
-        # Gazebo without 3D: launch_arguments={'gz_args': "-s -r empty.sdf"}.items())
+        # Gazebo without 3D: 
+        # launch_arguments={'gz_args': "-s -r empty.sdf"}.items())
 
     ros_gazebo_sim_node = TimerAction(
         period=2.0,
