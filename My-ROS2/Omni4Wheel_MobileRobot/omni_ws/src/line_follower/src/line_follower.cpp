@@ -111,50 +111,51 @@ private:
             bool line_found = get_contour_data(blue_mask, line_centroid);
             
             // Display centroid
-            if(line_found)
-            {
-                cv::circle(blue_segmented_image, line_centroid, 15, cv::Scalar(0, 0, 255), 7);
-                RCLCPP_INFO(this->get_logger(), "width: %d", blue_segmented_image.cols);
-                RCLCPP_INFO(this->get_logger(), "line_centroid: (%d, %d)", line_centroid.x, line_centroid.y);
-            }
-
-            // // <---- ----- Line following controller ----- ---->
-            // geometry_msgs::msg::TwistStamped cmd;
-            // cmd.header.stamp = this->get_clock()->now();
-            // cmd.header.frame_id = "base_link";
-
-            // int width = blue_segmented_image.cols;
-
             // if(line_found)
             // {
-            //     int x = line_centroid.x;
-
-            //     // Distance from image center
-            //     int error = x - (width / 2);
-
-            //     // Forward velocity
-            //     cmd.twist.linear.x = LINEAR_SPEED;
-
-            //     // Proportional steering controller
-            //     cmd.twist.angular.z = -static_cast<double>(error) * KP;
-
-            //     // Draw centroid
             //     cv::circle(blue_segmented_image, line_centroid, 15, cv::Scalar(0, 0, 255), 7);
-
-            //     // Print controller information
-            //     // RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 500, "Error: %d | Angular Z: %.3f", error, cmd.twist.angular.z);
-            // }
-            // else
-            // {
-            //     // Line not detected
-            //     cmd.twist.linear.x = 0.0;
-            //     cmd.twist.angular.z = 1.0;
-
-            //     RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "Line not detected!");
+            //     RCLCPP_INFO(this->get_logger(), "width: %d", blue_segmented_image.cols);
+            //     RCLCPP_INFO(this->get_logger(), "line_centroid: (%d, %d)", line_centroid.x, line_centroid.y);
             // }
 
-            // // <---- ----- Publish velocity command ----- ---->
-            // publisher_->publish(cmd);
+            // <---- ----- Line following controller ----- ---->
+            geometry_msgs::msg::TwistStamped cmd;
+            cmd.header.stamp = this->get_clock()->now();
+            cmd.header.frame_id = "base_link";
+
+            int width = blue_segmented_image.cols;
+
+            if(line_found)
+            {
+                int x = line_centroid.x;
+                RCLCPP_INFO(this->get_logger(), "line_centroid_XXXXX: %d", line_centroid.x);
+
+                // Distance from image center
+                int error = x - (width / 2);
+                RCLCPP_INFO(this->get_logger(), "Distance from image center: %d", error);
+
+                // Forward velocity
+                cmd.twist.linear.x = LINEAR_SPEED;
+            
+                // Proportional steering controller
+                cmd.twist.angular.z = -static_cast<double>(error) * KP;
+            
+                // Draw centroid
+                cv::circle(blue_segmented_image, line_centroid, 15, cv::Scalar(0, 0, 255), 7);
+                // Print controller information
+                // RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 500, "Error: %d | Angular Z: %.3f", error, cmd.twist.angular.z);
+            }
+            else
+            {
+                // Line not detected
+                cmd.twist.linear.x = 0.0;
+                cmd.twist.angular.z = 1.0;
+
+                RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "Line not detected!");
+            }
+
+            // <---- ----- Publish velocity command ----- ---->
+            publisher_->publish(cmd);
 
             // Display images
             cv::imshow("Blue Segmented Image", blue_segmented_image);

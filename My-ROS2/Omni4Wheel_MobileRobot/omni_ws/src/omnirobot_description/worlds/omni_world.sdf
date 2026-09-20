@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <include>
+      <uri>model://room</uri>
+      <name>room</name>
+    </include>
+    <include>
+      <uri>model://line</uri>
+      <name>line</name>
+    </include>
+  </world>
+</sdf>

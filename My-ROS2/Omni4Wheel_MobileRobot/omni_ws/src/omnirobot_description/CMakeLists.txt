@@ -14,6 +14,7 @@ install(DIRECTORY
   rviz
   launch
   models
+  worlds
 
   DESTINATION 
   share/${PROJECT_NAME}

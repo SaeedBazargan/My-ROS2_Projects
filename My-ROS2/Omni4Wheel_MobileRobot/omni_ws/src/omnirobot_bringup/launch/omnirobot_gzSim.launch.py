@@ -6,13 +6,13 @@ from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 import os
 from ament_index_python.packages import get_package_share_path
-from launch.actions import TimerAction
+from launch.actions import TimerAction, ExecuteProcess
 
 def generate_launch_description():
     urdf_path = os.path.join(get_package_share_path('omnirobot_description'), 'urdf', 'gazebo_ros2_control.xacro')
     rviz_config_path = os.path.join(get_package_share_path('omnirobot_description'), 'rviz', 'rviz_config.rviz')
     gazebo_config_path = os.path.join(get_package_share_path('omnirobot_bringup'), 'config', 'gz_sim_bridge.yaml')
-    world_path = os.path.join(get_package_share_path('omnirobot_description'), 'models', 'model.sdf')
+    world_path = os.path.join(get_package_share_path('omnirobot_description'), 'worlds', 'omni_world.sdf')
 
     # Convert xacro to URDF string
     robot_description = ParameterValue(Command(["xacro ", urdf_path]), value_type=str)
@@ -26,8 +26,25 @@ def generate_launch_description():
     start_gazebo = IncludeLaunchDescription(PythonLaunchDescriptionSource(
         os.path.join(get_package_share_path("ros_gz_sim"), "launch", "gz_sim.launch.py")),
         launch_arguments={'gz_args': "-r empty.sdf"}.items())
-        # Gazebo without 3D: 
-        # launch_arguments={'gz_args': "-s -r empty.sdf"}.items())
+
+    start_gazebo_without_3D = IncludeLaunchDescription(PythonLaunchDescriptionSource(
+        os.path.join(get_package_share_path("ros_gz_sim"), "launch", "gz_sim.launch.py")),
+        launch_arguments={'gz_args': "-s -r empty.sdf"}.items())
+
+    start_gazebo_with_NVIDIA = ExecuteProcess(
+        # Add this to ~/.bashrc:
+        # alias gz-nvidia='__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia gz'
+        # Then:
+        # source ~/.bashrc
+        # Now:
+        # gz-nvidia sim
+        
+        cmd=[
+            "bash",
+            "-ic",
+            "gz-nvidia sim -r empty.sdf"
+        ],
+        output="screen")
 
     ros_gazebo_sim_node = TimerAction(
         period=2.0,
@@ -114,6 +131,8 @@ def generate_launch_description():
     return LaunchDescription([
         robot_state_publisher_node,
         start_gazebo,
+        # start_gazebo_without_3D,
+        # start_gazebo_with_NVIDIA,
         ros_gazebo_sim_node,
         spawn_world,
         ros_gazebo_bridge_node,
