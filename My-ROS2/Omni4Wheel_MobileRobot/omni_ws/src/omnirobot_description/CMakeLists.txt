@@ -13,7 +13,6 @@ install(DIRECTORY
   meshes
   rviz
   launch
-  models
   worlds
 
   DESTINATION 

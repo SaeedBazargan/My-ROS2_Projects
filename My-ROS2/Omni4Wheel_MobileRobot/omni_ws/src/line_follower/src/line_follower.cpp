@@ -40,7 +40,7 @@ private:
         const double MIN_AREA_TRACK = 100.0;
         // Find contours 
         std::vector<std::vector<cv::Point>> contours;
-        cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_NONE);
+        cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
         if(contours.empty())
         {
@@ -128,11 +128,11 @@ private:
             if(line_found)
             {
                 int x = line_centroid.x;
-                RCLCPP_INFO(this->get_logger(), "line_centroid_XXXXX: %d", line_centroid.x);
+                // RCLCPP_INFO(this->get_logger(), "line_centroid_XXXXX: %d", line_centroid.x);
 
                 // Distance from image center
                 int error = x - (width / 2);
-                RCLCPP_INFO(this->get_logger(), "Distance from image center: %d", error);
+                // RCLCPP_INFO(this->get_logger(), "Distance from image center: %d", error);
 
                 // Forward velocity
                 cmd.twist.linear.x = LINEAR_SPEED;
@@ -158,9 +158,9 @@ private:
             publisher_->publish(cmd);
 
             // Display images
-            cv::imshow("Blue Segmented Image", blue_segmented_image);
-            cv::imshow("Blue Mask", blue_mask);
-            cv::waitKey(1);
+            // cv::imshow("Blue Segmented Image", blue_segmented_image);
+            // cv::imshow("Blue Mask", blue_mask);
+            // cv::waitKey(1);
         }
         catch (const cv_bridge::Exception & e)
         {
