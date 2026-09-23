@@ -1,0 +1,33 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 31
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    omni_wheel_drive_controller:
+      type: omni_wheel_drive_controller/OmniWheelDriveController
+
+omni_wheel_drive_controller:
+  ros__parameters:
+    wheel_names:
+      - Omni1_MX1_Joint
+      - Omni2_MX2_Joint
+      - Omni4_MX4_Joint
+      - Omni3_MX3_Joint
+
+    wheel_offset: 0.7854
+    robot_radius: 0.090
+    wheel_radius: 0.025
+
+    odom_frame_id: odom
+    base_frame_id: base_footprint
+
+    enable_odom_tf: true
+    position_feedback: true
+    open_loop: false
+
+    diagonal_covariance:
+      pose: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+      twist: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+

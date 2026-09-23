@@ -1,0 +1,484 @@
+#VRML_SIM R2023b utf8
+# license: Apache License 2.0
+# license url: http://www.apache.org/licenses/LICENSE-2.0
+# This is a proto file for Webots for the main
+# Extracted from: /home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/urdf/main.urdf
+
+PROTO main [
+  field  SFVec3f     translation     0 0 0
+  field  SFRotation  rotation        0 0 1 0
+  field  SFString    name            "omnirobot"  # Is `Robot.name`.
+  field  SFString    controller      "void"  # Is `Robot.controller`.
+  field  MFString    controllerArgs  []      # Is `Robot.controllerArgs`.
+  field  SFString    customData      ""      # Is `Robot.customData`.
+  field  SFBool      supervisor      FALSE   # Is `Robot.supervisor`.
+  field  SFBool      synchronization TRUE    # Is `Robot.synchronization`.
+  field  SFBool      selfCollision   FALSE   # Is `Robot.selfCollision`.
+]
+{
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    controller IS controller
+    controllerArgs IS controllerArgs
+    customData IS customData
+    supervisor IS supervisor
+    synchronization IS synchronization
+    selfCollision IS selfCollision
+    children [
+      Solid {
+        children [
+          Pose {
+            translation 0.000000 0.000000 0.017000
+            children [
+              DEF fusion_visual CadShape {
+                url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/fusion.dae"
+              }
+            ]
+          }
+          Solid {
+            translation 0.055000 0.052680 0.029500
+            rotation 1.000000 0.000000 0.000000 1.570796
+            children [
+              Pose {
+                translation -0.015000 0.004500 0.016000
+                rotation -1.000000 0.000000 0.000000 3.141593
+                children [
+                  DEF dc07_00a_dummy_none_visual CadShape {
+                    url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none.dae"
+                  }
+                ]
+              }
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0.000000 0.000000 -1.000000
+                  anchor -0.015000 0.004500 -0.007600
+                }
+                device [
+                  RotationalMotor {
+                    name "Omni1_MX1_Joint"
+                    maxVelocity 1.7453292519943295
+                    maxTorque 10.0
+                  }
+                  PositionSensor {
+                    name "Omni1_MX1_Joint_sensor"
+                  }
+                ]
+                endPoint Solid {
+                  translation -0.015000 0.004500 -0.007600
+                  children [
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation 1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF omnibase_predeterminado_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado.dae"
+                        }
+                      ]
+                    }
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation 1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF nut_predeterminado_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/nut_predeterminado.dae"
+                        }
+                      ]
+                    }
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation 1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF fusion001_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/fusion001.dae"
+                        }
+                      ]
+                    }
+                  ]
+                  name "l_OmniWheel001"
+                  boundingObject Pose {
+                    translation 0.000000 0.000000 -0.005560
+                    rotation 1.000000 0.000000 0.000000 3.141593
+                    children [
+                      Cylinder {
+                        radius 0.025
+                        height 0.011119233388594999
+                      }
+                    ]
+                  }
+                  physics Physics {
+                    density -1
+                    mass 0.007756
+                    centerOfMass [ 0.000000 0.000000 -0.007179 ]
+                    inertiaMatrix [
+                      1.072437e-06 1.072437e-06 2.092596e-06
+                      2.970426e-16 1.171933e-21 -4.125450e-22
+                    ]
+                  }
+                }
+              }
+            ]
+            name "l_MX_001"
+            physics Physics {
+              density -1
+              mass 0.053641
+              centerOfMass [ -0.015000 0.016015 0.015032 ]
+              inertiaMatrix [
+                1.511749e-05 9.281459e-06 1.280817e-05
+                -4.447255e-14 2.395084e-14 -2.266159e-07
+              ]
+            }
+          }
+          Solid {
+            translation -0.025000 0.052680 0.029500
+            rotation 1.000000 0.000000 0.000000 1.570796
+            children [
+              Pose {
+                translation -0.015000 0.004500 0.016000
+                rotation -1.000000 0.000000 0.000000 3.141593
+                children [
+                  DEF dc07_00a_dummy_none001_visual CadShape {
+                    url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none001.dae"
+                  }
+                ]
+              }
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0.000000 0.000000 -1.000000
+                  anchor -0.015000 0.004500 -0.007600
+                }
+                device [
+                  RotationalMotor {
+                    name "Omni2_MX2_Joint"
+                    maxVelocity 1.7453292519943295
+                    maxTorque 10.0
+                  }
+                  PositionSensor {
+                    name "Omni2_MX2_Joint_sensor"
+                  }
+                ]
+                endPoint Solid {
+                  translation -0.015000 0.004500 -0.007600
+                  children [
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation 1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF omnibase_predeterminado001_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado001.dae"
+                        }
+                      ]
+                    }
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation 1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF nut_predeterminado001_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/nut_predeterminado001.dae"
+                        }
+                      ]
+                    }
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation 1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF fusion002_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/fusion002.dae"
+                        }
+                      ]
+                    }
+                  ]
+                  name "l_OmniWheel003"
+                  boundingObject Pose {
+                    translation 0.000000 0.000000 -0.005560
+                    rotation 1.000000 0.000000 0.000000 3.141593
+                    children [
+                      Cylinder {
+                        radius 0.025
+                        height 0.011119233388594999
+                      }
+                    ]
+                  }
+                  physics Physics {
+                    density -1
+                    mass 0.007756
+                    centerOfMass [ 0.000000 0.000000 -0.007179 ]
+                    inertiaMatrix [
+                      1.072437e-06 1.072437e-06 2.092596e-06
+                      2.970426e-16 1.171933e-21 -4.125450e-22
+                    ]
+                  }
+                }
+              }
+            ]
+            name "l_MX_003"
+            physics Physics {
+              density -1
+              mass 0.053641
+              centerOfMass [ -0.015000 0.016015 0.015032 ]
+              inertiaMatrix [
+                1.511749e-05 9.281459e-06 1.280817e-05
+                -4.447255e-14 2.395084e-14 -2.266159e-07
+              ]
+            }
+          }
+          Solid {
+            translation 0.055000 -0.052680 0.029500
+            rotation 0.000000 -0.707107 -0.707107 3.141593
+            children [
+              Pose {
+                translation 0.015000 0.004500 0.016000
+                rotation 1.000000 0.000000 0.000000 3.141593
+                children [
+                  DEF dc07_00a_dummy_none002_visual CadShape {
+                    url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none002.dae"
+                  }
+                ]
+              }
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0.000000 0.000000 -1.000000
+                  anchor 0.015000 0.004500 -0.007600
+                }
+                device [
+                  RotationalMotor {
+                    name "Omni3_MX3_Joint"
+                    maxVelocity 1.7453292519943295
+                    maxTorque 10.0
+                  }
+                  PositionSensor {
+                    name "Omni3_MX3_Joint_sensor"
+                  }
+                ]
+                endPoint Solid {
+                  translation 0.015000 0.004500 -0.007600
+                  children [
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation -1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF omnibase_predeterminado002_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado002.dae"
+                        }
+                      ]
+                    }
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation -1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF nut_predeterminado002_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/nut_predeterminado002.dae"
+                        }
+                      ]
+                    }
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation -1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF fusion003_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/fusion003.dae"
+                        }
+                      ]
+                    }
+                  ]
+                  name "l_OmniWheel005"
+                  boundingObject Pose {
+                    translation 0.000000 0.000000 -0.005560
+                    rotation -1.000000 0.000000 0.000000 3.141593
+                    children [
+                      Cylinder {
+                        radius 0.025
+                        height 0.011119233388594999
+                      }
+                    ]
+                  }
+                  physics Physics {
+                    density -1
+                    mass 0.007756
+                    centerOfMass [ 0.000000 0.000000 -0.007179 ]
+                    inertiaMatrix [
+                      1.072437e-06 1.072437e-06 2.092596e-06
+                      2.970426e-16 1.171933e-21 2.903638e-22
+                    ]
+                  }
+                }
+              }
+            ]
+            name "l_MX_005"
+            physics Physics {
+              density -1
+              mass 0.053641
+              centerOfMass [ 0.015000 0.016015 0.015032 ]
+              inertiaMatrix [
+                1.511749e-05 9.281459e-06 1.280817e-05
+                -4.447255e-14 2.395084e-14 -2.266159e-07
+              ]
+            }
+          }
+          Solid {
+            translation -0.055000 -0.052680 0.029500
+            rotation 0.000000 0.707107 0.707107 3.141593
+            children [
+              Pose {
+                translation -0.015000 0.004500 0.016000
+                rotation 1.000000 0.000000 0.000000 3.141593
+                children [
+                  DEF dc07_00a_dummy_none003_visual CadShape {
+                    url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none003.dae"
+                  }
+                ]
+              }
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  axis 0.000000 0.000000 -1.000000
+                  anchor -0.015000 0.004500 -0.007600
+                }
+                device [
+                  RotationalMotor {
+                    name "Omni4_MX4_Joint"
+                    maxVelocity 1.7453292519943295
+                    maxTorque 10.0
+                  }
+                  PositionSensor {
+                    name "Omni4_MX4_Joint_sensor"
+                  }
+                ]
+                endPoint Solid {
+                  translation -0.015000 0.004500 -0.007600
+                  children [
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation -1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF omnibase_predeterminado003_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado003.dae"
+                        }
+                      ]
+                    }
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation -1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF nut_predeterminado003_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/nut_predeterminado003.dae"
+                        }
+                      ]
+                    }
+                    Pose {
+                      translation -0.004804 -0.000639 0.034500
+                      rotation -1.000000 0.000000 0.000000 3.141593
+                      children [
+                        DEF fusion004_visual CadShape {
+                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/fusion004.dae"
+                        }
+                      ]
+                    }
+                  ]
+                  name "l_OmniWheel007"
+                  boundingObject Pose {
+                    translation 0.000000 0.000000 -0.005560
+                    rotation -1.000000 0.000000 0.000000 3.141593
+                    children [
+                      Cylinder {
+                        radius 0.025
+                        height 0.011119233388594999
+                      }
+                    ]
+                  }
+                  physics Physics {
+                    density -1
+                    mass 0.007756
+                    centerOfMass [ 0.000000 0.000000 -0.007179 ]
+                    inertiaMatrix [
+                      1.072437e-06 1.072437e-06 2.092596e-06
+                      2.970426e-16 1.171933e-21 7.434055e-22
+                    ]
+                  }
+                }
+              }
+            ]
+            name "l_MX_007"
+            physics Physics {
+              density -1
+              mass 0.053641
+              centerOfMass [ -0.015000 0.016015 0.015032 ]
+              inertiaMatrix [
+                1.511749e-05 9.281459e-06 1.280817e-05
+                -4.447255e-14 2.395084e-14 -2.266159e-07
+              ]
+            }
+          }
+          Solid {
+            translation 0.000000 0.000000 0.074000
+            children [
+              DEF body_visual CadShape {
+                url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/body.dae"
+              }
+              Solid {
+                translation 0.080000 0.000000 0.000000
+                children [
+                  Pose {
+                    translation 0.000000 0.050000 0.047000
+                    rotation 0.707107 -0.707107 0.000000 3.141593
+                    children [
+                      DEF c920_Camera_visual CadShape {
+                        url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/c920_Camera.dae"
+                      }
+                    ]
+                  }
+                ]
+                name "camera_link"
+                boundingObject Pose {
+                  translation -0.015000 0.000000 0.037000
+                  children [
+                    Box {
+                       size 0.030000 0.060000 0.040000
+                    }
+                  ]
+                }
+                physics Physics {
+                  density -1
+                  mass 0.100000
+                  centerOfMass [ -0.015000 0.000000 0.037000 ]
+                  inertiaMatrix [
+                    1.000000e-04 1.000000e-04 1.000000e-04
+                    0.000000e+00 0.000000e+00 0.000000e+00
+                  ]
+                }
+              }
+            ]
+            name "l_Body001"
+            physics Physics {
+              density -1
+              mass 0.094872
+              centerOfMass [ 0.000000 0.000000 0.002000 ]
+              inertiaMatrix [
+                1.135573e-04 2.017272e-04 3.150315e-04
+                2.869056e-21 6.766641e-24 0.000000e+00
+              ]
+            }
+          }
+        ]
+        name "base_link"
+        boundingObject Pose {
+          translation 0.000000 0.000000 0.044750
+          children [
+            Box {
+               size 0.160000 0.120000 0.055500
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.137857
+          centerOfMass [ 0.000000 0.000000 0.025965 ]
+          inertiaMatrix [
+            2.149198e-04 3.133358e-04 4.700186e-04
+            -2.654530e-09 6.710718e-10 2.018678e-10
+          ]
+        }
+      }
+    ]
+    name IS name
+  }
+}
