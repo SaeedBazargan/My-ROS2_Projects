@@ -1,6 +1,17 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <webots>
+        <device reference="camera" type="Camera">
+        <ros>
+            <enabled>true</enabled>
+            <topicName>/camera</topicName>
+            <alwaysOn>true</alwaysOn>
+            <frameName>camera_link</frameName>
+            <imageSuffix>/image_raw</imageSuffix>
+            <cameraInfoSuffix>/camera_info</cameraInfoSuffix>
+        </ros>
+        </device>
+
         <plugin type="webots_ros2_control::Ros2Control"/>
     </webots>
 

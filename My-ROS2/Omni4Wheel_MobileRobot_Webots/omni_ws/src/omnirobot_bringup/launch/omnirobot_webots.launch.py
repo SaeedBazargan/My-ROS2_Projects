@@ -82,5 +82,5 @@ def generate_launch_description():
         start_webots._supervisor,
         joint_state_broadcaster_spawner,
         omni_wheel_drive_controller_spawner,
-        rviz_node
+        # rviz_node
     ])

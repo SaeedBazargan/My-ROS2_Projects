@@ -487,6 +487,12 @@ Robot {
                     }
                   ]
                 }
+                Camera {
+                  name "camera"
+                  width 320
+                  height 240
+                  fieldOfView 1.047
+                }
               ]
               name "camera_link"
               boundingObject Pose {
