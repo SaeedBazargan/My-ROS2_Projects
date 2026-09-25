@@ -1,8 +1,8 @@
 import os
 
 from launch import LaunchDescription
-from launch.actions import TimerAction
-from launch.substitutions import Command
+from launch.actions import TimerAction, DeclareLaunchArgument
+from launch.substitutions import Command, LaunchConfiguration
 from launch_ros.actions import Node
 from launch_ros.parameter_descriptions import ParameterValue
 
@@ -19,15 +19,22 @@ def generate_launch_description():
     rviz_config_path = os.path.join(get_package_share_path('omnirobot_description'), 'rviz', 'rviz_config.rviz')
     controller_path = os.path.join(get_package_share_path('omnirobot_bringup'), 'config', 'controllers.yaml')
     world_path = os.path.expanduser('~/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/webots_ws/worlds/omni_world.wbt')
+    use_sim_time = LaunchConfiguration('use_sim_time', default=True)
 
     # Xacro -> URDF: Used by robot_state_publisher
     robot_description = ParameterValue(Command(['xacro ', urdf_path]), value_type=str)
+
+    declare_use_sim_time = DeclareLaunchArgument(
+        'use_sim_time',
+        default_value='true',
+        description='Use simulation time'
+    )
 
     # Publish /robot_description
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        parameters=[{'robot_description': robot_description, 'use_sim_time': True}]
+        parameters=[{'robot_description': robot_description, 'use_sim_time': use_sim_time}]
     )
 
     # Webots
@@ -39,8 +46,8 @@ def generate_launch_description():
     # Webots ROS 2 Controller -> IMPORTANT: WebotsController receives the Xacro FILE PATH here, not the Launch Command substitution above.
     robot_driver = WebotsController(
         robot_name='omnirobot',
-        parameters=[{'robot_description': urdf_path, 'use_sim_time': True, 'set_robot_state_publisher': False}, controller_path],
-        respawn=True
+        parameters=[{'robot_description': urdf_path, 'use_sim_time': use_sim_time, 'set_robot_state_publisher': False}, controller_path],
+        respawn=False
     )
 
     joint_state_broadcaster_spawner = TimerAction(
@@ -76,6 +83,7 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
+        declare_use_sim_time,
         start_webots,
         robot_state_publisher_node,
         robot_driver,
