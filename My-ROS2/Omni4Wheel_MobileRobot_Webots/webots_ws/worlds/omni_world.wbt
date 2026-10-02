@@ -3,21 +3,45 @@
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.3297440296170807 0.277965461577449 0.9022217449728894 1.841164551619587
-  position 0.06967808656664443 -0.5404584284086524 0.5386078692183335
+  orientation -0.579188392895627 0.5850093977624686 0.5677189534131961 2.100298366575739
+  position 1.4074451561818018 -1.0104780391761812 1.9164742279488112
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 Floor {
+  appearance Parquetry {
+    type "light strip"
+  }
+}
+Solid {
+  translation 1.37 -1.03 0
+  children [
+    Shape {
+      geometry Mesh {
+        url [
+          "../Meshes/room.stl"
+        ]
+      }
+      isPickable FALSE
+    }
+  ]
+  name "Room"
+  boundingObject Mesh {
+    url [
+      "../Meshes/room.stl"
+    ]
+  }
 }
 Robot {
-  translation 0 0 0.1
+  translation 1.39 -1.19 0.1
+  rotation 0 0 1 1.5708
   children [
     Solid {
       translation 1.3367211938036805e-09 -9.316146919246188e-17 -3.627338082580478e-05
@@ -57,7 +81,7 @@ Robot {
               device [
                 RotationalMotor {
                   name "Omni1_MX1_Joint"
-                  maxVelocity 1.7453292519943295
+                  maxVelocity 20
                 }
                 PositionSensor {
                   name "Omni1_MX1_Joint_sensor"
@@ -123,8 +147,6 @@ Robot {
                     2.970426e-16 1.171933e-21 -4.12545e-22
                   ]
                 }
-                linearVelocity 1.0664990151228704e-12 -4.3496543719253146e-17 -7.115571841557839e-08
-                angularVelocity -6.761370718722997e-12 8.803760885949967e-09 -2.8964418935774454e-15
               }
             }
           ]
@@ -165,7 +187,7 @@ Robot {
               device [
                 RotationalMotor {
                   name "Omni2_MX2_Joint"
-                  maxVelocity 1.7453292519943295
+                  maxVelocity 20
                 }
                 PositionSensor {
                   name "Omni2_MX2_Joint_sensor"
@@ -231,8 +253,6 @@ Robot {
                     2.970426e-16 1.171933e-21 -4.12545e-22
                   ]
                 }
-                linearVelocity 1.0664989847318859e-12 -4.27767953561592e-17 -7.115929723869043e-08
-                angularVelocity -6.754900507508912e-12 8.803757623259652e-09 -2.902453515262887e-15
               }
             }
           ]
@@ -273,7 +293,7 @@ Robot {
               device [
                 RotationalMotor {
                   name "Omni3_MX3_Joint"
-                  maxVelocity 1.7453292519943295
+                  maxVelocity 20
                 }
                 PositionSensor {
                   name "Omni3_MX3_Joint_sensor"
@@ -339,8 +359,6 @@ Robot {
                     2.970426e-16 1.171933e-21 2.903638e-22
                   ]
                 }
-                linearVelocity 1.0664984247143677e-12 -4.252675781640607e-17 -7.115571875913402e-08
-                angularVelocity 6.757057009459415e-12 8.803762768860977e-09 -9.698800930085292e-18
               }
             }
           ]
@@ -381,7 +399,7 @@ Robot {
               device [
                 RotationalMotor {
                   name "Omni4_MX4_Joint"
-                  maxVelocity 1.7453292519943295
+                  maxVelocity 20
                 }
                 PositionSensor {
                   name "Omni4_MX4_Joint_sensor"
@@ -447,8 +465,6 @@ Robot {
                     2.970426e-16 1.171933e-21 7.434055e-22
                   ]
                 }
-                linearVelocity 1.0665001689076785e-12 -4.281489646446912e-17 -7.115929741046615e-08
-                angularVelocity 6.759214275469905e-12 8.803758852388007e-09 -8.6110450053204595e-19
               }
             }
           ]
@@ -488,10 +504,9 @@ Robot {
                   ]
                 }
                 Camera {
-                  name "camera"
+                  fieldOfView 1.047
                   width 320
                   height 240
-                  fieldOfView 1.047
                 }
               ]
               name "camera_link"
@@ -550,14 +565,36 @@ Robot {
           -2.65453e-09 6.710718e-10 2.018678e-10
         ]
       }
-      linearVelocity -1.909883174661942e-17 8.662692431261986e-25 -7.021525112627949e-08
-      angularVelocity -5.713596190267e-18 -4.4735835959453486e-11 -2.440038976010204e-19
     }
   ]
   name "omnirobot"
-  controller "<extern>"
   physics Physics {
     density -1
     mass 1
+  }
+  controller "<extern>"
+}
+Solid {
+  translation 1.44 -1.1 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.101961 0.372549 0.705882
+        }
+      }
+      geometry Mesh {
+        url [
+          "../Meshes/line.stl"
+        ]
+      }
+      isPickable FALSE
+    }
+  ]
+  name "line"
+  boundingObject Mesh {
+    url [
+      "../Meshes/line.stl"
+    ]
   }
 }

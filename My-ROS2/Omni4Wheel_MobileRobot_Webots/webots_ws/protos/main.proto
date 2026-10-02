@@ -57,7 +57,7 @@ PROTO main [
                 device [
                   RotationalMotor {
                     name "Omni1_MX1_Joint"
-                    maxVelocity 1.7453292519943295
+                    maxVelocity 20
                     maxTorque 10.0
                   }
                   PositionSensor {
@@ -150,7 +150,7 @@ PROTO main [
                 device [
                   RotationalMotor {
                     name "Omni2_MX2_Joint"
-                    maxVelocity 1.7453292519943295
+                    maxVelocity 20
                     maxTorque 10.0
                   }
                   PositionSensor {
@@ -243,7 +243,7 @@ PROTO main [
                 device [
                   RotationalMotor {
                     name "Omni3_MX3_Joint"
-                    maxVelocity 1.7453292519943295
+                    maxVelocity 20
                     maxTorque 10.0
                   }
                   PositionSensor {
@@ -336,7 +336,7 @@ PROTO main [
                 device [
                   RotationalMotor {
                     name "Omni4_MX4_Joint"
-                    maxVelocity 1.7453292519943295
+                    maxVelocity 20
                     maxTorque 10.0
                   }
                   PositionSensor {
