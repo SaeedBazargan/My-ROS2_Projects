@@ -74,6 +74,18 @@ def generate_launch_description():
         ]
     )
 
+    diff_drive_controller_spawner = TimerAction(
+        period=5.0,
+        actions=[
+            Node(
+                package="controller_manager",
+                executable="spawner",
+                arguments=["diff_drive_controller"],
+                output="screen",
+            )
+        ]
+    )
+
     rviz_node = Node(
         package="rviz2",
         executable="rviz2",
@@ -89,6 +101,7 @@ def generate_launch_description():
         robot_driver,
         start_webots._supervisor,
         joint_state_broadcaster_spawner,
-        omni_wheel_drive_controller_spawner,
-        # rviz_node
+        # omni_wheel_drive_controller_spawner,
+        diff_drive_controller_spawner,
+        rviz_node
     ])

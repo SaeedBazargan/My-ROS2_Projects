@@ -287,7 +287,7 @@ Robot {
             HingeJoint {
               jointParameters HingeJointParameters {
                 position -1.9693896217601737e-11
-                axis 0 0 -1
+                axis 0 0 1
                 anchor 0.015 0.0045 -0.0076
               }
               device [
@@ -393,7 +393,7 @@ Robot {
             HingeJoint {
               jointParameters HingeJointParameters {
                 position -1.9694275994550972e-11
-                axis 0 0 -1
+                axis 0 0 1
                 anchor -0.015 0.0045 -0.0076
               }
               device [

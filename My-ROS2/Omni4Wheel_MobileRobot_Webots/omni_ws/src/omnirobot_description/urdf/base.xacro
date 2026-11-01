@@ -273,14 +273,14 @@
     <parent link="l_MX_005"/>
     <child link="l_OmniWheel005"/>
     <origin rpy="0 0 0" xyz="0.015 0.0045 -0.0076"/>
-    <axis xyz="0 0 -1"/>
+    <axis xyz="0 0 1"/>
     <limit effort="10.0" velocity="1.7453292519943295"/>
   </joint>
   <joint name="Omni4_MX4_Joint" type="continuous">
     <parent link="l_MX_007"/>
     <child link="l_OmniWheel007"/>
     <origin rpy="0 0 0" xyz="-0.015 0.0045 -0.0076"/>
-    <axis xyz="0 0 -1"/>
+    <axis xyz="0 0 1"/>
     <limit effort="10.0" velocity="1.7453292519943295"/>
   </joint>
 
