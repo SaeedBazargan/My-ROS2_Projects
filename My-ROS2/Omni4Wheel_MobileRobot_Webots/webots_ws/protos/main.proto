@@ -7,7 +7,7 @@
 PROTO main [
   field  SFVec3f     translation     0 0 0
   field  SFRotation  rotation        0 0 1 0
-  field  SFString    name            "main"  # Is `Robot.name`.
+  field  SFString    name            "omnirobot"  # Is `Robot.name`.
   field  SFString    controller      "void"  # Is `Robot.controller`.
   field  MFString    controllerArgs  []      # Is `Robot.controllerArgs`.
   field  SFString    customData      ""      # Is `Robot.customData`.
@@ -426,6 +426,12 @@ PROTO main [
                       }
                     ]
                   }
+              Camera {
+                    name "camera"
+                    fieldOfView 1.047
+                    width 320
+                    height 240
+                  }
                 ]
                 name "camera_link"
                 boundingObject Pose {
@@ -479,6 +485,21 @@ PROTO main [
         }
       }
     ]
+    
+    boundingObject Pose {
+      translation 0.000000 0.000000 0.044750
+      children [
+        Box {
+          size 0.160000 0.120000 0.055500
+        }
+      ]
+    }
+    
+    physics Physics {
+      density -1
+      mass 1.0
+    }    
+    
     name IS name
   }
 }
