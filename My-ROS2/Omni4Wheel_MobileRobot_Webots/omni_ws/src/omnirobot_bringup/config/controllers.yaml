@@ -16,7 +16,11 @@ diff_drive_controller:
 
     wheel_radius: 0.025
     wheel_separation: 0.121
-
+    linear:
+      x:
+        max_velocity: 0.5
+        min_velocity: -0.5
+        
     odom_frame_id: odom
     base_frame_id: base_footprint
 

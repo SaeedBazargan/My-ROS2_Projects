@@ -9,8 +9,8 @@ EXTERNPROTO "../protos/main.proto"
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.57735 0.57735 0.57735 2.0944
-  position 1.57035 -0.2481 7.11669
+  orientation -0.4285405354398312 0.4328489033754099 0.7930919469592714 1.7908198406535591
+  position 1.3714821413978908 -1.8805547946475594 1.7605845560615132
 }
 TexturedBackground {
 }
@@ -41,7 +41,7 @@ Solid {
   }
 }
 Solid {
-  translation 1.44 -1.1 0
+  translation 1.44 -1.1 -0.0018
   children [
     Shape {
       appearance Appearance {
@@ -65,21 +65,10 @@ Solid {
   }
 }
 main {
-  hidden translation_1 6.68360597769202e-10 -4.6460363480287375e-17 -1.8136690412423606e-05
-  hidden rotation_1 -6.964660740805203e-08 -0.9999999999999976 -5.413290862603217e-11 5.777634319415807e-09
   hidden position_2_0 -1.9694705258138232e-11
-  hidden translation_3 -0.015 0.0045 -0.0076
-  hidden rotation_3 0 0 -1 0
   hidden position_4_0 -1.9695010011756752e-11
-  hidden translation_5 -0.015 0.0045 -0.0076
-  hidden rotation_5 0 0 -1 0
   hidden position_6_0 -1.9694610993553582e-11
-  hidden translation_7 0.015 0.0045 -0.0076
-  hidden rotation_7 0 0 1 0
   hidden position_8_0 1.9695251372634138e-11
-  hidden translation_9 -0.015 0.0045 -0.0076
-  hidden rotation_9 0 0 1 0
-
   translation 1.4 -1 0.1
   rotation 0 0 1 1.5708
   controller "<extern>"

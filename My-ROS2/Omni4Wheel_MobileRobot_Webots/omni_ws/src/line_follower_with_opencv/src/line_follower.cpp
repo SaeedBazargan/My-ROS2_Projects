@@ -15,13 +15,9 @@ public:
         subscription_ = this->create_subscription<sensor_msgs::msg::Image>(
             "/camera/image_raw",
             10,
-            std::bind(&LineFollowerNode::listener_callback, this, std::placeholders::_1)
-        );
-
-        publisher_ = this->create_publisher<geometry_msgs::msg::TwistStamped>(
-            "/omni_wheel_drive_controller/cmd_vel",
-            10
-        );
+            std::bind(&LineFollowerNode::listener_callback, this, std::placeholders::_1));
+            
+        publisher_ = this->create_publisher<geometry_msgs::msg::TwistStamped>("/omni_wheel_drive_controller/cmd_vel", 10);
 
         RCLCPP_INFO(this->get_logger(), "Line follower started.");
 
