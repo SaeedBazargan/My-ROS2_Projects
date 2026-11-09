@@ -209,7 +209,7 @@
       <!--col__l_Assembly001__col_Assembly001__BoundBox/col_Assembly001__BoundBox.-->
       <origin rpy="0 0 0" xyz="0.0 0.0 0.04475"/>
       <geometry>
-        <box size="0.16 0.12 0.0555"/>
+        <box size="0.16 0.11 0.0555"/>
       </geometry>
     </collision>
     <inertial>
@@ -232,6 +232,19 @@
       <inertia ixx="0.00011355729857447346" ixy="2.8690556064248077e-21" ixz="6.766640581190585e-24" iyy="0.00020172717829805288" iyz="0.0" izz="0.00031503148433323526"/>
     </inertial>
   </link>
+  <link name="l_Body002">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://omnirobot_description/meshes/body.dae"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.09487173723413107"/>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.002"/>
+      <inertia ixx="0.00011355729857447346" ixy="2.8690556064248077e-21" ixz="6.766640581190585e-24" iyy="0.00020172717829805288" iyz="0.0" izz="0.00031503148433323526"/>
+    </inertial>
+  </link>  
   <joint name="MX1_Base_LeftTop_Joint" type="fixed">
     <parent link="base_link"/>
     <child link="l_MX_001"/>
@@ -298,6 +311,12 @@
     <parent link="base_footprint"/>
     <child link="base_link"/>
     <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="base3_base2_Joint" type="fixed">
+    <parent link="l_Body001"/>
+    <child link="l_Body002"/>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.052"/>
   </joint>
 
 </robot>

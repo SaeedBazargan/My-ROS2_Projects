@@ -18,7 +18,7 @@ def generate_launch_description():
     urdf_path = os.path.join(get_package_share_path('omnirobot_description'), 'urdf', 'main.xacro')
     rviz_config_path = os.path.join(get_package_share_path('omnirobot_description'), 'rviz', 'rviz_config.rviz')
     controller_path = os.path.join(get_package_share_path('omnirobot_bringup'), 'config', 'controllers.yaml')
-    world_path = os.path.expanduser('~/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot_Webots/webots_ws/worlds/omni_world.wbt')
+    world_path = os.path.expanduser('~/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/webots_ws/worlds/omni_world.wbt')
     use_sim_time = LaunchConfiguration('use_sim_time', default=True)
 
     # Xacro -> URDF: Used by robot_state_publisher

@@ -5,63 +5,22 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
 EXTERNPROTO "../protos/main.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/Table.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.4285405354398312 0.4328489033754099 0.7930919469592714 1.7908198406535591
-  position 1.3714821413978908 -1.8805547946475594 1.7605845560615132
+  orientation 0.5773502691896258 -0.5773502691896258 -0.5773502691896258 4.188785307179587
+  position 0.026026559867128762 0.008166150885753565 5.7049594491305236
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 Floor {
+  size 5 5
   appearance Parquetry {
     type "light strip"
-  }
-}
-Solid {
-  translation 1.37 -1.03 0
-  children [
-    Shape {
-      geometry Mesh {
-        url [
-          "../Meshes/room.stl"
-        ]
-      }
-      isPickable FALSE
-    }
-  ]
-  name "Room"
-  boundingObject Mesh {
-    url [
-      "../Meshes/room.stl"
-    ]
-  }
-}
-Solid {
-  translation 1.44 -1.1 -0.0018
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 0.101961 0.372549 0.705882
-        }
-      }
-      geometry Mesh {
-        url [
-          "../Meshes/line.stl"
-        ]
-      }
-      isPickable FALSE
-    }
-  ]
-  name "line"
-  boundingObject Mesh {
-    url [
-      "../Meshes/line.stl"
-    ]
   }
 }
 main {
@@ -69,7 +28,114 @@ main {
   hidden position_4_0 -1.9695010011756752e-11
   hidden position_6_0 -1.9694610993553582e-11
   hidden position_8_0 1.9695251372634138e-11
-  translation 1.4 -1 0.1
+  translation 1.54919 -1.30691 0.1
   rotation 0 0 1 1.5708
   controller "<extern>"
+}
+Solid {
+  children [
+    CadShape {
+      url [
+        "../Meshes/room.dae"
+      ]
+      isPickable FALSE
+    }
+  ]
+  name "room"
+  boundingObject Mesh {
+    url [
+      "../Meshes/room.dae"
+    ]
+  }
+}
+Solid {
+  translation 0.04 -0.01 -0.0008
+  children [
+    CadShape {
+      url [
+        "../Meshes/line.dae"
+      ]
+    }
+  ]
+  name "line"
+}
+Solid {
+  translation 0.11 -0.16 -0.0008
+  children [
+    CadShape {
+      url [
+        "../Meshes/goal.dae"
+      ]
+    }
+  ]
+  name "goal"
+}
+Solid {
+  translation -0.5 0.15 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.964706 0.380392 0.317647
+        }
+      }
+      geometry Box {
+        size 0.2 0.2 0.4
+      }
+    }
+  ]
+  name "box1"
+}
+Solid {
+  translation -0.79 0.76 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.388235 0.270588 0.172549
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.2
+      }
+    }
+  ]
+  name "box2"
+}
+Solid {
+  translation -1.32 -0.4 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.2 0.819608 0.478431
+        }
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "sphere"
+}
+Solid {
+  children [
+    CadShape {
+      url [
+        "../Meshes/pedestrianCrossing.dae"
+      ]
+    }
+  ]
+  name "pedestrianCrossing"
+}
+Solid {
+  translation 0.678373 -0.261628 0
+  rotation 0 0 1 -2.3561953071795863
+  children [
+    Table {
+      size 0.2 0.4 0.2
+      feetSize 0.03 0.03
+    }
+  ]
+  name "table"
 }

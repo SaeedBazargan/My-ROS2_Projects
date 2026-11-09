@@ -75,7 +75,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot/omni_ws/src/omnirobot_description/worlds/models/line.stl</uri>
+              <uri>file:///home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot/omni_ws/src/omnirobot_description/worlds/models/line.stl</uri>
             </mesh>
           </geometry>
           <material> 
@@ -87,7 +87,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>file:///home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot/omni_ws/src/omnirobot_description/worlds/models/line.stl</uri>
+              <uri>file:///home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot/omni_ws/src/omnirobot_description/worlds/models/line.stl</uri>
             </mesh>
           </geometry>
         </collision>
@@ -117,14 +117,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot/omni_ws/src/omnirobot_description/worlds/models/room.stl</uri>
+              <uri>file:///home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot/omni_ws/src/omnirobot_description/worlds/models/room.stl</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>file:///home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot/omni_ws/src/omnirobot_description/worlds/models/room.stl</uri>
+              <uri>file:///home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot/omni_ws/src/omnirobot_description/worlds/models/room.stl</uri>
             </mesh>
           </geometry>
         </collision>

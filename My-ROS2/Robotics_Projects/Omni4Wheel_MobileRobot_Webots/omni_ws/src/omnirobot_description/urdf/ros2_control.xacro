@@ -1,44 +1,67 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <webots>
-        <device reference="camera" type="Camera">
-        <ros>
-            <enabled>true</enabled>
-            <topicName>/camera</topicName>
-            <alwaysOn>true</alwaysOn>
-            <frameName>camera_link</frameName>
-            <imageSuffix>/image_raw</imageSuffix>
-            <cameraInfoSuffix>/camera_info</cameraInfoSuffix>
-        </ros>
-        </device>
+  <webots>
+    <device reference="camera" type="Camera">
+      <ros>
+        <enabled>true</enabled>
+        <topicName>/camera</topicName>
+        <alwaysOn>true</alwaysOn>
+        <frameName>camera_link</frameName>
+        <imageSuffix>/image_raw</imageSuffix>
+        <cameraInfoSuffix>/camera_info</cameraInfoSuffix>
+      </ros>
+    </device>
 
-        <plugin type="webots_ros2_control::Ros2Control"/>
-    </webots>
+    <device reference="lidar" type="Lidar">
+      <ros>
+        <enabled>true</enabled>
+        <topicName>/scan</topicName>
+        <alwaysOn>true</alwaysOn>
+        <frameName>lidar_link</frameName>
+      </ros>
+    </device>
+    
+    <plugin type="webots_ros2_control::Ros2Control"/>
 
-    <ros2_control name="WebotsControl" type="system">
-        <hardware>
-            <plugin>webots_ros2_control::Ros2ControlSystem</plugin>
-        </hardware>
+    <plugin type="webots_ros2_driver::Ros2IMU">
+      <enabled>true</enabled>
+      <topicName>/imu</topicName>
+      <alwaysOn>true</alwaysOn>
+      <frameName>imu_link</frameName>
 
-        <joint name="Omni1_MX1_Joint">
-            <state_interface name="position"/>
-            <command_interface name="velocity"/>
-        </joint>
+      <inertialUnitName>imu</inertialUnitName>
+      <gyroName>gyro</gyroName>
+      <accelerometerName>accelerometer</accelerometerName>
+    </plugin>
+    
+  </webots>
 
-        <joint name="Omni2_MX2_Joint">
-            <state_interface name="position"/>
-            <command_interface name="velocity"/>
-        </joint>
+  <!-- ##################################################################################################### -->
+  <ros2_control name="WebotsControl" type="system">
+    <hardware>
+      <plugin>webots_ros2_control::Ros2ControlSystem</plugin>
+    </hardware>
 
-        <joint name="Omni3_MX3_Joint">
-            <state_interface name="position"/>
-            <command_interface name="velocity"/>
-        </joint>
+    <joint name="Omni1_MX1_Joint">
+      <state_interface name="position"/>
+      <command_interface name="velocity"/>
+    </joint>
 
-        <joint name="Omni4_MX4_Joint">
-            <state_interface name="position"/>
-            <command_interface name="velocity"/>
-        </joint>
-    </ros2_control>
+    <joint name="Omni2_MX2_Joint">
+      <state_interface name="position"/>
+      <command_interface name="velocity"/>
+    </joint>
+
+    <joint name="Omni3_MX3_Joint">
+      <state_interface name="position"/>
+      <command_interface name="velocity"/>
+    </joint>
+
+    <joint name="Omni4_MX4_Joint">
+      <state_interface name="position"/>
+      <command_interface name="velocity"/>
+    </joint>
+
+  </ros2_control>
 
 </robot>

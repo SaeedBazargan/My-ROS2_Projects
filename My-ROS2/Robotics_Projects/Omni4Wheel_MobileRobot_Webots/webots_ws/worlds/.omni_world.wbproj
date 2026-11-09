@@ -9,4 +9,4 @@ orthographicViewHeight: 1
 textFiles: -1
 globalOptionalRendering: CoordinateSystem
 consoles: Console:All:All
-renderingDevicePerspectives: omnirobot:camera;0;0.788849;0.00510856;0.557121
+renderingDevicePerspectives: omnirobot:camera;0;0.530607;0;0.700589

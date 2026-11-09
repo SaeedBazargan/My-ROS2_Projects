@@ -5,7 +5,7 @@
       <!--MX_001/MX_001.Part__Feature001.-->
       <origin rpy="${M_PI} 0 -${M_PI/2}" xyz="0.0 0.050 0.047"/>
       <geometry>
-        <mesh filename="file:///home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Omni4Wheel_MobileRobot/omni_ws/src/omnirobot_description/meshes/c920_Camera.dae"/>
+        <mesh filename="file:///home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot/omni_ws/src/omnirobot_description/meshes/c920_Camera.dae"/>
       </geometry>
     </visual>
   </link>

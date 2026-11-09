@@ -27,8 +27,8 @@
     </inertial>
 
   </link>
-  <joint name="camera_base2_Joint" type="fixed">
-    <parent link="l_Body001"/>
+  <joint name="camera_base3_Joint" type="fixed">
+    <parent link="l_Body002"/>
     <child link="camera_link"/>
     <origin rpy="0 0 0" xyz="0.08 0 0"/>
   </joint>
