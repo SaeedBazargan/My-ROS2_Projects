@@ -18,14 +18,16 @@
         <topicName>/scan</topicName>
         <alwaysOn>true</alwaysOn>
         <frameName>lidar_link</frameName>
+        <updateRate>10</updateRate>
       </ros>
     </device>
-    
+
     <plugin type="webots_ros2_control::Ros2Control"/>
 
     <plugin type="webots_ros2_driver::Ros2IMU">
       <enabled>true</enabled>
       <topicName>/imu</topicName>
+      <updateRate>10</updateRate>
       <alwaysOn>true</alwaysOn>
       <frameName>imu_link</frameName>
 

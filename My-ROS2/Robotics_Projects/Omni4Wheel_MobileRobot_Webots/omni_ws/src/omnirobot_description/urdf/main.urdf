@@ -466,24 +466,16 @@
       </ros>
     </device>
 
-    <device reference="imu" type="InertialUnit">
-      <ros>
-        <enabled>true</enabled>
-        <topicName>/imu</topicName>
-        <alwaysOn>true</alwaysOn>
-        <frameName>imu_link</frameName>
-      </ros>
-    </device>
-
     <device reference="lidar" type="Lidar">
       <ros>
         <enabled>true</enabled>
         <topicName>/scan</topicName>
         <alwaysOn>true</alwaysOn>
         <frameName>lidar_link</frameName>
+        <updateRate>10</updateRate>
       </ros>
     </device>
-    
+
     <plugin type="webots_ros2_control::Ros2Control"/>
 
     <plugin type="webots_ros2_driver::Ros2IMU">
