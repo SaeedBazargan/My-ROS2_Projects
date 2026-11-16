@@ -11,9 +11,27 @@ find_package(ament_cmake REQUIRED)
 install(DIRECTORY
   launch
   config
+  src
 
   DESTINATION 
   share/${PROJECT_NAME}
 )
+
+# these are for fix lidar
+find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
+
+add_executable(fix_lidar src/fix_lidar.cpp)
+
+ament_target_dependencies(fix_lidar
+  rclcpp
+  sensor_msgs
+)
+
+install(TARGETS
+  fix_lidar
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 
 ament_package()

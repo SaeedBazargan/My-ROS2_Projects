@@ -469,7 +469,7 @@
     <device reference="lidar" type="Lidar">
       <ros>
         <enabled>true</enabled>
-        <topicName>/scan</topicName>
+        <topicName>/myscan</topicName>
         <alwaysOn>true</alwaysOn>
         <frameName>lidar_link</frameName>
         <updateRate>10</updateRate>
