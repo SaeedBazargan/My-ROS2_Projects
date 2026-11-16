@@ -32,7 +32,7 @@ PROTO main [
             translation 0.000000 0.000000 0.017000
             children [
               DEF fusion_visual CadShape {
-                url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/fusion.dae"
+                url "../../omni_ws/src/omnirobot_description/meshes/fusion.dae"
               }
             ]
           }
@@ -45,7 +45,7 @@ PROTO main [
                 rotation -1.000000 0.000000 0.000000 3.141593
                 children [
                   DEF dc07_00a_dummy_none_visual CadShape {
-                    url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none.dae"
+                    url "../../omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none.dae"
                   }
                 ]
               }
@@ -72,7 +72,7 @@ PROTO main [
                       rotation 1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF omnibase_predeterminado_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado.dae"
                         }
                       ]
                     }
@@ -81,7 +81,7 @@ PROTO main [
                       rotation 1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF nut_predeterminado_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/nut_predeterminado.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/nut_predeterminado.dae"
                         }
                       ]
                     }
@@ -90,7 +90,7 @@ PROTO main [
                       rotation 1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF fusion001_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/fusion001.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/fusion001.dae"
                         }
                       ]
                     }
@@ -138,7 +138,7 @@ PROTO main [
                 rotation -1.000000 0.000000 0.000000 3.141593
                 children [
                   DEF dc07_00a_dummy_none001_visual CadShape {
-                    url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none001.dae"
+                    url "../../omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none001.dae"
                   }
                 ]
               }
@@ -165,7 +165,7 @@ PROTO main [
                       rotation 1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF omnibase_predeterminado001_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado001.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado001.dae"
                         }
                       ]
                     }
@@ -174,7 +174,7 @@ PROTO main [
                       rotation 1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF nut_predeterminado001_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/nut_predeterminado001.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/nut_predeterminado001.dae"
                         }
                       ]
                     }
@@ -183,7 +183,7 @@ PROTO main [
                       rotation 1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF fusion002_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/fusion002.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/fusion002.dae"
                         }
                       ]
                     }
@@ -231,7 +231,7 @@ PROTO main [
                 rotation 1.000000 0.000000 0.000000 3.141593
                 children [
                   DEF dc07_00a_dummy_none002_visual CadShape {
-                    url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none002.dae"
+                    url "../../omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none002.dae"
                   }
                 ]
               }
@@ -258,7 +258,7 @@ PROTO main [
                       rotation -1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF omnibase_predeterminado002_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado002.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado002.dae"
                         }
                       ]
                     }
@@ -267,7 +267,7 @@ PROTO main [
                       rotation -1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF nut_predeterminado002_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/nut_predeterminado002.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/nut_predeterminado002.dae"
                         }
                       ]
                     }
@@ -276,7 +276,7 @@ PROTO main [
                       rotation -1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF fusion003_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/fusion003.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/fusion003.dae"
                         }
                       ]
                     }
@@ -324,7 +324,7 @@ PROTO main [
                 rotation 1.000000 0.000000 0.000000 3.141593
                 children [
                   DEF dc07_00a_dummy_none003_visual CadShape {
-                    url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none003.dae"
+                    url "../../omni_ws/src/omnirobot_description/meshes/dc07_00a_dummy_none003.dae"
                   }
                 ]
               }
@@ -351,7 +351,7 @@ PROTO main [
                       rotation -1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF omnibase_predeterminado003_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado003.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/omnibase_predeterminado003.dae"
                         }
                       ]
                     }
@@ -360,7 +360,7 @@ PROTO main [
                       rotation -1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF nut_predeterminado003_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/nut_predeterminado003.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/nut_predeterminado003.dae"
                         }
                       ]
                     }
@@ -369,7 +369,7 @@ PROTO main [
                       rotation -1.000000 0.000000 0.000000 3.141593
                       children [
                         DEF fusion004_visual CadShape {
-                          url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/fusion004.dae"
+                          url "../../omni_ws/src/omnirobot_description/meshes/fusion004.dae"
                         }
                       ]
                     }
@@ -412,7 +412,7 @@ PROTO main [
             translation 0.000000 0.000000 0.074000
             children [
               DEF body_visual CadShape {
-                url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/body.dae"
+                url "../../omni_ws/src/omnirobot_description/meshes/body.dae"
               }
               Solid {
                 translation 0.000000 0.000000 0.052000
@@ -426,7 +426,7 @@ PROTO main [
                         rotation 0.707107 -0.707107 0.000000 3.141593
                         children [
                           DEF c920_Camera_visual CadShape {
-                            url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/c920_Camera.dae"
+                            url "../../omni_ws/src/omnirobot_description/meshes/c920_Camera.dae"
                           }
                         ]
                       }
@@ -476,7 +476,7 @@ PROTO main [
                     rotation 0.577350 0.577350 0.577350 2.094395
                     children [
                       DEF imu_visual CadShape {
-                        url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/imu.dae"
+                        url "../../omni_ws/src/omnirobot_description/meshes/imu.dae"
                       }
                     ]
                   }
@@ -530,7 +530,7 @@ PROTO main [
                     rotation 1.000000 0.000000 0.000000 1.570796
                     children [
                       DEF rplidarc1_visual CadShape {
-                        url "/home/sbzrgn/Desktop/My-ROS2_Projects/My-ROS2/Robotics_Projects/Omni4Wheel_MobileRobot_Webots/omni_ws/src/omnirobot_description/meshes/rplidarc1.dae"
+                        url "../../omni_ws/src/omnirobot_description/meshes/rplidarc1.dae"
                       }
                     ]
                   }
