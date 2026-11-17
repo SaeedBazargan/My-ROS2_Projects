@@ -538,12 +538,12 @@ PROTO main [
                     name "lidar"
                     tiltAngle 0
                     horizontalResolution 512
-                    fieldOfView 1.57
+                    fieldOfView 0.7854
                     verticalFieldOfView 0.1
                     numberOfLayers 1
                     near 0.01
-                    minRange 0.05
-                    maxRange 5.0
+                    minRange 0.025
+                    maxRange 10.0
                     type "fixed"
                     projection "planar"
                     noise 0

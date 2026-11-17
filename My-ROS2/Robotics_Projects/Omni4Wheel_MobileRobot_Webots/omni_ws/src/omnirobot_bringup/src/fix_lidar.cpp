@@ -28,26 +28,26 @@ private:
     void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
     {
         auto corrected_scan = *msg;
-        const int resolution = corrected_scan.ranges.size();
-        if(resolution < 2)
-        {
-            return;
-        }
+        // const int resolution = corrected_scan.ranges.size();
+        // if(resolution < 2)
+        // {
+        //     return;
+        // }
 
-        // Reverse LiDAR measurements
-        std::reverse(corrected_scan.ranges.begin(), corrected_scan.ranges.end());
+        // // Reverse LiDAR measurements
+        // std::reverse(corrected_scan.ranges.begin(), corrected_scan.ranges.end());
 
-        // Reverse intensities if available
-        if(!corrected_scan.intensities.empty())
-        {
-            std::reverse(corrected_scan.intensities.begin(), corrected_scan.intensities.end());
-        }
+        // // Reverse intensities if available
+        // if(!corrected_scan.intensities.empty())
+        // {
+        //     std::reverse(corrected_scan.intensities.begin(), corrected_scan.intensities.end());
+        // }
 
-        // Correct angular parameters
-        const double fov = std::abs(corrected_scan.angle_max - corrected_scan.angle_min);
-        corrected_scan.angle_increment = fov / (resolution - 1);
-        corrected_scan.angle_min = -fov / 2.0;
-        corrected_scan.angle_max = fov / 2.0;
+        // // Correct angular parameters
+        // const double fov = std::abs(corrected_scan.angle_max - corrected_scan.angle_min);
+        // corrected_scan.angle_increment = fov / (resolution - 1);
+        // corrected_scan.angle_min = -fov / 2.0;
+        // corrected_scan.angle_max = fov / 2.0;
 
         publisher_->publish(corrected_scan);
     }
