@@ -1,0 +1,21 @@
+digraph G {
+"odom" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 30.825\nBuffer length: 4.704\nMost recent transform: 340.192\nOldest transform: 335.488\n"];
+"l_MX_001" -> "l_OmniWheel001"[label=" Broadcaster: default_authority\nAverage rate: 15.92\nBuffer length: 3.392\nMost recent transform: 340.16\nOldest transform: 336.768\n"];
+"base_link" -> "l_MX_001"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"l_MX_003" -> "l_OmniWheel003"[label=" Broadcaster: default_authority\nAverage rate: 15.92\nBuffer length: 3.392\nMost recent transform: 340.16\nOldest transform: 336.768\n"];
+"base_link" -> "l_MX_003"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"l_MX_005" -> "l_OmniWheel005"[label=" Broadcaster: default_authority\nAverage rate: 15.92\nBuffer length: 3.392\nMost recent transform: 340.16\nOldest transform: 336.768\n"];
+"base_link" -> "l_MX_005"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"l_MX_007" -> "l_OmniWheel007"[label=" Broadcaster: default_authority\nAverage rate: 15.92\nBuffer length: 3.392\nMost recent transform: 340.16\nOldest transform: 336.768\n"];
+"base_link" -> "l_MX_007"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_footprint" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "l_Body001"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"l_Body001" -> "l_Body002"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"l_Body002" -> "camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"l_Body001" -> "imu_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"l_Body001" -> "lidar_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1794994656.1904366"[ shape=plaintext ] ;
+}->"odom";
+}
